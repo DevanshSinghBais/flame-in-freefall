@@ -1,0 +1,60 @@
+- generic [active] [ref=f9e1]:
+  - generic [ref=f9e2]:
+    - generic [ref=f9e3]:
+      - button "Open workspace navigation" [ref=f9e4] [cursor=pointer]
+      - link "FLAME IN FREEFALL home" [ref=f9e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f9e7]: FLAME
+        - generic [ref=f9e9]: IN FREEFALL
+    - complementary [aria-hidden] [ref=f9e10]:
+      - generic [ref=f9e11]:
+        - link [ref=f9e12] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f9e13]: FLAME
+          - generic [ref=f9e15]: IN FREEFALL
+        - generic [ref=f9e16]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation [ref=f9e17]:
+        - link [ref=f9e18] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f9e24]: Overview
+        - link [ref=f9e25] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+          - generic [ref=f9e29]: Research Explorer
+        - link [ref=f9e30] [cursor=pointer]:
+          - /url: /workspace/paper-library
+          - generic [ref=f9e33]: Paper Library
+        - link [ref=f9e34] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+          - generic [ref=f9e37]: AI Research Assistant
+        - link [ref=f9e38] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+          - generic [ref=f9e44]: Experiment Comparison
+        - link [ref=f9e45] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+          - generic [ref=f9e49]: Scenario Explorer
+        - link [ref=f9e50] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+          - generic [ref=f9e53]: Evidence Gaps
+        - link [ref=f9e54] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+          - generic [ref=f9e57]: Scientific Analytics
+        - link [ref=f9e58] [cursor=pointer]:
+          - /url: /workspace/collections
+          - generic [ref=f9e61]: Collections
+        - link [ref=f9e62] [cursor=pointer]:
+          - /url: /workspace/reports
+          - generic [ref=f9e66]: Reports
+        - link [ref=f9e67] [cursor=pointer]:
+          - /url: /workspace/settings
+          - generic [ref=f9e71]: Settings
+      - paragraph [ref=f9e74]: Research, with its sources in view.
+    - main [ref=f9e76]:
+      - generic [ref=f9e77]:
+        - paragraph [ref=f9e78]: FLAME IN FREEFALL · WORKSPACE
+        - heading "Experiment Comparison" [level=1] [ref=f9e79]
+        - paragraph [ref=f9e80]: Side-by-side experiment analysis is planned. This preview includes a qualitative flame-form schematic only.
+        - status [ref=f9e81]:
+          - generic [ref=f9e85]: This area is a navigation placeholder; no backend or scientific service is connected.
+        - link "Back to research overview" [ref=f9e86] [cursor=pointer]:
+          - /url: /workspace/overview
+  - alert [ref=f9e89]

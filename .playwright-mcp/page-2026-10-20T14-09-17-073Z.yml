@@ -1,0 +1,130 @@
+- generic [active] [ref=f6e1]:
+  - banner [ref=f6e2]:
+    - generic [ref=f6e3]:
+      - link "FLAME IN FREEFALL home" [ref=f6e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f6e5]: FLAME
+        - generic [ref=f6e6]: IN FREEFALL
+      - navigation "Main navigation" [ref=f6e7]:
+        - link "About the Science" [ref=f6e8] [cursor=pointer]:
+          - /url: /about
+        - link "Research Sources" [ref=f6e9] [cursor=pointer]:
+          - /url: /sources
+        - link "Sign In" [ref=f6e10] [cursor=pointer]:
+          - /url: /sign-in
+  - main [ref=f6e11]:
+    - region [ref=f6e12]:
+      - img "Illustrative concept artwork depicting a luminous spherical flame inside an experimental combustion chamber; this is not NASA photography." [ref=f6e13]
+      - generic [ref=f6e16]:
+        - heading "FIRE BEHAVES DIFFERENTLY BEYOND EARTH." [level=1] [ref=f6e17]:
+          - generic [ref=f6e18]: FIRE BEHAVES
+          - generic [ref=f6e19]: DIFFERENTLY
+          - generic [ref=f6e20]: BEYOND EARTH.
+        - paragraph [ref=f6e21]: Without gravity, buoyancy-driven flow changes how flames move, mix, and burn.
+        - paragraph [ref=f6e22]: FLAME IN FREEFALL helps researchers find, compare, and interpret published evidence on microgravity combustion.
+        - generic [ref=f6e23]:
+          - link "Explore Research" [ref=f6e24] [cursor=pointer]:
+            - /url: /workspace/overview
+          - link "Ask the Research Assistant" [ref=f6e27] [cursor=pointer]:
+            - /url: /workspace/ai-research-assistant
+      - paragraph [ref=f6e30]: Illustrative concept image · not NASA photography
+    - region [ref=f6e32]:
+      - generic [ref=f6e33]:
+        - heading "A different kind of flame" [level=2] [ref=f6e34]
+        - paragraph [ref=f6e35]: On Earth, gravity-driven buoyant convection moves hot gases upward, shaping familiar flame forms. In microgravity, that upward flow is greatly reduced, changing the conditions in which flames develop.
+        - paragraph [ref=f6e36]: Comparing these environments helps researchers investigate flame structure, soot, stability, and combustion behavior.
+        - link "About the science" [ref=f6e37] [cursor=pointer]:
+          - /url: /about
+      - region "NASA image comparing candle flames on Earth and in microgravity" [ref=f6e41]:
+        - figure "On Earth Gravity-driven buoyant convection In microgravity Reduced convective flow" [ref=f6e42]:
+          - link "Open the NASA image source for the flame comparison" [ref=f6e43] [cursor=pointer]:
+            - /url: https://science.nasa.gov/image-detail/candle-flames-3/
+            - img "NASA image comparing a yellow, teardrop-shaped candle flame at 1 g with a spherical blue candle flame in microgravity." [ref=f6e44]
+          - generic [ref=f6e49]:
+            - generic [ref=f6e50]:
+              - strong [ref=f6e51]: On Earth
+              - generic [ref=f6e52]: Gravity-driven buoyant convection
+            - generic [ref=f6e53]:
+              - strong [ref=f6e54]: In microgravity
+              - generic [ref=f6e55]: Reduced convective flow
+        - paragraph [ref=f6e56]:
+          - text: NASA image credit · ACME flame comparison.
+          - link "Read the source description" [ref=f6e57] [cursor=pointer]:
+            - /url: https://science.nasa.gov/image-detail/candle-flames-3/
+    - region [ref=f6e61]:
+      - generic [ref=f6e62]:
+        - generic "Preview of the research source interface" [ref=f6e64]:
+          - generic [ref=f6e65]:
+            - generic [ref=f6e67]: FLAME IN FREEFALL / RESEARCH OVERVIEW
+            - generic [ref=f6e68]: INTERFACE CONCEPT
+          - generic [ref=f6e69]: microgravity combustion flame structure
+          - generic [ref=f6e76]:
+            - generic [ref=f6e77]: Research area
+            - generic [ref=f6e78]: Environment
+            - generic [ref=f6e79]: Source type
+          - generic [ref=f6e80]:
+            - link "Advanced Combustion via Microgravity Experiments (ACME) NASA Science · Mission overview" [ref=f6e81] [cursor=pointer]:
+              - /url: https://science.nasa.gov/mission/acme/
+              - generic [ref=f6e85]:
+                - strong [ref=f6e86]: Advanced Combustion via Microgravity Experiments (ACME)
+                - generic [ref=f6e87]: NASA Science · Mission overview
+            - link "Structure and Response of Spherical Flames (s-Flame) NASA Science · Investigation" [ref=f6e91] [cursor=pointer]:
+              - /url: https://science.nasa.gov/biological-physical/investigations/s-flame/
+              - generic [ref=f6e95]:
+                - strong [ref=f6e96]: Structure and Response of Spherical Flames (s-Flame)
+                - generic [ref=f6e97]: NASA Science · Investigation
+            - link "Coflow Laminar Diffusion Flame (CLD Flame) NASA Science · Investigation" [ref=f6e101] [cursor=pointer]:
+              - /url: https://science.nasa.gov/biological-physical/investigations/cld-flame/
+              - generic [ref=f6e105]:
+                - strong [ref=f6e106]: Coflow Laminar Diffusion Flame (CLD Flame)
+                - generic [ref=f6e107]: NASA Science · Investigation
+          - paragraph [ref=f6e111]: Curated NASA Science source pages · this is not live search output
+        - generic [ref=f6e112]:
+          - heading "Find. Compare. Deepen understanding." [level=2] [ref=f6e113]
+          - paragraph [ref=f6e114]: Search traceable research sources, compare the conditions they describe, and keep published evidence distinct from generated interpretation.
+          - list [ref=f6e115]:
+            - listitem [ref=f6e116]:
+              - generic [ref=f6e121]:
+                - strong [ref=f6e122]: Discover relevant research
+                - generic [ref=f6e123]: Start with NASA’s microgravity combustion source pages.
+            - listitem [ref=f6e124]:
+              - generic [ref=f6e131]:
+                - strong [ref=f6e132]: Compare evidence
+                - generic [ref=f6e133]: Read source context before drawing comparisons.
+            - listitem [ref=f6e134]:
+              - generic [ref=f6e138]:
+                - strong [ref=f6e139]: Get research support
+                - generic [ref=f6e140]: Ask for a source-grounded synthesis with links to the NASA records used.
+          - generic "How the workspace separates source evidence and AI interpretation" [ref=f6e141]:
+            - generic [ref=f6e142]:
+              - generic [ref=f6e143]: PUBLISHED EVIDENCE
+              - paragraph [ref=f6e144]: Traceable source wording and metadata.
+            - generic [ref=f6e145]:
+              - generic [ref=f6e146]: AI INTERPRETATION
+              - paragraph [ref=f6e147]: Generated synthesis, kept distinct and cited.
+          - link "View the curated sources" [ref=f6e148] [cursor=pointer]:
+            - /url: /sources
+    - region [ref=f6e152]:
+      - generic [ref=f6e154]:
+        - heading "Same questions. A larger perspective." [level=2] [ref=f6e155]: Same questions.A larger perspective.
+        - paragraph [ref=f6e156]: Explore traceable research into combustion under conditions beyond Earth.
+        - generic [ref=f6e157]:
+          - link "Explore Research" [ref=f6e158] [cursor=pointer]:
+            - /url: /workspace/overview
+          - link "Ask the Research Assistant" [ref=f6e161] [cursor=pointer]:
+            - /url: /workspace/ai-research-assistant
+      - link "Earth photographed from the ISS · NASA" [ref=f6e164] [cursor=pointer]:
+        - /url: https://www.nasa.gov/image-article/sun-rises-above-horizon-illuminating-earth/
+  - contentinfo [ref=f6e165]:
+    - generic [ref=f6e166]:
+      - link "FLAME IN FREEFALL home" [ref=f6e167] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f6e168]: FLAME
+        - generic [ref=f6e169]: IN FREEFALL
+      - navigation "Footer navigation" [ref=f6e170]:
+        - link "About the Science" [ref=f6e171] [cursor=pointer]:
+          - /url: /about
+        - link "Research Sources" [ref=f6e172] [cursor=pointer]:
+          - /url: /sources
+        - link "Sign In" [ref=f6e173] [cursor=pointer]:
+          - /url: /sign-in

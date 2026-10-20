@@ -1,0 +1,29 @@
+- generic [active] [ref=f4e1]:
+  - banner [ref=f4e2]:
+    - generic [ref=f4e3]:
+      - link "FLAME IN FREEFALL home" [ref=f4e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f4e5]: FLAME
+        - generic [ref=f4e7]: IN FREEFALL
+      - button "Open navigation menu" [ref=f4e8] [cursor=pointer]
+  - main [ref=f4e10]:
+    - paragraph [ref=f4e11]: FLAME IN FREEFALL
+    - heading "Workspace access is not enabled yet." [level=1] [ref=f4e12]
+    - paragraph [ref=f4e13]: Authentication is not part of this milestone. You can explore the public source preview and research overview without signing in.
+    - link "Open research overview" [ref=f4e14] [cursor=pointer]:
+      - /url: /workspace/overview
+  - contentinfo [ref=f4e15]:
+    - generic [ref=f4e16]:
+      - link "FLAME IN FREEFALL home" [ref=f4e17] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f4e18]: FLAME
+        - generic [ref=f4e20]: IN FREEFALL
+      - paragraph [ref=f4e21]: A clearer path through microgravity combustion research.
+      - navigation "Footer navigation" [ref=f4e22]:
+        - link "About the Science" [ref=f4e23] [cursor=pointer]:
+          - /url: /about
+        - link "Research Sources" [ref=f4e24] [cursor=pointer]:
+          - /url: /sources
+        - link "Sign In" [ref=f4e25] [cursor=pointer]:
+          - /url: /sign-in
+  - alert [ref=f4e26]

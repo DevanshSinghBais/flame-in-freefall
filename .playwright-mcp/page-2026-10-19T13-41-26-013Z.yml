@@ -1,0 +1,43 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e266]: AI Research Assistant | FLAME IN FREEFALL
+  - generic [ref=e349]:
+    - complementary [ref=e350]:
+      - generic [ref=e351]:
+        - link "FLAME IN FREEFALL home" [ref=e352] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=e353]: FLAME
+          - generic [ref=e355]: IN FREEFALL
+        - generic [ref=e356]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=e357]:
+        - link "Overview" [ref=e358] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=e365] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=e370] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=e374] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=e378] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=e385] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=e390] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=e394] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=e398] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=e402] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=e407] [cursor=pointer]:
+          - /url: /workspace/settings
+      - paragraph [ref=e414]: Research, with its sources in view.
+    - main [ref=e416]:
+      - generic [ref=e417]:
+        - paragraph [ref=e418]: FLAME IN FREEFALL · WORKSPACE
+        - heading "AI Research Assistant" [level=1] [ref=e419]
+        - paragraph [ref=e420]: The AI research assistant is not connected in this preview. No generated scientific findings are shown.
+        - status [ref=e421]:
+          - generic [ref=e425]: This area is a navigation placeholder; no backend or scientific service is connected.
+        - link "Back to research overview" [ref=e426] [cursor=pointer]:
+          - /url: /workspace/overview

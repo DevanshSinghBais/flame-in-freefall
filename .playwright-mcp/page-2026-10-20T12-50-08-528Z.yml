@@ -1,0 +1,41 @@
+- generic [active] [ref=f5e1]:
+  - generic [ref=f5e2]:
+    - complementary [ref=f5e3]:
+      - generic [ref=f5e4]:
+        - link "FLAME IN FREEFALL home" [ref=f5e5] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f5e6]: FLAME
+          - generic [ref=f5e8]: IN FREEFALL
+        - generic [ref=f5e9]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=f5e10]:
+        - link "Overview" [ref=f5e11] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=f5e18] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=f5e23] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=f5e27] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=f5e31] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=f5e38] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=f5e43] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=f5e47] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=f5e51] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=f5e55] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=f5e60] [cursor=pointer]:
+          - /url: /workspace/settings
+      - generic [ref=f5e65]:
+        - paragraph [ref=f5e67]: Research, with its sources in view.
+        - link "Sign in to save research" [ref=f5e68] [cursor=pointer]:
+          - /url: /sign-in
+    - main [ref=f5e74]:
+      - status [ref=f5e75]:
+        - heading "Loading NASA research record" [level=1] [ref=f5e77]
+        - paragraph [ref=f5e78]: Retrieving citation 19970020613 from NASA NTRS.
+  - button "Open Next.js Dev Tools" [ref=f5e84] [cursor=pointer]

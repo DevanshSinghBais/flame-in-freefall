@@ -1,0 +1,60 @@
+- generic [active] [ref=f11e1]:
+  - generic [ref=f11e2]:
+    - generic [ref=f11e3]:
+      - button "Open workspace navigation" [ref=f11e4] [cursor=pointer]
+      - link "FLAME IN FREEFALL home" [ref=f11e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f11e7]: FLAME
+        - generic [ref=f11e9]: IN FREEFALL
+    - complementary [aria-hidden] [ref=f11e10]:
+      - generic [ref=f11e11]:
+        - link [ref=f11e12] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f11e13]: FLAME
+          - generic [ref=f11e15]: IN FREEFALL
+        - generic [ref=f11e16]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation [ref=f11e17]:
+        - link [ref=f11e18] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f11e24]: Overview
+        - link [ref=f11e25] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+          - generic [ref=f11e29]: Research Explorer
+        - link [ref=f11e30] [cursor=pointer]:
+          - /url: /workspace/paper-library
+          - generic [ref=f11e33]: Paper Library
+        - link [ref=f11e34] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+          - generic [ref=f11e37]: AI Research Assistant
+        - link [ref=f11e38] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+          - generic [ref=f11e44]: Experiment Comparison
+        - link [ref=f11e45] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+          - generic [ref=f11e49]: Scenario Explorer
+        - link [ref=f11e50] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+          - generic [ref=f11e53]: Evidence Gaps
+        - link [ref=f11e54] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+          - generic [ref=f11e57]: Scientific Analytics
+        - link [ref=f11e58] [cursor=pointer]:
+          - /url: /workspace/collections
+          - generic [ref=f11e61]: Collections
+        - link [ref=f11e62] [cursor=pointer]:
+          - /url: /workspace/reports
+          - generic [ref=f11e66]: Reports
+        - link [ref=f11e67] [cursor=pointer]:
+          - /url: /workspace/settings
+          - generic [ref=f11e71]: Settings
+      - paragraph [ref=f11e74]: Research, with its sources in view.
+    - main [ref=f11e76]:
+      - generic [ref=f11e77]:
+        - paragraph [ref=f11e78]: FLAME IN FREEFALL · WORKSPACE
+        - heading "Evidence Gaps" [level=1] [ref=f11e79]
+        - paragraph [ref=f11e80]: Evidence-gap analysis is planned for a later phase and is not computed in this preview.
+        - status [ref=f11e81]:
+          - generic [ref=f11e85]: This area is a navigation placeholder; no backend or scientific service is connected.
+        - link "Back to research overview" [ref=f11e86] [cursor=pointer]:
+          - /url: /workspace/overview
+  - alert [ref=f11e89]

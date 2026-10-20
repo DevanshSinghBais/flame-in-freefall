@@ -1,0 +1,118 @@
+- generic [ref=f1e3]:
+  - generic [ref=f1e6]:
+    - generic [ref=f1e7]:
+      - img "NASA Logo" [ref=f1e8] [cursor=pointer]
+      - heading "NTRS - NASA Technical Reports Server" [level=2] [ref=f1e9] [cursor=pointer]
+    - generic [ref=f1e13]:
+      - textbox "Search all fields" [ref=f1e15]
+      - button "Search" [ref=f1e16] [cursor=pointer]
+    - generic [ref=f1e17]:
+      - generic [ref=f1e18] [cursor=pointer]: Collections
+      - link "About" [ref=f1e19] [cursor=pointer]:
+        - /url: https://sti.nasa.gov/what-is-the-ntrs/
+      - link "News" [ref=f1e20] [cursor=pointer]:
+        - /url: https://sti.nasa.gov/ntrs-news/
+      - link "Help" [ref=f1e21] [cursor=pointer]:
+        - /url: https://sti.nasa.gov/contact-us/
+      - generic [ref=f1e22] [cursor=pointer]: Login
+  - paragraph [ref=f1e25]: Press Enter or click the Search button to begin your search.
+  - generic [ref=f1e28]:
+    - generic [ref=f1e29]:
+      - generic [ref=f1e31]:
+        - img [aria-hidden] [ref=f1e32]: lock_open
+        - text: Publicly Available Content
+      - generic [ref=f1e33]:
+        - generic [ref=f1e34]:
+          - paragraph [ref=f1e35]: The NASA Technical Reports Server (NTRS) provides access to NASA metadata records, full-text online documents, images, and videos. The types of information included are conference papers, journal articles, meeting papers, patents, research reports, images, movies, and technical videos – scientific and technical information (STI) created or funded by NASA.
+          - paragraph [ref=f1e36]: By maintaining NTRS, the STI Program supports NASA’s strategic goals to
+          - list [ref=f1e37]:
+            - listitem [ref=f1e38]: Expand the frontiers of knowledge, capability, and opportunity in space.
+            - listitem [ref=f1e39]: Advance understanding of Earth and develop technologies to improve the quality of life on our home planet.
+            - listitem [ref=f1e40]: Serve the American public and accomplish our Mission by effectively managing our people, technical capabilities, and infrastructure.
+          - paragraph [ref=f1e41]: We invite you to begin searching NTRS.
+          - generic [ref=f1e42]:
+            - heading "Please See" [level=2] [ref=f1e43]
+            - paragraph [ref=f1e44]:
+              - link "NASA Disclaimers, Copyright Notice, and Terms and Conditions of Use" [ref=f1e45] [cursor=pointer]:
+                - /url: https://sti.nasa.gov/disclaimers/
+              - text: for information on how to use NASA’s scientific and technical information.
+            - heading "Contact Us" [level=2] [ref=f1e46]
+            - paragraph [ref=f1e47]:
+              - text: Please contact the
+              - link "NASA STI Information Desk" [ref=f1e48] [cursor=pointer]:
+                - /url: https://sti.nasa.gov/contact-us/
+              - text: for more information or question.
+        - link "Start Search" [ref=f1e50] [cursor=pointer]:
+          - /url: /search
+    - generic [ref=f1e51]:
+      - generic [ref=f1e53]:
+        - img [aria-hidden] [ref=f1e54]: lock
+        - text: NASA Registered Content
+      - generic [ref=f1e55]:
+        - generic [ref=f1e56]:
+          - paragraph [ref=f1e57]: Registered content in the NASA Technical Reports Server-Registered (NTRS-R) includes the complete STI collection of NASA and non-NASA aerospace materials and is available to NASA civil servants, contractors, and grantees.
+          - paragraph [ref=f1e58]: Members of the NASA community – NASA civil servants, contractors, and grantees - who have access to registered content in NTRS can use the sign-in button to authenticate via their Agency launchpad credentials. Registered content includes the complete STI collection.
+          - paragraph [ref=f1e59]:
+            - text: NASA civil servants, contractors, and grantees who need access to registered content in the repository, please visit
+            - link "https://nasa.sharepoint.com/sites/NASASTIProgram/SitePages/NTRS-Registered-Content.aspx" [ref=f1e60] [cursor=pointer]:
+              - /url: https://nasa.sharepoint.com/sites/NASASTIProgram/SitePages/NTRS-Registered-Content.aspx
+            - text: .
+          - paragraph [ref=f1e61]:
+            - text: Access to registered content is managed through the
+            - link "NASA Application Management System (NAMS)" [ref=f1e62] [cursor=pointer]:
+              - /url: https://nams.nasa.gov/
+            - text: and requires an established NASA Agency User Identity (AUID) and a NASA Launchpad password.
+        - generic [ref=f1e63]: Login with NASA Launchpad
+  - contentinfo [ref=f1e66]:
+    - generic [ref=f1e67]:
+      - generic [ref=f1e68]:
+        - link [ref=f1e69] [cursor=pointer]:
+          - /url: https://www.nasa.gov/
+          - img "NASA Logo" [ref=f1e70]
+        - generic [ref=f1e71]:
+          - generic [ref=f1e72]:
+            - link "No Fear Act" [ref=f1e73] [cursor=pointer]:
+              - /url: https://www.nasa.gov/no-fear-act/
+            - text: "|"
+            - link "Freedom of Information Act" [ref=f1e74] [cursor=pointer]:
+              - /url: https://www.nasa.gov/foia/
+            - text: "|"
+            - link "Office of the Inspector General" [ref=f1e75] [cursor=pointer]:
+              - /url: http://oig.nasa.gov/
+            - text: "|"
+            - link "Agency Financial Reports" [ref=f1e76] [cursor=pointer]:
+              - /url: https://www.nasa.gov/organizations/budget-annual-reports/agency-financial-reports/
+          - generic [ref=f1e77]:
+            - link "NASA Web Privacy Policy and Important Notices" [ref=f1e78] [cursor=pointer]:
+              - /url: https://www.nasa.gov/nasa-web-privacy-policy-and-important-notices/
+            - text: "|"
+            - link "NASA Guidelines for Quality of Information" [ref=f1e79] [cursor=pointer]:
+              - /url: https://www.nasa.gov/offices/ocio/qualityinfo/index.html
+          - generic [ref=f1e80]:
+            - link "Disclaimers, Copyright, Terms of Use" [ref=f1e81] [cursor=pointer]:
+              - /url: https://sti.nasa.gov/disclaimers
+            - text: "|"
+            - link "Accessibility" [ref=f1e82] [cursor=pointer]:
+              - /url: https://www.nasa.gov/accessibility/
+            - text: "|"
+            - link "NASA OCIO" [ref=f1e83] [cursor=pointer]:
+              - /url: https://www.nasa.gov/offices/ocio/home/index.html
+            - text: "|"
+            - link "USA.gov" [ref=f1e84] [cursor=pointer]:
+              - /url: https://www.usa.gov/
+            - text: "|"
+            - link "NASA.gov" [ref=f1e85] [cursor=pointer]:
+              - /url: https://www.nasa.gov/
+          - generic [ref=f1e86]:
+            - link "Contact Us" [ref=f1e87] [cursor=pointer]:
+              - /url: https://sti.nasa.gov/contact-us/
+            - text: "|"
+            - link "Site Map" [ref=f1e88] [cursor=pointer]:
+              - /url: https://ntrs.nasa.gov/sitemap.xml
+      - generic [ref=f1e89]:
+        - img "STI Logo" [ref=f1e90]
+        - generic [ref=f1e91]:
+          - text: "NASA Official: JoAnne R. Calhoun Site Curator:"
+          - link "STI Compliance and Distribution Services" [ref=f1e92] [cursor=pointer]:
+            - /url: https://sti.nasa.gov/contact-us/
+          - text: "Last Modified: September 21, 2026"

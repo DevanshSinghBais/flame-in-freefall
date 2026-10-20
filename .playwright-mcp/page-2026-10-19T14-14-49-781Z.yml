@@ -1,0 +1,280 @@
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - img "NASA Logo" [ref=e8] [cursor=pointer]
+      - heading "NTRS - NASA Technical Reports Server" [level=2] [ref=e9] [cursor=pointer]
+    - generic [ref=e13]:
+      - textbox "Search all fields" [ref=e15]
+      - button "Search" [ref=e16] [cursor=pointer]
+    - generic [ref=e17]:
+      - generic [ref=e18] [cursor=pointer]: Collections
+      - link "About" [ref=e19] [cursor=pointer]:
+        - /url: https://sti.nasa.gov/what-is-the-ntrs/
+      - link "News" [ref=e20] [cursor=pointer]:
+        - /url: https://sti.nasa.gov/ntrs-news/
+      - link "Help" [ref=e21] [cursor=pointer]:
+        - /url: https://sti.nasa.gov/contact-us/
+      - generic [ref=e22] [cursor=pointer]: Login
+  - paragraph [ref=e25]: Press Enter or click the Search button to begin your search.
+  - generic [ref=e28]:
+    - generic [ref=e33]:
+      - heading "Filter Results" [level=2] [ref=e35]
+      - generic [ref=e36]:
+        - generic [ref=e40]:
+          - textbox "Title" [ref=e41]
+          - generic: Title
+        - generic [ref=e47] [cursor=pointer]:
+          - combobox "Author Author" [ref=e48]:
+            - generic [ref=e49]: Author
+          - generic: Author
+        - generic [ref=e59] [cursor=pointer]:
+          - combobox "Organization Organization" [ref=e60]:
+            - generic [ref=e61]: Organization
+          - generic: Organization
+        - generic [ref=e66]:
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - textbox "Publication Date" [ref=e71]:
+                - /placeholder: YYYYMMDD
+              - generic: Publication Date
+            - button "Open calendar" [ref=e74] [cursor=pointer]
+          - img [aria-hidden] [ref=e78]: remove
+          - generic [ref=e81]:
+            - textbox [ref=e83]:
+              - /placeholder: YYYYMMDD
+            - button "Open calendar" [ref=e86] [cursor=pointer]
+        - generic [ref=e90]:
+          - generic [ref=e93]:
+            - generic [ref=e94]:
+              - textbox "Date Acquired" [ref=e95]:
+                - /placeholder: YYYYMMDD
+              - generic: Date Acquired
+            - button "Open calendar" [ref=e98] [cursor=pointer]
+          - img [aria-hidden] [ref=e102]: remove
+          - generic [ref=e105]:
+            - textbox [ref=e107]:
+              - /placeholder: YYYYMMDD
+            - button "Open calendar" [ref=e110] [cursor=pointer]
+        - generic [ref=e119] [cursor=pointer]:
+          - combobox "Type Type" [ref=e120]:
+            - generic [ref=e121]: Type
+          - generic: Type
+        - generic [ref=e129] [cursor=pointer]:
+          - combobox [ref=e130]
+          - generic: Center
+        - generic [ref=e141] [cursor=pointer]:
+          - combobox "Subject Category Subject Category" [ref=e142]:
+            - generic [ref=e143]: Subject Category
+          - generic: Subject Category
+        - generic [ref=e153] [cursor=pointer]:
+          - combobox "Report Numbers Report Numbers" [ref=e154]:
+            - generic [ref=e155]: Report Numbers
+          - generic: Report Numbers
+        - generic [ref=e165] [cursor=pointer]:
+          - combobox "Funding Numbers Funding Numbers" [ref=e166]:
+            - generic [ref=e167]: Funding Numbers
+          - generic: Funding Numbers
+        - generic [ref=e177] [cursor=pointer]:
+          - combobox "Keywords Keywords" [ref=e178]:
+            - generic [ref=e179]: Keywords
+          - generic: Keywords
+        - generic [ref=e184]:
+          - button "Clear" [ref=e185] [cursor=pointer]
+          - button "Apply" [ref=e186] [cursor=pointer]
+    - generic [ref=e188]:
+      - generic [ref=e189]:
+        - button "Clear Filter" [ref=e191] [cursor=pointer]
+        - generic [ref=e192]: Export
+        - generic [ref=e200] [cursor=pointer]:
+          - combobox "Best Match Best Match" [ref=e201]:
+            - generic [ref=e202]: Best Match
+          - generic: Best Match
+        - group [ref=e208]:
+          - generic [ref=e210]:
+            - generic [ref=e211]:
+              - generic [ref=e212]: "Items per page:"
+              - combobox "Items per page:" [ref=e217] [cursor=pointer]:
+                - generic [ref=e218]: "25"
+            - generic [ref=e223]:
+              - generic [ref=e224]: 1 – 25 of 648116
+              - button "Previous page" [disabled] [ref=e225]
+              - button "Next page" [ref=e229] [cursor=pointer]
+      - separator [ref=e233]
+      - generic [ref=e241]:
+        - generic [ref=e242]:
+          - heading "Collections" [level=2] [ref=e244]
+          - listbox [ref=e246]:
+            - option [ref=e248] [cursor=pointer]:
+              - strong [ref=e249]: PubSpace
+        - heading "Top Results" [level=2] [ref=e251]
+        - generic [ref=e252]:
+          - heading "Source" [level=4] [ref=e253]
+          - generic [ref=e254] [cursor=pointer]:
+            - strong [ref=e256]: "608099"
+            - generic "STI Collection" [ref=e257]
+          - generic [ref=e258] [cursor=pointer]:
+            - strong [ref=e260]: "39295"
+            - generic "CHORUS" [ref=e261]
+          - generic [ref=e262] [cursor=pointer]:
+            - strong [ref=e264]: "722"
+            - generic "JPL" [ref=e265]
+        - generic [ref=e266]:
+          - heading "published" [level=4] [ref=e267]
+          - generic [ref=e268] [cursor=pointer]:
+            - strong [ref=e270]: "17551"
+            - generic "1992" [ref=e271]
+          - generic [ref=e272] [cursor=pointer]:
+            - strong [ref=e274]: "16534"
+            - generic "1993" [ref=e275]
+          - generic [ref=e276] [cursor=pointer]:
+            - strong [ref=e278]: "16019"
+            - generic "1991" [ref=e279]
+          - generic [ref=e280] [cursor=pointer]:
+            - strong [ref=e282]: "14955"
+            - generic "1990" [ref=e283]
+          - generic [ref=e284] [cursor=pointer]:
+            - strong [ref=e286]: "13331"
+            - generic "1985" [ref=e287]
+        - generic [ref=e288]:
+          - heading "author" [level=4] [ref=e289]
+          - generic [ref=e290] [cursor=pointer]:
+            - strong [ref=e292]: "685"
+            - generic "Russell, C. T." [ref=e293]
+          - generic [ref=e294] [cursor=pointer]:
+            - strong [ref=e296]: "492"
+            - generic "Baker, D. N." [ref=e297]
+          - generic [ref=e298] [cursor=pointer]:
+            - strong [ref=e300]: "445"
+            - generic "Smith, E. J." [ref=e301]
+          - generic [ref=e302] [cursor=pointer]:
+            - strong [ref=e304]: "391"
+            - generic "Gurnett, D. A." [ref=e305]
+          - generic [ref=e306] [cursor=pointer]:
+            - strong [ref=e308]: "363"
+            - generic "Curtis, S. A." [ref=e309]
+        - generic [ref=e310]:
+          - heading "Type" [level=4] [ref=e311]
+          - generic [ref=e312] [cursor=pointer]:
+            - strong [ref=e314]: "150899"
+            - generic "Conference Paper" [ref=e315]
+          - generic [ref=e316] [cursor=pointer]:
+            - strong [ref=e318]: "124196"
+            - generic "Reprint (Version printed in journal)" [ref=e319]
+          - generic [ref=e320] [cursor=pointer]:
+            - strong [ref=e322]: "71872"
+            - generic "Contractor Report (CR)" [ref=e323]
+          - generic [ref=e324] [cursor=pointer]:
+            - strong [ref=e326]: "49064"
+            - generic "Other" [ref=e327]
+          - generic [ref=e328] [cursor=pointer]:
+            - strong [ref=e330]: "45091"
+            - generic "Presentation" [ref=e331]
+        - generic [ref=e332]:
+          - heading "center" [level=4] [ref=e333]
+          - generic [ref=e334] [cursor=pointer]:
+            - strong [ref=e336]: "381616"
+            - generic "CDMS" [ref=e337]
+          - generic [ref=e338] [cursor=pointer]:
+            - strong [ref=e340]: "42245"
+            - generic "GSFC" [ref=e341]
+          - generic [ref=e342] [cursor=pointer]:
+            - strong [ref=e344]: "41546"
+            - generic "JPL" [ref=e345]
+          - generic [ref=e346] [cursor=pointer]:
+            - strong [ref=e348]: "28511"
+            - generic "LaRC" [ref=e349]
+          - generic [ref=e350] [cursor=pointer]:
+            - strong [ref=e352]: "23102"
+            - generic "MSFC" [ref=e353]
+        - generic [ref=e354]:
+          - heading "subject Category" [level=4] [ref=e355]
+          - generic [ref=e356] [cursor=pointer]:
+            - strong [ref=e358]: "27482"
+            - generic "Geophysics" [ref=e359]
+          - generic [ref=e360] [cursor=pointer]:
+            - strong [ref=e362]: "23828"
+            - generic "Astrophysics" [ref=e363]
+          - generic [ref=e364] [cursor=pointer]:
+            - strong [ref=e366]: "20377"
+            - generic "Earth Resources And Remote Sensing" [ref=e367]
+          - generic [ref=e368] [cursor=pointer]:
+            - strong [ref=e370]: "17745"
+            - generic "Aerodynamics" [ref=e371]
+          - generic [ref=e372] [cursor=pointer]:
+            - strong [ref=e374]: "16082"
+            - generic "Meteorology And Climatology" [ref=e375]
+        - generic [ref=e376]:
+          - heading "keyword" [level=4] [ref=e377]
+          - generic [ref=e378] [cursor=pointer]:
+            - strong [ref=e380]: "5207"
+            - generic "Non-NASA Center" [ref=e381]
+          - generic [ref=e382] [cursor=pointer]:
+            - strong [ref=e384]: "4804"
+            - generic "Support, U.S. Gov't, Non-P.H.S" [ref=e385]
+          - generic [ref=e386] [cursor=pointer]:
+            - strong [ref=e388]: "2446"
+            - generic "Human" [ref=e389]
+          - generic [ref=e390] [cursor=pointer]:
+            - strong [ref=e392]: "2311"
+            - generic "Support, U.S. Gov't, P.H.S" [ref=e393]
+          - generic [ref=e394] [cursor=pointer]:
+            - strong [ref=e396]: "2299"
+            - generic "Support, Non-U.S. Gov't" [ref=e397]
+        - generic [ref=e398]:
+          - heading "distribution" [level=4] [ref=e399]
+          - generic [ref=e400] [cursor=pointer]:
+            - strong [ref=e402]: "648116"
+            - generic "Public" [ref=e403]
+  - contentinfo [ref=e405]:
+    - generic [ref=e406]:
+      - generic [ref=e407]:
+        - link [ref=e408] [cursor=pointer]:
+          - /url: https://www.nasa.gov/
+          - img "NASA Logo" [ref=e409]
+        - generic [ref=e410]:
+          - generic [ref=e411]:
+            - link "No Fear Act" [ref=e412] [cursor=pointer]:
+              - /url: https://www.nasa.gov/no-fear-act/
+            - text: "|"
+            - link "Freedom of Information Act" [ref=e413] [cursor=pointer]:
+              - /url: https://www.nasa.gov/foia/
+            - text: "|"
+            - link "Office of the Inspector General" [ref=e414] [cursor=pointer]:
+              - /url: http://oig.nasa.gov/
+            - text: "|"
+            - link "Agency Financial Reports" [ref=e415] [cursor=pointer]:
+              - /url: https://www.nasa.gov/organizations/budget-annual-reports/agency-financial-reports/
+          - generic [ref=e416]:
+            - link "NASA Web Privacy Policy and Important Notices" [ref=e417] [cursor=pointer]:
+              - /url: https://www.nasa.gov/nasa-web-privacy-policy-and-important-notices/
+            - text: "|"
+            - link "NASA Guidelines for Quality of Information" [ref=e418] [cursor=pointer]:
+              - /url: https://www.nasa.gov/offices/ocio/qualityinfo/index.html
+          - generic [ref=e419]:
+            - link "Disclaimers, Copyright, Terms of Use" [ref=e420] [cursor=pointer]:
+              - /url: https://sti.nasa.gov/disclaimers
+            - text: "|"
+            - link "Accessibility" [ref=e421] [cursor=pointer]:
+              - /url: https://www.nasa.gov/accessibility/
+            - text: "|"
+            - link "NASA OCIO" [ref=e422] [cursor=pointer]:
+              - /url: https://www.nasa.gov/offices/ocio/home/index.html
+            - text: "|"
+            - link "USA.gov" [ref=e423] [cursor=pointer]:
+              - /url: https://www.usa.gov/
+            - text: "|"
+            - link "NASA.gov" [ref=e424] [cursor=pointer]:
+              - /url: https://www.nasa.gov/
+          - generic [ref=e425]:
+            - link "Contact Us" [ref=e426] [cursor=pointer]:
+              - /url: https://sti.nasa.gov/contact-us/
+            - text: "|"
+            - link "Site Map" [ref=e427] [cursor=pointer]:
+              - /url: https://ntrs.nasa.gov/sitemap.xml
+      - generic [ref=e428]:
+        - img "STI Logo" [ref=e429]
+        - generic [ref=e430]:
+          - text: "NASA Official: JoAnne R. Calhoun Site Curator:"
+          - link "STI Compliance and Distribution Services" [ref=e431] [cursor=pointer]:
+            - /url: https://sti.nasa.gov/contact-us/
+          - text: "Last Modified: September 21, 2026"

@@ -1,0 +1,135 @@
+- generic [active] [ref=f8e1]:
+  - generic [ref=f8e2]:
+    - complementary [ref=f8e3]:
+      - generic [ref=f8e4]:
+        - link "FLAME IN FREEFALL home" [ref=f8e5] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f8e6]: FLAME
+          - generic [ref=f8e8]: IN FREEFALL
+        - generic [ref=f8e9]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=f8e10]:
+        - link "Overview" [ref=f8e11] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=f8e18] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=f8e23] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=f8e27] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=f8e31] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=f8e38] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=f8e43] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=f8e47] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=f8e51] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=f8e55] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=f8e60] [cursor=pointer]:
+          - /url: /workspace/settings
+      - generic [ref=f8e65]:
+        - paragraph [ref=f8e67]: Research, with its sources in view.
+        - link "Sign in to save research" [ref=f8e68] [cursor=pointer]:
+          - /url: /sign-in
+    - main [ref=f8e74]:
+      - generic [ref=f8e75]:
+        - generic [ref=f8e76]:
+          - paragraph [ref=f8e77]: MICROGRAVITY COMBUSTION RESEARCH
+          - heading "Research overview" [level=1] [ref=f8e78]
+          - paragraph [ref=f8e79]: Discover and compare traceable source material on combustion beyond Earth.
+        - generic [ref=f8e80]: NASA NTRS · LIVE
+      - region [ref=f8e82]:
+        - heading "Search NASA Technical Reports Server research" [level=2] [ref=f8e83]
+        - search [ref=f8e84]:
+          - generic [ref=f8e88]: Search NASA research
+          - searchbox "Search NASA research" [ref=f8e89]: microgravity combustion
+          - button "Search" [disabled] [ref=f8e90]
+        - generic [ref=f8e94]:
+          - generic [ref=f8e95]: Filter by
+          - generic [ref=f8e97]:
+            - generic [ref=f8e98]: NASA document type
+            - combobox "NASA document type" [ref=f8e99] [cursor=pointer]:
+              - option "All document types" [selected]
+          - generic [ref=f8e100]:
+            - generic [ref=f8e101]: NASA center
+            - combobox "NASA center" [ref=f8e102] [cursor=pointer]:
+              - option "All NASA centers" [selected]
+          - generic [ref=f8e103]:
+            - generic [ref=f8e104]: NASA subject category
+            - combobox "NASA subject category" [ref=f8e105] [cursor=pointer]:
+              - option "All subject categories" [selected]
+          - button "Clear filters" [disabled] [ref=f8e106]
+          - generic [ref=f8e110]: NASA Technical Reports Server
+        - generic [ref=f8e111]:
+          - region [ref=f8e112]:
+            - generic [ref=f8e114]:
+              - heading "Continue your research" [level=3] [ref=f8e115]
+              - paragraph [ref=f8e116]: Start with a source or compare the science.
+            - generic [ref=f8e117]:
+              - link "Open the ACME overview NASA mission source" [ref=f8e118] [cursor=pointer]:
+                - /url: https://science.nasa.gov/mission/acme/
+                - generic [ref=f8e122]:
+                  - strong [ref=f8e123]: Open the ACME overview
+                  - generic [ref=f8e124]: NASA mission source
+              - link "Browse research sources Curated NASA Science pages" [ref=f8e128] [cursor=pointer]:
+                - /url: /sources
+                - generic [ref=f8e133]:
+                  - strong [ref=f8e134]: Browse research sources
+                  - generic [ref=f8e135]: Curated NASA Science pages
+              - link "Compare flame forms Illustrative, qualitative view" [ref=f8e138] [cursor=pointer]:
+                - /url: "#flame-comparison"
+                - generic [ref=f8e145]:
+                  - strong [ref=f8e146]: Compare flame forms
+                  - generic [ref=f8e147]: Illustrative, qualitative view
+          - region [ref=f8e150]:
+            - generic [ref=f8e152]:
+              - heading "NASA research" [level=3] [ref=f8e153]
+              - paragraph [ref=f8e154]: Live publication metadata from NASA NTRS
+            - status [ref=f8e156]:
+              - generic [ref=f8e159]:
+                - heading "Searching NASA NTRS" [level=4] [ref=f8e160]
+                - paragraph [ref=f8e161]: Retrieving source records for “microgravity combustion”.
+      - region [ref=f8e163]:
+        - generic [ref=f8e164]:
+          - generic [ref=f8e165]:
+            - paragraph [ref=f8e166]: THE ROLE OF GRAVITY
+            - heading "Flame morphology comparison" [level=2] [ref=f8e167]
+          - generic [ref=f8e168]: Illustrative visualization
+        - paragraph [ref=f8e170]: On Earth, gravity-driven buoyant convection shapes a candle flame into a teardrop and carries soot toward its tip. In microgravity, with convective flows absent, NASA describes a spherical, soot-free, blue flame.
+        - group "Qualitative flame shape comparison" [ref=f8e171]:
+          - figure "On Earth Buoyancy-driven flow shapes an elongated flame." [ref=f8e172]:
+            - img "Qualitative teardrop-shaped flame schematic" [ref=f8e174]
+            - generic [ref=f8e179]:
+              - generic [ref=f8e180]: On Earth
+              - generic [ref=f8e181]: Buoyancy-driven flow shapes an elongated flame.
+          - generic [ref=f8e183]: Reduced buoyancy
+          - figure "In microgravity NASA describes a spherical, soot-free, blue flame." [ref=f8e184]:
+            - img "Qualitative spherical flame schematic" [ref=f8e186]
+            - generic [ref=f8e191]:
+              - generic [ref=f8e192]: In microgravity
+              - generic [ref=f8e193]: NASA describes a spherical, soot-free, blue flame.
+        - paragraph [ref=f8e194]:
+          - text: Qualitative schematic, not to scale and not a plot of experimental measurements.
+          - link "Read the NASA source" [ref=f8e195] [cursor=pointer]:
+            - /url: https://science.nasa.gov/image-detail/candle-flames-3/
+      - region "Published evidence and AI interpretation" [ref=f8e199]:
+        - article [ref=f8e200]:
+          - generic [ref=f8e202]:
+            - paragraph [ref=f8e203]: PUBLISHED EVIDENCE
+            - heading "Source statement" [level=3] [ref=f8e204]
+            - paragraph [ref=f8e205]: NASA describes the Earth candle flame as teardrop-shaped under buoyant convection, and the microgravity flame as spherical, soot-free, and blue.
+            - link "Inspect the NASA source" [ref=f8e206] [cursor=pointer]:
+              - /url: https://science.nasa.gov/image-detail/candle-flames-3/
+            - generic [ref=f8e210]: Faithful summary of the linked source page.
+        - article [ref=f8e211]:
+          - generic [ref=f8e213]:
+            - paragraph [ref=f8e214]: AI INTERPRETATION
+            - heading "Analysis is not connected" [level=3] [ref=f8e215]
+            - paragraph [ref=f8e216]: No generated scientific interpretation is shown in this milestone. Future synthesis will identify supporting evidence and link back to each source.
+            - generic [ref=f8e217]: Unavailable in this preview
+      - paragraph [ref=f8e218]: Search results are live records returned by NASA NTRS. The flame comparison remains illustrative and qualitative; it does not display experimental measurements.
+  - button "Open Next.js Dev Tools" [ref=f8e224] [cursor=pointer]
+  - alert [ref=f8e228]

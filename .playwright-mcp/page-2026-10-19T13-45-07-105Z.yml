@@ -1,0 +1,60 @@
+- generic [active] [ref=f8e1]:
+  - generic [ref=f8e2]:
+    - generic [ref=f8e3]:
+      - button "Open workspace navigation" [ref=f8e4] [cursor=pointer]
+      - link "FLAME IN FREEFALL home" [ref=f8e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f8e7]: FLAME
+        - generic [ref=f8e9]: IN FREEFALL
+    - complementary [aria-hidden] [ref=f8e10]:
+      - generic [ref=f8e11]:
+        - link [ref=f8e12] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f8e13]: FLAME
+          - generic [ref=f8e15]: IN FREEFALL
+        - generic [ref=f8e16]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation [ref=f8e17]:
+        - link [ref=f8e18] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f8e24]: Overview
+        - link [ref=f8e25] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+          - generic [ref=f8e29]: Research Explorer
+        - link [ref=f8e30] [cursor=pointer]:
+          - /url: /workspace/paper-library
+          - generic [ref=f8e33]: Paper Library
+        - link [ref=f8e34] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+          - generic [ref=f8e37]: AI Research Assistant
+        - link [ref=f8e38] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+          - generic [ref=f8e44]: Experiment Comparison
+        - link [ref=f8e45] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+          - generic [ref=f8e49]: Scenario Explorer
+        - link [ref=f8e50] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+          - generic [ref=f8e53]: Evidence Gaps
+        - link [ref=f8e54] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+          - generic [ref=f8e57]: Scientific Analytics
+        - link [ref=f8e58] [cursor=pointer]:
+          - /url: /workspace/collections
+          - generic [ref=f8e61]: Collections
+        - link [ref=f8e62] [cursor=pointer]:
+          - /url: /workspace/reports
+          - generic [ref=f8e66]: Reports
+        - link [ref=f8e67] [cursor=pointer]:
+          - /url: /workspace/settings
+          - generic [ref=f8e71]: Settings
+      - paragraph [ref=f8e74]: Research, with its sources in view.
+    - main [ref=f8e76]:
+      - generic [ref=f8e77]:
+        - paragraph [ref=f8e78]: FLAME IN FREEFALL · WORKSPACE
+        - heading "AI Research Assistant" [level=1] [ref=f8e79]
+        - paragraph [ref=f8e80]: The AI research assistant is not connected in this preview. No generated scientific findings are shown.
+        - status [ref=f8e81]:
+          - generic [ref=f8e85]: This area is a navigation placeholder; no backend or scientific service is connected.
+        - link "Back to research overview" [ref=f8e86] [cursor=pointer]:
+          - /url: /workspace/overview
+  - alert [ref=f8e89]

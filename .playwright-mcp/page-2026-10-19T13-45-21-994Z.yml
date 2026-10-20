@@ -1,0 +1,43 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - complementary [ref=f1e3]:
+      - generic [ref=f1e4]:
+        - link "FLAME IN FREEFALL home" [ref=f1e5] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f1e6]: FLAME
+          - generic [ref=f1e8]: IN FREEFALL
+        - generic [ref=f1e9]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=f1e10]:
+        - link "Overview" [ref=f1e11] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=f1e18] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=f1e23] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=f1e27] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=f1e31] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=f1e38] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=f1e43] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=f1e47] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=f1e51] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=f1e55] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=f1e60] [cursor=pointer]:
+          - /url: /workspace/settings
+      - paragraph [ref=f1e67]: Research, with its sources in view.
+    - main [ref=f1e69]:
+      - generic [ref=f1e70]:
+        - paragraph [ref=f1e71]: FLAME IN FREEFALL · WORKSPACE
+        - heading "Reports" [level=1] [ref=f1e72]
+        - paragraph [ref=f1e73]: Research reports are not generated in this preview.
+        - status [ref=f1e74]:
+          - generic [ref=f1e78]: This area is a navigation placeholder; no backend or scientific service is connected.
+        - link "Back to research overview" [ref=f1e79] [cursor=pointer]:
+          - /url: /workspace/overview
+  - alert [ref=f1e82]

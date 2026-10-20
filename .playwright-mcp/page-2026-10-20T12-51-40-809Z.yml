@@ -1,0 +1,99 @@
+- generic [active] [ref=f9e1]:
+  - generic [ref=f9e2]:
+    - complementary [ref=f9e3]:
+      - generic [ref=f9e4]:
+        - link "FLAME IN FREEFALL home" [ref=f9e5] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f9e6]: FLAME
+          - generic [ref=f9e8]: IN FREEFALL
+        - generic [ref=f9e9]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=f9e10]:
+        - link "Overview" [ref=f9e11] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=f9e18] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=f9e23] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=f9e27] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=f9e31] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=f9e38] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=f9e43] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=f9e47] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=f9e51] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=f9e55] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=f9e60] [cursor=pointer]:
+          - /url: /workspace/settings
+      - generic [ref=f9e65]:
+        - paragraph [ref=f9e67]: Research, with its sources in view.
+        - link "Sign in to save research" [ref=f9e68] [cursor=pointer]:
+          - /url: /sign-in
+    - main [ref=f9e74]:
+      - generic [ref=f9e75]:
+        - generic [ref=f9e76]:
+          - paragraph [ref=f9e77]: FLAME IN FREEFALL · RESEARCH WORKSPACE
+          - heading "Scenario Explorer" [level=1] [ref=f9e78]
+          - paragraph [ref=f9e79]: Record user-selected combustion conditions without presenting an unvalidated simulation or prediction.
+        - generic [ref=f9e80]: ASSUMPTIONS ONLY
+      - generic [ref=f9e82]:
+        - note [ref=f9e83]:
+          - paragraph [ref=f9e84]: ASSUMPTIONS ONLY · NO SOLVER
+          - paragraph [ref=f9e85]: This is an interactive scenario worksheet. It records values you choose; it does not calculate combustion behavior, predict flame outcomes, or represent a validated NASA simulation.
+        - generic [ref=f9e86]:
+          - region [ref=f9e87]:
+            - generic [ref=f9e89]:
+              - paragraph [ref=f9e90]: USER-SELECTED CONDITIONS
+              - heading "Define a scenario" [level=2] [ref=f9e91]
+              - paragraph [ref=f9e92]: Every value below is a user assumption. Leave unknown values blank.
+            - generic [ref=f9e93]:
+              - generic [ref=f9e94]:
+                - text: Gravity context
+                - combobox "Gravity context" [ref=f9e95]:
+                  - option "Choose a context" [selected]
+                  - option "Microgravity (user-selected context)"
+                  - option "Partial gravity (user-selected context)"
+                  - option "Earth gravity (user-selected context)"
+                  - option "Other or unspecified"
+              - generic [ref=f9e96]:
+                - text: Fuel or material description
+                - textbox "Fuel or material description" [ref=f9e97]:
+                  - /placeholder: Enter a material or fuel
+              - generic [ref=f9e98]:
+                - text: Oxidizer description
+                - textbox "Oxidizer description" [ref=f9e99]:
+                  - /placeholder: Enter an oxidizer or mixture
+              - generic [ref=f9e100]:
+                - text: Ambient pressure
+                - generic [ref=f9e101]: (kPa; optional)
+                - spinbutton "Ambient pressure (kPa; optional)" [ref=f9e102]
+              - generic [ref=f9e103]:
+                - text: Initial temperature
+                - generic [ref=f9e104]: (K; optional)
+                - spinbutton "Initial temperature (K; optional)" [ref=f9e105]
+              - generic [ref=f9e106]:
+                - text: Oxygen concentration
+                - generic [ref=f9e107]: (vol %; optional)
+                - spinbutton "Oxygen concentration (vol %; optional)" [ref=f9e108]
+              - generic [ref=f9e109]:
+                - text: Planned duration
+                - generic [ref=f9e110]: (s; optional)
+                - spinbutton "Planned duration (s; optional)" [ref=f9e111]
+          - region [ref=f9e112]:
+            - generic [ref=f9e113]:
+              - generic [ref=f9e114]:
+                - paragraph [ref=f9e115]: SCENARIO RECORD
+                - heading "Your assumptions" [level=2] [ref=f9e116]
+              - generic [ref=f9e117]: USER INPUT
+            - generic [ref=f9e118]:
+              - heading "No conditions entered" [level=3] [ref=f9e119]
+              - paragraph [ref=f9e120]: Choose a context or add a parameter to build a scenario record.
+            - paragraph [ref=f9e121]: Values are recorded as user-entered assumptions, not published evidence.
+            - paragraph [ref=f9e124]: No physical combustion model, prediction, or NASA simulation has been applied. Do not use this worksheet as an engineering prediction or fire-safety decision tool.
+            - button "Download assumptions JSON" [disabled] [ref=f9e125]
+  - button "Open Next.js Dev Tools" [ref=f9e134] [cursor=pointer]

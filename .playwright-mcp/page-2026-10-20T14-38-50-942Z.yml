@@ -1,0 +1,42 @@
+- generic [active] [ref=f23e1]:
+  - banner [ref=f23e2]:
+    - generic [ref=f23e3]:
+      - link "FLAME IN FREEFALL home" [ref=f23e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f23e5]: FLAME
+        - generic [ref=f23e6]: IN FREEFALL
+      - button "Open navigation menu" [ref=f23e7] [cursor=pointer]
+  - main [ref=f23e9]:
+    - region [ref=f23e10]:
+      - paragraph [ref=f23e11]: FLAME IN FREEFALL · SECURE RESEARCH WORKSPACE
+      - heading "Sign in to your workspace" [level=1] [ref=f23e12]
+      - paragraph [ref=f23e13]: Your public NASA research search remains available without an account.
+      - generic [ref=f23e14]:
+        - generic [ref=f23e15]:
+          - generic [ref=f23e16]: Email address
+          - textbox "Email address" [ref=f23e17]
+        - generic [ref=f23e18]:
+          - generic [ref=f23e19]: Password
+          - textbox "Password" [ref=f23e20]
+        - button "Sign in" [ref=f23e21] [cursor=pointer]
+      - navigation "Account actions" [ref=f23e22]:
+        - link "Forgot password?" [ref=f23e23] [cursor=pointer]:
+          - /url: /forgot-password
+        - generic [ref=f23e24]:
+          - text: New to FLAME IN FREEFALL?
+          - link "Create an account" [ref=f23e25] [cursor=pointer]:
+            - /url: /sign-up
+  - contentinfo [ref=f23e26]:
+    - generic [ref=f23e27]:
+      - link "FLAME IN FREEFALL home" [ref=f23e28] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f23e29]: FLAME
+        - generic [ref=f23e30]: IN FREEFALL
+      - navigation "Footer navigation" [ref=f23e31]:
+        - link "About the Science" [ref=f23e32] [cursor=pointer]:
+          - /url: /about
+        - link "Research Sources" [ref=f23e33] [cursor=pointer]:
+          - /url: /sources
+        - link "Sign In" [ref=f23e34] [cursor=pointer]:
+          - /url: /sign-in
+  - alert [ref=f23e35]

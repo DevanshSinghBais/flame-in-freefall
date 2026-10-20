@@ -1,0 +1,100 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - button "Open workspace navigation" [ref=f2e4] [cursor=pointer]
+      - link "FLAME IN FREEFALL home" [ref=f2e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f2e7]: FLAME
+        - generic [ref=f2e9]: IN FREEFALL
+    - complementary [aria-hidden] [ref=f2e10]:
+      - generic [ref=f2e11]:
+        - link [ref=f2e12] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f2e13]: FLAME
+          - generic [ref=f2e15]: IN FREEFALL
+        - generic [ref=f2e16]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation [ref=f2e17]:
+        - link [ref=f2e18] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f2e24]: Overview
+        - link [ref=f2e25] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+          - generic [ref=f2e29]: Research Explorer
+        - link [ref=f2e30] [cursor=pointer]:
+          - /url: /workspace/paper-library
+          - generic [ref=f2e33]: Paper Library
+        - link [ref=f2e34] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+          - generic [ref=f2e37]: AI Research Assistant
+        - link [ref=f2e38] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+          - generic [ref=f2e44]: Experiment Comparison
+        - link [ref=f2e45] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+          - generic [ref=f2e49]: Scenario Explorer
+        - link [ref=f2e50] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+          - generic [ref=f2e53]: Evidence Gaps
+        - link [ref=f2e54] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+          - generic [ref=f2e57]: Scientific Analytics
+        - link [ref=f2e58] [cursor=pointer]:
+          - /url: /workspace/collections
+          - generic [ref=f2e61]: Collections
+        - link [ref=f2e62] [cursor=pointer]:
+          - /url: /workspace/reports
+          - generic [ref=f2e66]: Reports
+        - link [ref=f2e67] [cursor=pointer]:
+          - /url: /workspace/settings
+          - generic [ref=f2e71]: Settings
+      - paragraph [ref=f2e74]: Research, with its sources in view.
+    - main [ref=f2e76]:
+      - article [ref=f2e77]:
+        - link "Back to research overview" [ref=f2e78] [cursor=pointer]:
+          - /url: /workspace/overview
+        - generic [ref=f2e81]:
+          - paragraph [ref=f2e82]: LIVE NASA TECHNICAL REPORTS SERVER RECORD
+          - heading "Buoyancy Effects on Concurrent Flame Spread Over Thick PMMA" [level=1] [ref=f2e83]
+          - generic [ref=f2e84]:
+            - generic [ref=f2e85]:
+              - text: NASA NTRS citation ID
+              - strong [ref=f2e86]: "20200000557"
+            - link "Open canonical source" [ref=f2e87] [cursor=pointer]:
+              - /url: https://ntrs.nasa.gov/citations/20200000557
+        - region [ref=f2e91]:
+          - heading "Record metadata" [level=2] [ref=f2e92]
+          - generic [ref=f2e93]:
+            - generic [ref=f2e94]:
+              - term [ref=f2e95]: Authors
+              - definition [ref=f2e96]: Maria Thomsen; Carlos Fernandez-Pello; Gary A. Ruff; David L. Urban
+            - generic [ref=f2e97]:
+              - term [ref=f2e98]: Publication date
+              - definition [ref=f2e99]: 2018-11-05
+            - generic [ref=f2e100]:
+              - term [ref=f2e101]: NASA document type
+              - definition [ref=f2e102]: Accepted Manuscript (Version with final changes)
+            - generic [ref=f2e103]:
+              - term [ref=f2e104]: NASA center
+              - definition [ref=f2e105]: Glenn Research Center
+            - generic [ref=f2e106]:
+              - term [ref=f2e107]: Subject categories
+              - definition [ref=f2e108]: Inorganic, Organic And Physical Chemistry
+            - generic [ref=f2e109]:
+              - term [ref=f2e110]: DOI
+              - definition [ref=f2e111]:
+                - link "https://doi.org/10.1016/j.combustflame.2018.10.016" [ref=f2e112] [cursor=pointer]:
+                  - /url: https://doi.org/10.1016/j.combustflame.2018.10.016
+        - region [ref=f2e116]:
+          - heading "Abstract" [level=2] [ref=f2e119]
+          - paragraph [ref=f2e120]: The flammability of combustible materials in a spacecraft is important for fire safety applications because the conditions in spacecraft environments differ from those on earth. Experimental testing in space is difficult and expensive. However, reducing buoyancy by decreasing ambient pressure is a possible approach to simulate on-earth the burning behavior inside spacecraft environments. The objective of this work is to determine that possibility by studying the effect of pressure on concurrent flame spread, and by comparison with microgravity data, observe up to what point low-pressure can be used to replicate flame spread characteristics observed in microgravity. Specifically, this work studies the effect of pressure and microgravity on upward/concurrent flame spread over 10 mm thick polymethyl methacrylate (PMMA) slabs. Experiments in normal gravity were conducted over pressures ranging between 100 and 40 kPa and a forced flow velocity of 200 mm/s. Microgravity experiments were conducted during NASA’s Spacecraft Fire Experiment (Saffire II), on board the Cygnus spacecraft at 100 kPa with an air flow velocity of 200 mm/s. Results show that reductions of pressure slow down the flame spread over the PMMA surface approaching that in microgravity. The data is correlated in terms of a non-dimensional mixed convection analysis that describes the convective heat transferred from the flame to the solid, and the primary mechanism controlling the spread of the flame. The extrapolation of the correlation to low pressures predicts well the flame spread rate obtained in microgravity in the Saffire II experiments. Similar results were obtained by the authors with similar experiments with a thin composite cotton/fiberglass fabric (published elsewhere). Both results suggest that reduced pressure can be used to approximately replicate flame behavior of untested gravity conditions for the burning of thick and thin solids. This work could provide guidance for potential ground-based testing for fire safety design in spacecraft and space habitats.
+        - region [ref=f2e121]:
+          - heading "Full text and source" [level=2] [ref=f2e124]
+          - list [ref=f2e125]:
+            - listitem [ref=f2e126]:
+              - link "PDF" [ref=f2e127] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/api/citations/20200000557/downloads/20200000557.pdf
+            - listitem [ref=f2e134]:
+              - link "Full text" [ref=f2e135] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/api/citations/20200000557/downloads/20200000557.txt
+          - paragraph [ref=f2e142]: This page displays metadata returned by NASA NTRS and keeps the provider identifier and canonical source link visible for traceability.
+  - alert [ref=f2e143]

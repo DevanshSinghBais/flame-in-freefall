@@ -1,0 +1,60 @@
+- generic [active] [ref=f10e1]:
+  - generic [ref=f10e2]:
+    - generic [ref=f10e3]:
+      - button "Open workspace navigation" [ref=f10e4] [cursor=pointer]
+      - link "FLAME IN FREEFALL home" [ref=f10e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f10e7]: FLAME
+        - generic [ref=f10e9]: IN FREEFALL
+    - complementary [aria-hidden] [ref=f10e10]:
+      - generic [ref=f10e11]:
+        - link [ref=f10e12] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f10e13]: FLAME
+          - generic [ref=f10e15]: IN FREEFALL
+        - generic [ref=f10e16]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation [ref=f10e17]:
+        - link [ref=f10e18] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f10e24]: Overview
+        - link [ref=f10e25] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+          - generic [ref=f10e29]: Research Explorer
+        - link [ref=f10e30] [cursor=pointer]:
+          - /url: /workspace/paper-library
+          - generic [ref=f10e33]: Paper Library
+        - link [ref=f10e34] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+          - generic [ref=f10e37]: AI Research Assistant
+        - link [ref=f10e38] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+          - generic [ref=f10e44]: Experiment Comparison
+        - link [ref=f10e45] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+          - generic [ref=f10e49]: Scenario Explorer
+        - link [ref=f10e50] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+          - generic [ref=f10e53]: Evidence Gaps
+        - link [ref=f10e54] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+          - generic [ref=f10e57]: Scientific Analytics
+        - link [ref=f10e58] [cursor=pointer]:
+          - /url: /workspace/collections
+          - generic [ref=f10e61]: Collections
+        - link [ref=f10e62] [cursor=pointer]:
+          - /url: /workspace/reports
+          - generic [ref=f10e66]: Reports
+        - link [ref=f10e67] [cursor=pointer]:
+          - /url: /workspace/settings
+          - generic [ref=f10e71]: Settings
+      - paragraph [ref=f10e74]: Research, with its sources in view.
+    - main [ref=f10e76]:
+      - generic [ref=f10e77]:
+        - paragraph [ref=f10e78]: FLAME IN FREEFALL · WORKSPACE
+        - heading "Scenario Explorer" [level=1] [ref=f10e79]
+        - paragraph [ref=f10e80]: Scenario exploration depends on traceable experimental inputs and is not available in this milestone.
+        - status [ref=f10e81]:
+          - generic [ref=f10e85]: This area is a navigation placeholder; no backend or scientific service is connected.
+        - link "Back to research overview" [ref=f10e86] [cursor=pointer]:
+          - /url: /workspace/overview
+  - alert [ref=f10e89]

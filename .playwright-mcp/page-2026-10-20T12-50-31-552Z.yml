@@ -1,0 +1,64 @@
+- generic [active] [ref=f6e1]:
+  - generic [ref=f6e2]:
+    - complementary [ref=f6e3]:
+      - generic [ref=f6e4]:
+        - link "FLAME IN FREEFALL home" [ref=f6e5] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f6e6]: FLAME
+          - generic [ref=f6e8]: IN FREEFALL
+        - generic [ref=f6e9]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=f6e10]:
+        - link "Overview" [ref=f6e11] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=f6e18] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=f6e23] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=f6e27] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=f6e31] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=f6e38] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=f6e43] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=f6e47] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=f6e51] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=f6e55] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=f6e60] [cursor=pointer]:
+          - /url: /workspace/settings
+      - generic [ref=f6e65]:
+        - paragraph [ref=f6e67]: Research, with its sources in view.
+        - link "Sign in to save research" [ref=f6e68] [cursor=pointer]:
+          - /url: /sign-in
+    - main [ref=f6e74]:
+      - generic [ref=f6e75]:
+        - generic [ref=f6e76]:
+          - paragraph [ref=f6e77]: FLAME IN FREEFALL · RESEARCH WORKSPACE
+          - heading "AI Research Assistant" [level=1] [ref=f6e78]
+          - paragraph [ref=f6e79]: Search the NASA research corpus and inspect source records. AI-generated synthesis is not connected.
+        - generic [ref=f6e80]: SOURCE RETRIEVAL
+      - generic [ref=f6e82]:
+        - region [ref=f6e83]:
+          - generic [ref=f6e85]:
+            - paragraph [ref=f6e86]: AI INTERPRETATION
+            - heading "AI synthesis is not connected" [level=2] [ref=f6e87]
+            - paragraph [ref=f6e88]: This project has no server-side AI research provider. No generated answer or scientific conclusion is shown. You can still retrieve real NASA NTRS records below and inspect each source directly.
+        - region [ref=f6e89]:
+          - generic [ref=f6e90]:
+            - generic [ref=f6e91]:
+              - paragraph [ref=f6e92]: SOURCE RETRIEVAL
+              - heading "Find research for a question" [level=2] [ref=f6e93]
+              - paragraph [ref=f6e94]: Search the NASA corpus with your terms. Returned records are source material, not an AI answer.
+            - generic [ref=f6e95]: NASA NTRS
+          - search [ref=f6e97]:
+            - generic [ref=f6e98]: Research query
+            - generic [ref=f6e99]:
+              - textbox "Research query" [ref=f6e103]:
+                - /placeholder: Search microgravity combustion research
+              - button "Find sources" [disabled] [ref=f6e104]
+            - generic [ref=f6e105]: Search is limited to records returned by NASA NTRS for this query.
+  - button "Open Next.js Dev Tools" [ref=f6e111] [cursor=pointer]

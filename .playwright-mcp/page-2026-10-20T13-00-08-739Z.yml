@@ -1,0 +1,59 @@
+- generic [active] [ref=f6e1]:
+  - generic [ref=f6e2]:
+    - complementary [ref=f6e3]:
+      - generic [ref=f6e4]:
+        - link "FLAME IN FREEFALL home" [ref=f6e5] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f6e6]: FLAME
+        - generic [ref=f6e7]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=f6e8]:
+        - link "Overview" [ref=f6e9] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=f6e16] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=f6e21] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=f6e25] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=f6e29] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=f6e36] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=f6e41] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=f6e45] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=f6e49] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=f6e53] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=f6e58] [cursor=pointer]:
+          - /url: /workspace/settings
+      - generic [ref=f6e63]:
+        - paragraph: Research, with its sources in view.
+        - link "Sign in to save research" [ref=f6e65] [cursor=pointer]:
+          - /url: /sign-in
+    - main [ref=f6e71]:
+      - generic [ref=f6e72]:
+        - generic [ref=f6e73]:
+          - paragraph [ref=f6e74]: FLAME IN FREEFALL · RESEARCH WORKSPACE
+          - heading "Scientific Analytics" [level=1] [ref=f6e75]
+          - paragraph [ref=f6e76]: Explore source-backed publication metadata. The available NTRS metadata does not provide a structured measurement corpus.
+        - generic [ref=f6e77]: NTRS METADATA
+      - region [ref=f6e80]:
+        - generic [ref=f6e81]:
+          - generic [ref=f6e82]:
+            - paragraph [ref=f6e83]: LIVE CORPUS QUERY
+            - heading "Analyze returned record metadata" [level=2] [ref=f6e84]
+            - paragraph [ref=f6e85]: View publication metadata distributions from one reproducible NTRS query. No experimental measurements are inferred.
+          - generic [ref=f6e86]: NASA NTRS
+        - search [ref=f6e88]:
+          - generic [ref=f6e89]: Research query
+          - generic [ref=f6e90]:
+            - textbox "Research query" [ref=f6e94]:
+              - /placeholder: Search microgravity combustion research
+              - text: microgravity combustion
+            - button "Run metadata analysis" [ref=f6e95] [cursor=pointer]
+          - generic [ref=f6e96]: Search is limited to records returned by NASA NTRS for this query.
+  - button "Open Next.js Dev Tools" [ref=f6e102] [cursor=pointer]
+  - alert [ref=f6e106]

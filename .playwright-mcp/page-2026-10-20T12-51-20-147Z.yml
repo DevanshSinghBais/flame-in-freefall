@@ -1,0 +1,222 @@
+- generic [active] [ref=f8e1]:
+  - generic [ref=f8e2]:
+    - complementary [ref=f8e3]:
+      - generic [ref=f8e4]:
+        - link "FLAME IN FREEFALL home" [ref=f8e5] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f8e6]: FLAME
+          - generic [ref=f8e8]: IN FREEFALL
+        - generic [ref=f8e9]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=f8e10]:
+        - link "Overview" [ref=f8e11] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=f8e18] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=f8e23] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=f8e27] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=f8e31] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=f8e38] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=f8e43] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=f8e47] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=f8e51] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=f8e55] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=f8e60] [cursor=pointer]:
+          - /url: /workspace/settings
+      - generic [ref=f8e65]:
+        - paragraph [ref=f8e67]: Research, with its sources in view.
+        - link "Sign in to save research" [ref=f8e68] [cursor=pointer]:
+          - /url: /sign-in
+    - main [ref=f8e74]:
+      - generic [ref=f8e75]:
+        - generic [ref=f8e76]:
+          - paragraph [ref=f8e77]: FLAME IN FREEFALL · RESEARCH WORKSPACE
+          - heading "Experiment Comparison" [level=1] [ref=f8e78]
+          - paragraph [ref=f8e79]: Select real NASA NTRS records and compare the metadata the source actually provides.
+        - generic [ref=f8e80]: SOURCE-LINKED
+      - region [ref=f8e83]:
+        - generic [ref=f8e84]:
+          - generic [ref=f8e85]:
+            - paragraph [ref=f8e86]: SOURCE RECORDS
+            - heading "Choose records to compare" [level=2] [ref=f8e87]
+            - paragraph [ref=f8e88]: Select up to three NASA NTRS records. This comparison uses provider metadata and abstracts only.
+          - generic [ref=f8e89]: SOURCE-LINKED
+        - search [ref=f8e91]:
+          - generic [ref=f8e92]: Research query
+          - generic [ref=f8e93]:
+            - textbox "Research query" [ref=f8e97]:
+              - /placeholder: Search microgravity combustion research
+              - text: microgravity ignition
+            - button "Find records" [ref=f8e98] [cursor=pointer]
+          - generic [ref=f8e99]: Search is limited to records returned by NASA NTRS for this query.
+        - status [ref=f8e110]: 172 records match “microgravity ignition”; select up to three from the 20 returned here.
+        - list [ref=f8e111]:
+          - listitem [ref=f8e112]:
+            - generic [ref=f8e113] [cursor=pointer]:
+              - checkbox "Microgravity ignition experiment NASA NTRS ID 19940021214 · Conference Paper · 1992-01-01 Details" [ref=f8e114]
+              - generic [ref=f8e115]:
+                - strong [ref=f8e116]: Microgravity ignition experiment
+                - generic [ref=f8e117]: NASA NTRS ID 19940021214 · Conference Paper · 1992-01-01
+              - link "Details" [ref=f8e118]:
+                - /url: /research/19940021214
+          - listitem [ref=f8e119]:
+            - generic [ref=f8e120] [cursor=pointer]:
+              - checkbox "Microgravity ignition experiment NASA NTRS ID 19930008864 · Contractor Report (CR) · 1992-01-01 Details" [ref=f8e121]
+              - generic [ref=f8e122]:
+                - strong [ref=f8e123]: Microgravity ignition experiment
+                - generic [ref=f8e124]: NASA NTRS ID 19930008864 · Contractor Report (CR) · 1992-01-01
+              - link "Details" [ref=f8e125]:
+                - /url: /research/19930008864
+          - listitem [ref=f8e126]:
+            - generic [ref=f8e127] [cursor=pointer]:
+              - checkbox "Ignition, Transition, Flame Spread in Multidimensional Configurations in Microgravity NASA NTRS ID 19970020613 · Conference Paper · 1997-05-01 Details" [ref=f8e128]
+              - generic [ref=f8e129]:
+                - strong [ref=f8e130]: Ignition, Transition, Flame Spread in Multidimensional Configurations in Microgravity
+                - generic [ref=f8e131]: NASA NTRS ID 19970020613 · Conference Paper · 1997-05-01
+              - link "Details" [ref=f8e132]:
+                - /url: /research/19970020613
+          - listitem [ref=f8e133]:
+            - generic [ref=f8e134] [cursor=pointer]:
+              - checkbox "Ignition and subsequent transition to flame spread in a microgravity environment NASA NTRS ID 19960008418 · Conference Paper · 1995-08-01 Details" [ref=f8e135]
+              - generic [ref=f8e136]:
+                - strong [ref=f8e137]: Ignition and subsequent transition to flame spread in a microgravity environment
+                - generic [ref=f8e138]: NASA NTRS ID 19960008418 · Conference Paper · 1995-08-01
+              - link "Details" [ref=f8e139]:
+                - /url: /research/19960008418
+          - listitem [ref=f8e140]:
+            - generic [ref=f8e141] [cursor=pointer]:
+              - checkbox "Theoretical Prediction of Microgravity Ignition Delay of Polymeric Fuels in Low Velocity Flows NASA NTRS ID 20010074015 · Conference Paper · 2001-05-01 Details" [ref=f8e142]
+              - generic [ref=f8e143]:
+                - strong [ref=f8e144]: Theoretical Prediction of Microgravity Ignition Delay of Polymeric Fuels in Low Velocity Flows
+                - generic [ref=f8e145]: NASA NTRS ID 20010074015 · Conference Paper · 2001-05-01
+              - link "Details" [ref=f8e146]:
+                - /url: /research/20010074015
+          - listitem [ref=f8e147]:
+            - generic [ref=f8e148] [cursor=pointer]:
+              - 'checkbox "Flow Effects on the Flammability Diagrams of Solid Fuels: Microgravity Influence on Ignition Delay NASA NTRS ID 19990053973 · Conference Paper · 1999-05-01 Details" [ref=f8e149]'
+              - generic [ref=f8e150]:
+                - strong [ref=f8e151]: "Flow Effects on the Flammability Diagrams of Solid Fuels: Microgravity Influence on Ignition Delay"
+                - generic [ref=f8e152]: NASA NTRS ID 19990053973 · Conference Paper · 1999-05-01
+              - link "Details" [ref=f8e153]:
+                - /url: /research/19990053973
+          - listitem [ref=f8e154]:
+            - generic [ref=f8e155] [cursor=pointer]:
+              - checkbox "Multidimensional Effects on Ignition, Transition, and Flame Spread in Microgravity NASA NTRS ID 20010074014 · Conference Paper · 2001-05-01 Details" [ref=f8e156]
+              - generic [ref=f8e157]:
+                - strong [ref=f8e158]: Multidimensional Effects on Ignition, Transition, and Flame Spread in Microgravity
+                - generic [ref=f8e159]: NASA NTRS ID 20010074014 · Conference Paper · 2001-05-01
+              - link "Details" [ref=f8e160]:
+                - /url: /research/20010074014
+          - listitem [ref=f8e161]:
+            - generic [ref=f8e162] [cursor=pointer]:
+              - checkbox "Ignition, Transition, Flame Spread in Multidimensional Configurations in Microgravity NASA NTRS ID 19990054042 · Conference Paper · 1999-05-01 Details" [ref=f8e163]
+              - generic [ref=f8e164]:
+                - strong [ref=f8e165]: Ignition, Transition, Flame Spread in Multidimensional Configurations in Microgravity
+                - generic [ref=f8e166]: NASA NTRS ID 19990054042 · Conference Paper · 1999-05-01
+              - link "Details" [ref=f8e167]:
+                - /url: /research/19990054042
+          - listitem [ref=f8e168]:
+            - generic [ref=f8e169] [cursor=pointer]:
+              - checkbox "Localized Ignition And Subsequent Flame Spread Over Solid Fuels In Microgravity NASA NTRS ID 20040053565 · Conference Paper · 2003-08-01 Details" [ref=f8e170]
+              - generic [ref=f8e171]:
+                - strong [ref=f8e172]: Localized Ignition And Subsequent Flame Spread Over Solid Fuels In Microgravity
+                - generic [ref=f8e173]: NASA NTRS ID 20040053565 · Conference Paper · 2003-08-01
+              - link "Details" [ref=f8e174]:
+                - /url: /research/20040053565
+          - listitem [ref=f8e175]:
+            - generic [ref=f8e176] [cursor=pointer]:
+              - checkbox "Ultrasound Imaging System Implementation and Ignition Protocol for the Microgravity Smoldering Combustion (MSC) Experiments NASA NTRS ID 20000005011 · Conference Paper · 1999-01-01 Details" [ref=f8e177]
+              - generic [ref=f8e178]:
+                - strong [ref=f8e179]: Ultrasound Imaging System Implementation and Ignition Protocol for the Microgravity Smoldering Combustion (MSC) Experiments
+                - generic [ref=f8e180]: NASA NTRS ID 20000005011 · Conference Paper · 1999-01-01
+              - link "Details" [ref=f8e181]:
+                - /url: /research/20000005011
+          - listitem [ref=f8e182]:
+            - generic [ref=f8e183] [cursor=pointer]:
+              - checkbox "Combustion of Interacting Droplet Arrays in a Microgravity Environment NASA NTRS ID 20010074042 · Conference Paper · 2001-05-01 Details" [ref=f8e184]
+              - generic [ref=f8e185]:
+                - strong [ref=f8e186]: Combustion of Interacting Droplet Arrays in a Microgravity Environment
+                - generic [ref=f8e187]: NASA NTRS ID 20010074042 · Conference Paper · 2001-05-01
+              - link "Details" [ref=f8e188]:
+                - /url: /research/20010074042
+          - listitem [ref=f8e189]:
+            - generic [ref=f8e190] [cursor=pointer]:
+              - checkbox "Ignition and combustion of bulk metals in a microgravity environment NASA NTRS ID 19950011667 · Contractor Report (CR) · 1994-12-15 Details" [ref=f8e191]
+              - generic [ref=f8e192]:
+                - strong [ref=f8e193]: Ignition and combustion of bulk metals in a microgravity environment
+                - generic [ref=f8e194]: NASA NTRS ID 19950011667 · Contractor Report (CR) · 1994-12-15
+              - link "Details" [ref=f8e195]:
+                - /url: /research/19950011667
+          - listitem [ref=f8e196]:
+            - generic [ref=f8e197] [cursor=pointer]:
+              - checkbox "Fourth International Microgravity Combustion Workshop NASA NTRS ID 19970020547 · Conference Proceedings · 1997-05-01 Details" [ref=f8e198]
+              - generic [ref=f8e199]:
+                - strong [ref=f8e200]: Fourth International Microgravity Combustion Workshop
+                - generic [ref=f8e201]: NASA NTRS ID 19970020547 · Conference Proceedings · 1997-05-01
+              - link "Details" [ref=f8e202]:
+                - /url: /research/19970020547
+          - listitem [ref=f8e203]:
+            - generic [ref=f8e204] [cursor=pointer]:
+              - checkbox "Reaction Kernel Structure of a Slot Jet Diffusion Flame in Microgravity NASA NTRS ID 20010074023 · Conference Paper · 2001-05-01 Details" [ref=f8e205]
+              - generic [ref=f8e206]:
+                - strong [ref=f8e207]: Reaction Kernel Structure of a Slot Jet Diffusion Flame in Microgravity
+                - generic [ref=f8e208]: NASA NTRS ID 20010074023 · Conference Paper · 2001-05-01
+              - link "Details" [ref=f8e209]:
+                - /url: /research/20010074023
+          - listitem [ref=f8e210]:
+            - generic [ref=f8e211] [cursor=pointer]:
+              - checkbox "Candle Flames in Microgravity NASA NTRS ID 19970020585 · Conference Paper · 1997-05-01 Details" [ref=f8e212]
+              - generic [ref=f8e213]:
+                - strong [ref=f8e214]: Candle Flames in Microgravity
+                - generic [ref=f8e215]: NASA NTRS ID 19970020585 · Conference Paper · 1997-05-01
+              - link "Details" [ref=f8e216]:
+                - /url: /research/19970020585
+          - listitem [ref=f8e217]:
+            - generic [ref=f8e218] [cursor=pointer]:
+              - checkbox "Fifth International Microgravity Combustion Workshop NASA NTRS ID 19990053965 · Conference Publication (CP) · 1999-05-18 Details" [ref=f8e219]
+              - generic [ref=f8e220]:
+                - strong [ref=f8e221]: Fifth International Microgravity Combustion Workshop
+                - generic [ref=f8e222]: NASA NTRS ID 19990053965 · Conference Publication (CP) · 1999-05-18
+              - link "Details" [ref=f8e223]:
+                - /url: /research/19990053965
+          - listitem [ref=f8e224]:
+            - generic [ref=f8e225] [cursor=pointer]:
+              - checkbox "Microgravity smoldering combustion on the USML-1 Space Shuttle mission NASA NTRS ID 19960008388 · Conference Paper · 1995-08-01 Details" [ref=f8e226]
+              - generic [ref=f8e227]:
+                - strong [ref=f8e228]: Microgravity smoldering combustion on the USML-1 Space Shuttle mission
+                - generic [ref=f8e229]: NASA NTRS ID 19960008388 · Conference Paper · 1995-08-01
+              - link "Details" [ref=f8e230]:
+                - /url: /research/19960008388
+          - listitem [ref=f8e231]:
+            - generic [ref=f8e232] [cursor=pointer]:
+              - checkbox "Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgravity NASA NTRS ID 20150008962 · Conference Paper · 2015-05-17 Details" [ref=f8e233]
+              - generic [ref=f8e234]:
+                - strong [ref=f8e235]: Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgravity
+                - generic [ref=f8e236]: NASA NTRS ID 20150008962 · Conference Paper · 2015-05-17
+              - link "Details" [ref=f8e237]:
+                - /url: /research/20150008962
+          - listitem [ref=f8e238]:
+            - generic [ref=f8e239] [cursor=pointer]:
+              - checkbox "Radiative Ignition and the Transition to Flame Spread Investigated in the Japan Microgravity Center's 10-sec Drop Shaft NASA NTRS ID 20050176400 · Other · 1996-03-01 Details" [ref=f8e240]
+              - generic [ref=f8e241]:
+                - strong [ref=f8e242]: Radiative Ignition and the Transition to Flame Spread Investigated in the Japan Microgravity Center's 10-sec Drop Shaft
+                - generic [ref=f8e243]: NASA NTRS ID 20050176400 · Other · 1996-03-01
+              - link "Details" [ref=f8e244]:
+                - /url: /research/20050176400
+          - listitem [ref=f8e245]:
+            - generic [ref=f8e246] [cursor=pointer]:
+              - checkbox "Material Ignition and Suppression Test (MIST) in Space Exploration Atmospheres, Summary of Research NASA NTRS ID 20150023467 · Contractor or Grantee Report · 2013-05-13 Details" [ref=f8e247]
+              - generic [ref=f8e248]:
+                - strong [ref=f8e249]: Material Ignition and Suppression Test (MIST) in Space Exploration Atmospheres, Summary of Research
+                - generic [ref=f8e250]: NASA NTRS ID 20150023467 · Contractor or Grantee Report · 2013-05-13
+              - link "Details" [ref=f8e251]:
+                - /url: /research/20150023467
+  - button "Open Next.js Dev Tools" [ref=f8e105] [cursor=pointer]
+  - alert [ref=f8e109]

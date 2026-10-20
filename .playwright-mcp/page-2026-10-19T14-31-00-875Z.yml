@@ -1,0 +1,83 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e214]: NASA research record | FLAME IN FREEFALL
+  - generic [ref=e650]:
+    - complementary [ref=e651]:
+      - generic [ref=e652]:
+        - link "FLAME IN FREEFALL home" [ref=e653] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=e654]: FLAME
+          - generic [ref=e656]: IN FREEFALL
+        - generic [ref=e657]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=e658]:
+        - link "Overview" [ref=e659] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=e666] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=e671] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=e675] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=e679] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=e686] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=e691] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=e695] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=e699] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=e703] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=e708] [cursor=pointer]:
+          - /url: /workspace/settings
+      - paragraph [ref=e715]: Research, with its sources in view.
+    - main [ref=e717]:
+      - article [ref=e718]:
+        - link "Back to research overview" [ref=e719] [cursor=pointer]:
+          - /url: /workspace/overview
+        - generic [ref=e722]:
+          - paragraph [ref=e723]: LIVE NASA TECHNICAL REPORTS SERVER RECORD
+          - heading "Buoyancy Effects on Concurrent Flame Spread Over Thick PMMA" [level=1] [ref=e724]
+          - generic [ref=e725]:
+            - generic [ref=e726]:
+              - text: NASA NTRS citation ID
+              - strong [ref=e727]: "20200000557"
+            - link "Open canonical source" [ref=e728] [cursor=pointer]:
+              - /url: https://ntrs.nasa.gov/citations/20200000557
+        - region [ref=e732]:
+          - heading "Record metadata" [level=2] [ref=e733]
+          - generic [ref=e734]:
+            - generic [ref=e735]:
+              - term [ref=e736]: Authors
+              - definition [ref=e737]: Maria Thomsen; Carlos Fernandez-Pello; Gary A. Ruff; David L. Urban
+            - generic [ref=e738]:
+              - term [ref=e739]: Publication date
+              - definition [ref=e740]: 2018-11-05
+            - generic [ref=e741]:
+              - term [ref=e742]: NASA document type
+              - definition [ref=e743]: Accepted Manuscript (Version with final changes)
+            - generic [ref=e744]:
+              - term [ref=e745]: NASA center
+              - definition [ref=e746]: Glenn Research Center
+            - generic [ref=e747]:
+              - term [ref=e748]: Subject categories
+              - definition [ref=e749]: Inorganic, Organic And Physical Chemistry
+            - generic [ref=e750]:
+              - term [ref=e751]: DOI
+              - definition [ref=e752]:
+                - link "https://doi.org/10.1016/j.combustflame.2018.10.016" [ref=e753] [cursor=pointer]:
+                  - /url: https://doi.org/https%3A//doi.org/10.1016/j.combustflame.2018.10.016
+        - region [ref=e757]:
+          - heading "Abstract" [level=2] [ref=e760]
+          - paragraph [ref=e761]: The flammability of combustible materials in a spacecraft is important for fire safety applications because the conditions in spacecraft environments differ from those on earth. Experimental testing in space is difficult and expensive. However, reducing buoyancy by decreasing ambient pressure is a possible approach to simulate on-earth the burning behavior inside spacecraft environments. The objective of this work is to determine that possibility by studying the effect of pressure on concurrent flame spread, and by comparison with microgravity data, observe up to what point low-pressure can be used to replicate flame spread characteristics observed in microgravity. Specifically, this work studies the effect of pressure and microgravity on upward/concurrent flame spread over 10 mm thick polymethyl methacrylate (PMMA) slabs. Experiments in normal gravity were conducted over pressures ranging between 100 and 40 kPa and a forced flow velocity of 200 mm/s. Microgravity experiments were conducted during NASA’s Spacecraft Fire Experiment (Saffire II), on board the Cygnus spacecraft at 100 kPa with an air flow velocity of 200 mm/s. Results show that reductions of pressure slow down the flame spread over the PMMA surface approaching that in microgravity. The data is correlated in terms of a non-dimensional mixed convection analysis that describes the convective heat transferred from the flame to the solid, and the primary mechanism controlling the spread of the flame. The extrapolation of the correlation to low pressures predicts well the flame spread rate obtained in microgravity in the Saffire II experiments. Similar results were obtained by the authors with similar experiments with a thin composite cotton/fiberglass fabric (published elsewhere). Both results suggest that reduced pressure can be used to approximately replicate flame behavior of untested gravity conditions for the burning of thick and thin solids. This work could provide guidance for potential ground-based testing for fire safety design in spacecraft and space habitats.
+        - region [ref=e762]:
+          - heading "Full text and source" [level=2] [ref=e765]
+          - list [ref=e766]:
+            - listitem [ref=e767]:
+              - link "PDF" [ref=e768] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/api/citations/20200000557/downloads/20200000557.pdf
+            - listitem [ref=e775]:
+              - link "Full text" [ref=e776] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/api/citations/20200000557/downloads/20200000557.txt
+          - paragraph [ref=e783]: This page displays metadata returned by NASA NTRS and keeps the provider identifier and canonical source link visible for traceability.

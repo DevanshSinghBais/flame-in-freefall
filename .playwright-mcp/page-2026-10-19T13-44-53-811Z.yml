@@ -1,0 +1,79 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link "FLAME IN FREEFALL home" [ref=f3e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f3e5]: FLAME
+        - generic [ref=f3e7]: IN FREEFALL
+      - button "Open navigation menu" [ref=f3e8] [cursor=pointer]
+  - main [ref=f3e10]:
+    - paragraph [ref=f3e11]: TRACEABLE SOURCE PAGES
+    - heading "Research sources" [level=1] [ref=f3e12]
+    - paragraph [ref=f3e13]: A small, hand-verified starter set of NASA Science pages. It is not a complete or live research index. Each summary links directly to its source; author, date, DOI, and section metadata are not shown here unless verified in the source record.
+    - generic [ref=f3e14]:
+      - article [ref=f3e15]:
+        - generic [ref=f3e16]:
+          - generic [ref=f3e17]: Mission overview
+          - heading "Advanced Combustion via Microgravity Experiments (ACME)" [level=2] [ref=f3e18]
+          - paragraph [ref=f3e19]: NASA describes ACME as a set of studies of gaseous flames, with goals that include combustion understanding and spacecraft fire prevention.
+        - generic [ref=f3e20]: Combustion research
+        - link "NASA Science" [ref=f3e21] [cursor=pointer]:
+          - /url: https://science.nasa.gov/mission/acme/
+      - article [ref=f3e25]:
+        - generic [ref=f3e26]:
+          - generic [ref=f3e27]: Investigation
+          - heading "Structure and Response of Spherical Flames (s-Flame)" [level=2] [ref=f3e28]
+          - paragraph [ref=f3e29]: Investigation of the structure and dynamics, including extinction, of soot-free and sooty spherical flames.
+        - generic [ref=f3e30]: Flame structure
+        - link "NASA Science" [ref=f3e31] [cursor=pointer]:
+          - /url: https://science.nasa.gov/biological-physical/investigations/s-flame/
+      - article [ref=f3e35]:
+        - generic [ref=f3e36]:
+          - generic [ref=f3e37]: Investigation
+          - heading "Coflow Laminar Diffusion Flame (CLD Flame)" [level=2] [ref=f3e38]
+          - paragraph [ref=f3e39]: NASA describes measurements of flame characteristics including size, structure, temperature, soot, and stability.
+        - generic [ref=f3e40]: Flame structure
+        - link "NASA Science" [ref=f3e41] [cursor=pointer]:
+          - /url: https://science.nasa.gov/biological-physical/investigations/cld-flame/
+      - article [ref=f3e45]:
+        - generic [ref=f3e46]:
+          - generic [ref=f3e47]: Investigation
+          - heading "Burning Rate Emulator (BRE)" [level=2] [ref=f3e48]
+          - paragraph [ref=f3e49]: A spacecraft fire-safety investigation focused on materials flammability, extinction behavior, and sustained combustion conditions.
+        - generic [ref=f3e50]: Materials flammability
+        - link "NASA Science" [ref=f3e51] [cursor=pointer]:
+          - /url: https://science.nasa.gov/biological-physical/investigations/bre/
+      - article [ref=f3e55]:
+        - generic [ref=f3e56]:
+          - generic [ref=f3e57]: Investigation
+          - heading "Electric-Field Effects on Laminar Diffusion Flames" [level=2] [ref=f3e58]
+          - paragraph [ref=f3e59]: Investigation of flame ions and how electric fields can influence non-premixed flames.
+        - generic [ref=f3e60]: Flame control
+        - link "NASA Science" [ref=f3e61] [cursor=pointer]:
+          - /url: https://science.nasa.gov/biological-physical/investigations/e-field-flames/
+      - article [ref=f3e65]:
+        - generic [ref=f3e66]:
+          - generic [ref=f3e67]: Investigation
+          - heading "Flame Design" [level=2] [ref=f3e68]
+          - paragraph [ref=f3e69]: NASA describes research on soot production and control in oxygen-enriched combustion and robust, soot-free flames.
+        - generic [ref=f3e70]: Soot and emissions
+        - link "NASA Science" [ref=f3e71] [cursor=pointer]:
+          - /url: https://science.nasa.gov/biological-physical/investigations/flame-design/
+    - paragraph [ref=f3e75]: Scientific statements in FLAME IN FREEFALL must remain connected to traceable source records. This preview does not show experimental measurements, generated analysis, or unsupported citations.
+    - link "Back to research overview" [ref=f3e76] [cursor=pointer]:
+      - /url: /workspace/overview
+  - contentinfo [ref=f3e80]:
+    - generic [ref=f3e81]:
+      - link "FLAME IN FREEFALL home" [ref=f3e82] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f3e83]: FLAME
+        - generic [ref=f3e85]: IN FREEFALL
+      - paragraph [ref=f3e86]: A clearer path through microgravity combustion research.
+      - navigation "Footer navigation" [ref=f3e87]:
+        - link "About the Science" [ref=f3e88] [cursor=pointer]:
+          - /url: /about
+        - link "Research Sources" [ref=f3e89] [cursor=pointer]:
+          - /url: /sources
+        - link "Sign In" [ref=f3e90] [cursor=pointer]:
+          - /url: /sign-in
+  - alert [ref=f3e91]

@@ -1,0 +1,57 @@
+- generic [ref=f1e2]:
+  - complementary [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - link "FLAME IN FREEFALL home" [ref=f1e5] [cursor=pointer]:
+        - /url: /workspace/overview
+        - generic [ref=f1e6]: FLAME
+        - generic [ref=f1e8]: IN FREEFALL
+      - generic [ref=f1e9]: MICROGRAVITY COMBUSTION RESEARCH
+    - navigation "Workspace navigation" [ref=f1e10]:
+      - link "Overview" [ref=f1e11] [cursor=pointer]:
+        - /url: /workspace/overview
+      - link "Research Explorer" [ref=f1e18] [cursor=pointer]:
+        - /url: /workspace/research-explorer
+      - link "Paper Library" [ref=f1e23] [cursor=pointer]:
+        - /url: /workspace/paper-library
+      - link "AI Research Assistant" [ref=f1e27] [cursor=pointer]:
+        - /url: /workspace/ai-research-assistant
+      - link "Experiment Comparison" [ref=f1e31] [cursor=pointer]:
+        - /url: /workspace/experiment-comparison
+      - link "Scenario Explorer" [ref=f1e38] [cursor=pointer]:
+        - /url: /workspace/scenario-explorer
+      - link "Evidence Gaps" [ref=f1e43] [cursor=pointer]:
+        - /url: /workspace/evidence-gaps
+      - link "Scientific Analytics" [ref=f1e47] [cursor=pointer]:
+        - /url: /workspace/scientific-analytics
+      - link "Collections" [ref=f1e51] [cursor=pointer]:
+        - /url: /workspace/collections
+      - link "Reports" [ref=f1e55] [cursor=pointer]:
+        - /url: /workspace/reports
+      - link "Settings" [ref=f1e60] [cursor=pointer]:
+        - /url: /workspace/settings
+    - generic [ref=f1e65]:
+      - paragraph [ref=f1e67]: Research, with its sources in view.
+      - link "Sign in to save research" [ref=f1e68] [cursor=pointer]:
+        - /url: /sign-in
+  - main [ref=f1e74]:
+    - generic [ref=f1e75]:
+      - generic [ref=f1e76]:
+        - paragraph [ref=f1e77]: FLAME IN FREEFALL · RESEARCH WORKSPACE
+        - heading "Experiment Comparison" [level=1] [ref=f1e78]
+        - paragraph [ref=f1e79]: Select real NASA NTRS records and compare the metadata the source actually provides.
+      - generic [ref=f1e80]: SOURCE-LINKED
+    - region [ref=f1e83]:
+      - generic [ref=f1e84]:
+        - generic [ref=f1e85]:
+          - paragraph [ref=f1e86]: SOURCE RECORDS
+          - heading "Choose records to compare" [level=2] [ref=f1e87]
+          - paragraph [ref=f1e88]: Select up to three NASA NTRS records. This comparison uses provider metadata and abstracts only.
+        - generic [ref=f1e89]: SOURCE-LINKED
+      - search [ref=f1e91]:
+        - generic [ref=f1e92]: Research query
+        - generic [ref=f1e93]:
+          - textbox "Research query" [ref=f1e97]:
+            - /placeholder: Search microgravity combustion research
+            - text: microgravity combustion
+          - button "Find records" [ref=f1e98] [cursor=pointer]
+        - generic [ref=f1e99]: Search is limited to records returned by NASA NTRS for this query.

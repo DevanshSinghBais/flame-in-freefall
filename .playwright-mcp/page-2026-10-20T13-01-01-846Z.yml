@@ -1,0 +1,102 @@
+- generic [active] [ref=f7e1]:
+  - generic [ref=f7e2]:
+    - generic [ref=f7e3]:
+      - button "Open workspace navigation" [ref=f7e4] [cursor=pointer]
+      - link "FLAME IN FREEFALL home" [ref=f7e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f7e7]: FLAME
+        - generic [ref=f7e9]: IN FREEFALL
+    - complementary [ref=f7e10]:
+      - generic [ref=f7e11]:
+        - link "FLAME IN FREEFALL home" [ref=f7e12] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f7e13]: FLAME
+          - generic [ref=f7e15]: IN FREEFALL
+        - generic [ref=f7e16]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=f7e17]:
+        - link "Overview" [ref=f7e18] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=f7e25] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=f7e30] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=f7e34] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=f7e38] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=f7e45] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=f7e50] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=f7e54] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=f7e58] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=f7e62] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=f7e67] [cursor=pointer]:
+          - /url: /workspace/settings
+      - generic [ref=f7e72]:
+        - paragraph [ref=f7e74]: Research, with its sources in view.
+        - link "Sign in to save research" [ref=f7e75] [cursor=pointer]:
+          - /url: /sign-in
+    - main [ref=f7e81]:
+      - generic [ref=f7e82]:
+        - generic [ref=f7e83]:
+          - paragraph [ref=f7e84]: NASA TECHNICAL REPORTS SERVER
+          - heading "Research Explorer" [level=1] [ref=f7e85]
+          - paragraph [ref=f7e86]: Search live NASA publication records, refine the returned metadata, and open traceable source details.
+        - generic [ref=f7e87]: LIVE SOURCE
+      - region [ref=f7e89]:
+        - heading "Search NASA Technical Reports Server research" [level=2] [ref=f7e90]
+        - search [ref=f7e91]:
+          - generic [ref=f7e95]: Search NASA research
+          - searchbox "Search NASA research" [ref=f7e96]: microgravity ignition
+          - button "Search" [disabled] [ref=f7e97]
+        - generic [ref=f7e98]:
+          - generic [ref=f7e99]: Filter by
+          - generic [ref=f7e101]:
+            - generic [ref=f7e102]: NASA document type
+            - combobox "NASA document type" [ref=f7e103] [cursor=pointer]:
+              - option "All document types" [selected]
+          - generic [ref=f7e104]:
+            - generic [ref=f7e105]: NASA center
+            - combobox "NASA center" [ref=f7e106] [cursor=pointer]:
+              - option "All NASA centers" [selected]
+          - generic [ref=f7e107]:
+            - generic [ref=f7e108]: NASA subject category
+            - combobox "NASA subject category" [ref=f7e109] [cursor=pointer]:
+              - option "All subject categories" [selected]
+          - button "Clear filters" [disabled] [ref=f7e110]
+          - generic [ref=f7e114]: NASA Technical Reports Server
+        - generic [ref=f7e115]:
+          - region [ref=f7e116]:
+            - generic [ref=f7e118]:
+              - heading "Continue your research" [level=3] [ref=f7e119]
+              - paragraph [ref=f7e120]: Start with a source or compare the science.
+            - generic [ref=f7e121]:
+              - link "Explore NASA research Search live NTRS records" [ref=f7e122] [cursor=pointer]:
+                - /url: /workspace/research-explorer?q=microgravity%20combustion
+                - generic [ref=f7e127]:
+                  - strong [ref=f7e128]: Explore NASA research
+                  - generic [ref=f7e129]: Search live NTRS records
+              - link "Compare source records Review returned metadata side by side" [ref=f7e132] [cursor=pointer]:
+                - /url: /workspace/experiment-comparison
+                - generic [ref=f7e139]:
+                  - strong [ref=f7e140]: Compare source records
+                  - generic [ref=f7e141]: Review returned metadata side by side
+              - link "Open your Paper Library Saved records and private notes" [ref=f7e144] [cursor=pointer]:
+                - /url: /workspace/paper-library
+                - generic [ref=f7e148]:
+                  - strong [ref=f7e149]: Open your Paper Library
+                  - generic [ref=f7e150]: Saved records and private notes
+          - region [ref=f7e153]:
+            - generic [ref=f7e155]:
+              - heading "NASA research" [level=3] [ref=f7e156]
+              - paragraph [ref=f7e157]: Live publication metadata from NASA NTRS
+            - status [ref=f7e159]:
+              - generic [ref=f7e162]:
+                - heading "Searching NASA NTRS" [level=4] [ref=f7e163]
+                - paragraph [ref=f7e164]: Retrieving source records for “microgravity ignition”.
+      - paragraph [ref=f7e165]: Record titles, abstracts, authors, dates, and identifiers are displayed only when returned by NASA NTRS. Search coverage is limited to the source response for the query above.
+  - button "Open Next.js Dev Tools" [ref=f7e171] [cursor=pointer]

@@ -1,0 +1,60 @@
+- generic [active] [ref=f12e1]:
+  - generic [ref=f12e2]:
+    - generic [ref=f12e3]:
+      - button "Open workspace navigation" [ref=f12e4] [cursor=pointer]
+      - link "FLAME IN FREEFALL home" [ref=f12e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f12e7]: FLAME
+        - generic [ref=f12e9]: IN FREEFALL
+    - complementary [aria-hidden] [ref=f12e10]:
+      - generic [ref=f12e11]:
+        - link [ref=f12e12] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f12e13]: FLAME
+          - generic [ref=f12e15]: IN FREEFALL
+        - generic [ref=f12e16]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation [ref=f12e17]:
+        - link [ref=f12e18] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f12e24]: Overview
+        - link [ref=f12e25] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+          - generic [ref=f12e29]: Research Explorer
+        - link [ref=f12e30] [cursor=pointer]:
+          - /url: /workspace/paper-library
+          - generic [ref=f12e33]: Paper Library
+        - link [ref=f12e34] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+          - generic [ref=f12e37]: AI Research Assistant
+        - link [ref=f12e38] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+          - generic [ref=f12e44]: Experiment Comparison
+        - link [ref=f12e45] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+          - generic [ref=f12e49]: Scenario Explorer
+        - link [ref=f12e50] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+          - generic [ref=f12e53]: Evidence Gaps
+        - link [ref=f12e54] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+          - generic [ref=f12e57]: Scientific Analytics
+        - link [ref=f12e58] [cursor=pointer]:
+          - /url: /workspace/collections
+          - generic [ref=f12e61]: Collections
+        - link [ref=f12e62] [cursor=pointer]:
+          - /url: /workspace/reports
+          - generic [ref=f12e66]: Reports
+        - link [ref=f12e67] [cursor=pointer]:
+          - /url: /workspace/settings
+          - generic [ref=f12e71]: Settings
+      - paragraph [ref=f12e74]: Research, with its sources in view.
+    - main [ref=f12e76]:
+      - generic [ref=f12e77]:
+        - paragraph [ref=f12e78]: FLAME IN FREEFALL · WORKSPACE
+        - heading "Scientific Analytics" [level=1] [ref=f12e79]
+        - paragraph [ref=f12e80]: Scientific analytics require source-derived measurements and documented transformations, which are not connected here.
+        - status [ref=f12e81]:
+          - generic [ref=f12e85]: This area is a navigation placeholder; no backend or scientific service is connected.
+        - link "Back to research overview" [ref=f12e86] [cursor=pointer]:
+          - /url: /workspace/overview
+  - alert [ref=f12e89]

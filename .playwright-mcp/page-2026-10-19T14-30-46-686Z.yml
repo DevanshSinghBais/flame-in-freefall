@@ -1,0 +1,365 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - link "FLAME IN FREEFALL home" [ref=e5] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=e6]: FLAME
+          - generic [ref=e8]: IN FREEFALL
+        - generic [ref=e9]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=e10]:
+        - link "Overview" [ref=e11] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=e18] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=e23] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=e27] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=e31] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=e38] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=e43] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=e47] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=e51] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=e55] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=e60] [cursor=pointer]:
+          - /url: /workspace/settings
+      - paragraph [ref=e67]: Research, with its sources in view.
+    - main [ref=e69]:
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - paragraph [ref=e72]: MICROGRAVITY COMBUSTION RESEARCH
+          - heading "Research overview" [level=1] [ref=e73]
+          - paragraph [ref=e74]: Discover and compare traceable source material on combustion beyond Earth.
+        - generic [ref=e75]: NASA NTRS · LIVE
+      - region [ref=e77]:
+        - heading "Search NASA Technical Reports Server research" [level=2] [ref=e78]
+        - search [ref=e79]:
+          - generic [ref=e83]: Search NASA research
+          - searchbox "Search NASA research" [ref=e84]: flame spread
+          - button "Search" [ref=e85] [cursor=pointer]
+        - generic [ref=e89]:
+          - generic [ref=e90]: Filter by
+          - generic [ref=e92]:
+            - generic [ref=e93]: NASA document type
+            - combobox "NASA document type" [ref=e94] [cursor=pointer]:
+              - option "All document types" [selected]
+              - option "CONFERENCE_PAPER (145)"
+              - option "OTHER (32)"
+              - option "REPRINT (30)"
+              - option "ACCEPTED_MANUSCRIPT (20)"
+              - option "PRESENTATION (19)"
+              - option "CONFERENCE_PROCEEDINGS (16)"
+              - option "CONTRACTOR_REPORT (11)"
+              - option "PREPRINT (11)"
+              - option "TECHNICAL_MEMORANDUM (10)"
+              - option "ABSTRACT (7)"
+              - option "CONTRACTOR_OR_GRANTEE_REPORT (2)"
+              - option "EXTENDED_ABSTRACT (2)"
+              - option "POSTER (2)"
+              - option "THESIS_DISSERTATION (2)"
+              - option "CONFERENCE_PUBLICATION (1)"
+              - option "WHITE_PAPER (1)"
+          - generic [ref=e95]:
+            - generic [ref=e96]: NASA center
+            - combobox "NASA center" [ref=e97] [cursor=pointer]:
+              - option "All NASA centers" [selected]
+              - option "GRC (156)"
+              - option "CDMS (122)"
+              - option "HQ (3)"
+              - option "MSFC (3)"
+              - option "ARC (2)"
+              - option "JSC (1)"
+          - generic [ref=e98]:
+            - generic [ref=e99]: NASA subject category
+            - combobox "NASA subject category" [ref=e100] [cursor=pointer]:
+              - option "All subject categories" [selected]
+              - option "Inorganic And Physical Chemistry (50)"
+              - option "Inorganic, Organic And Physical Chemistry (42)"
+              - option "Materials Processing (35)"
+              - option "Fluid Mechanics And Thermodynamics (22)"
+              - option "Space Transportation And Safety (14)"
+              - option "Propellants And Fuels (12)"
+              - option "Chemistry And Materials (General) (11)"
+              - option "Inorganic, Organic and Physical Chemistry (10)"
+              - option "Nonmetallic Materials (10)"
+              - option "Composite Materials (8)"
+              - option "Space Processing (8)"
+              - option "Space Sciences (General) (8)"
+              - option "Thermodynamics And Combustion (6)"
+              - option "Astronautics (General) (5)"
+              - option "Energy Production And Conversion (5)"
+              - option "Fluid Mechanics And Heat Transfer (5)"
+              - option "Spacecraft Design, Testing And Performance (5)"
+              - option "Engineering (General) (4)"
+              - option "Mechanical Engineering (3)"
+              - option "Aeronautics (General) (2)"
+          - button "Clear filters" [disabled] [ref=e101]
+          - generic [ref=e105]: NASA Technical Reports Server
+        - generic [ref=e106]:
+          - region [ref=e107]:
+            - generic [ref=e109]:
+              - heading "Continue your research" [level=3] [ref=e110]
+              - paragraph [ref=e111]: Start with a source or compare the science.
+            - generic [ref=e112]:
+              - link "Open the ACME overview NASA mission source" [ref=e113] [cursor=pointer]:
+                - /url: https://science.nasa.gov/mission/acme/
+                - generic [ref=e117]:
+                  - strong [ref=e118]: Open the ACME overview
+                  - generic [ref=e119]: NASA mission source
+              - link "Browse research sources Curated NASA Science pages" [ref=e123] [cursor=pointer]:
+                - /url: /sources
+                - generic [ref=e128]:
+                  - strong [ref=e129]: Browse research sources
+                  - generic [ref=e130]: Curated NASA Science pages
+              - link "Compare flame forms Illustrative, qualitative view" [ref=e133] [cursor=pointer]:
+                - /url: "#flame-comparison"
+                - generic [ref=e140]:
+                  - strong [ref=e141]: Compare flame forms
+                  - generic [ref=e142]: Illustrative, qualitative view
+          - region [ref=e145]:
+            - generic [ref=e146]:
+              - generic [ref=e147]:
+                - heading "NASA research" [level=3] [ref=e148]
+                - paragraph [ref=e149]: Live publication metadata from NASA NTRS
+              - generic [ref=e215]: 1–10 of 311 results
+            - generic [ref=e150]:
+              - article [ref=e433]:
+                - generic [aria-hidden] [ref=e434]: "01"
+                - generic [ref=e435]:
+                  - generic [ref=e436]:
+                    - heading [level=4] [ref=e437]:
+                      - link "Buoyancy Effects on Concurrent Flame Spread Over Thick PMMA" [ref=e438] [cursor=pointer]:
+                        - /url: /research/20200000557
+                    - generic [ref=e439]: Accepted Manuscript (Version with final changes)
+                  - paragraph [ref=e440]: The flammability of combustible materials in a spacecraft is important for fire safety applications because the conditions in spacecraft environments differ from those on earth. Experimental testing in space is difficult and expensive. However, reducing buoyancy by decreasing ambient pressure is a possible approach to simulate on-earth the burning behavior inside spacecraft environments. The objective of this work is to determine that possibility by studying the effect of pressure on concurrent flame spread, and by comparison with microgravity data, observe up to what point low-pressure can be used to replicate flame spread characteristics observed in microgravity. Specifically, this work studies the effect of pressure and microgravity on upward/concurrent flame spread over 10 mm thick polymethyl methacrylate (PMMA) slabs. Experiments in normal gravity were conducted over pressures ranging between 100 and 40 kPa and a forced flow velocity of 200 mm/s. Microgravity experiments were conducted during NASA’s Spacecraft Fire Experiment (Saffire II), on board the Cygnus spacecraft at 100 kPa with an air flow velocity of 200 mm/s. Results show that reductions of pressure slow down the flame spread over the PMMA surface approaching that in microgravity. The data is correlated in terms of a non-dimensional mixed convection analysis that describes the convective heat transferred from the flame to the solid, and the primary mechanism controlling the spread of the flame. The extrapolation of the correlation to low pressures predicts well the flame spread rate obtained in microgravity in the Saffire II experiments. Similar results were obtained by the authors with similar experiments with a thin composite cotton/fiberglass fabric (published elsewhere). Both results suggest that reduced pressure can be used to approximately replicate flame behavior of untested gravity conditions for the burning of thick and thin solids. This work could provide guidance for potential ground-based testing for fire safety design in spacecraft and space habitats.
+                  - generic [ref=e441]:
+                    - generic [ref=e442]: Maria Thomsen; Carlos Fernandez-Pello; Gary A. Ruff; David L. Urban
+                    - generic [ref=e443]: 2018-11-05
+                    - generic [ref=e444]: Glenn Research Center
+                  - generic [ref=e445]:
+                    - generic [ref=e446]: NASA NTRS ID 20200000557
+                    - link "View record details" [ref=e447] [cursor=pointer]:
+                      - /url: /research/20200000557
+                - link "Open Buoyancy Effects on Concurrent Flame Spread Over Thick PMMA on NASA NTRS" [ref=e450] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20200000557
+              - article [ref=e454]:
+                - generic [aria-hidden] [ref=e455]: "02"
+                - generic [ref=e456]:
+                  - generic [ref=e457]:
+                    - heading [level=4] [ref=e458]:
+                      - link "Effects of Confinement on Flame Spread in Microgravity" [ref=e459] [cursor=pointer]:
+                        - /url: /research/20205004657
+                    - generic [ref=e460]: Conference Paper
+                  - paragraph [ref=e461]: Solid fuel combustion experiments aboard the ISS examine the effects of confinement on a concurrent, purely-forced-flow flame spread in microgravity environment. The results for a thin, cotton-fiberglass-blended textile fabric fuel are presented. Flat baffles of differing materials are used to alter the radiative boundary conditions with transparent polycarbonate, black anodized aluminum (reflectance ~ 0), and highly polished aluminum (reflectance ~ 1). The baffles are parallel to the fuel sheet and placed symmetrically on each side. The inter-baffle distance is varied to change the boundary conditions for the flow. In all tests, samples are ignited at the upstream leading edge and allowed to burn to completion. Results show that the flame reaches a steady length and spread rate at low flow speeds (< 15 cm/s) for all tested inter-baffle distances. As the distance decreases, the flame length and spread rate first increase then decrease showing an optimal inter-baffle distance. For all baffle types, the flame either fails to ignite or extinguishes before reaching the end of the sample when the inter-baffle distance is too small (~ 1 cm). This is attributed to the reduction of oxygen supply to the flame zone and heat loss to the baffles. The results also show at the same inter-baffle distance, flame length and spread rate are highest for polished aluminum baffles, and lowest for transparent polycarbonate baffles. The differences are most prominent at intermediate tested baffle distances. While the radiative heat feedback from the baffles is expected to increase when the baffle distance decreases, the combustion is limited by the reduced oxygen supply. Near this limit, flame lengths and spread rates are similar for all baffle types.
+                  - generic [ref=e462]:
+                    - generic [ref=e463]: Yanjun Li; Ya-Ting T Liao; Paul V Ferkul; Michael C Johnston; Charles Bunnell
+                    - generic [ref=e464]: Glenn Research Center
+                  - generic [ref=e465]:
+                    - generic [ref=e466]: NASA NTRS ID 20205004657
+                    - link "View record details" [ref=e467] [cursor=pointer]:
+                      - /url: /research/20205004657
+                - link "Open Effects of Confinement on Flame Spread in Microgravity on NASA NTRS" [ref=e470] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20205004657
+              - article [ref=e474]:
+                - generic [aria-hidden] [ref=e475]: "03"
+                - generic [ref=e476]:
+                  - generic [ref=e477]:
+                    - heading [level=4] [ref=e478]:
+                      - link "Flame Attachment in Flame Spread" [ref=e479] [cursor=pointer]:
+                        - /url: /research/19970020615
+                    - generic [ref=e480]: Conference Paper
+                  - paragraph [ref=e481]: Flame attachment is a subject that can be studied in many contexts and which has a relatively long history. All diffusion flames are ultimately attached somewhere along their length to one or more surfaces. Depending on the type of particular application, the attachment region may be important to the behavior of the entire flame. Flame spread over solid fuels is ones area in which flame attachment is apparently of central importance. It is widely believed, through it has not yet beer conclusively demonstrated, that the attachment region-alternately called the 'flame tip,' 'flame foot,' 'attachment point,' and etc. -controls the entire spread process. Flame spread is an important problem for both practical and academic reasons. On the practical level, one wishes to prevent or, at worst, control unwanted flame spread over combustible materials; to know what levels of heat flux are necessary to sustain flame spreading once it has begun; to design materials that are as minimally hazardous as possible; and to devise extinguishment methods that are both sound and useful. Academically, flame spread is one of the most difficult problems of combustion theory, combining a fully interacting multidimensional transient gas and solid phase problem with chemistry, heat transfer, radiation and material properties that may change during spreading. For this reason, it has been a challenge for scores of combustion researchers.
+                  - generic [ref=e482]:
+                    - generic [ref=e483]: Indrek S Wichman; Bassem Ramadan
+                    - generic [ref=e484]: 1997-05-01
+                    - generic [ref=e485]: Glenn Research Center
+                  - generic [ref=e486]:
+                    - generic [ref=e487]: NASA NTRS ID 19970020615
+                    - link "View record details" [ref=e488] [cursor=pointer]:
+                      - /url: /research/19970020615
+                - link "Open Flame Attachment in Flame Spread on NASA NTRS" [ref=e491] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19970020615
+              - article [ref=e495]:
+                - generic [aria-hidden] [ref=e496]: "04"
+                - generic [ref=e497]:
+                  - generic [ref=e498]:
+                    - heading [level=4] [ref=e499]:
+                      - link "Effect of Longitudinal Oscillations on Downward Flame Spread over Thin Solid Fuels" [ref=e500] [cursor=pointer]:
+                        - /url: /research/20140004929
+                    - generic [ref=e501]: Conference Paper
+                  - paragraph [ref=e502]: Downward flame spread rates over vertically vibrated thin fuel samples are measured in air at one atmospheric pressure under normal gravity. Unlike flame spread against forced‐convective flows, the present results show that with increasing vibration acceleration the flame spread rate increases before being blown off at high acceleration levels causing flame extinction. A simple scaling analysis seems to explain this phenomenon, which may have important implications to flammability studies including in microgravity environments.
+                  - generic [ref=e503]:
+                    - generic [ref=e504]: Nayagam, Vedha; Sacksteder, Kurt
+                    - generic [ref=e505]: 2013-05-19
+                    - generic [ref=e506]: Glenn Research Center
+                  - generic [ref=e507]:
+                    - generic [ref=e508]: NASA NTRS ID 20140004929
+                    - link "View record details" [ref=e509] [cursor=pointer]:
+                      - /url: /research/20140004929
+                - link "Open Effect of Longitudinal Oscillations on Downward Flame Spread over Thin Solid Fuels on NASA NTRS" [ref=e512] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20140004929
+              - article [ref=e516]:
+                - generic [aria-hidden] [ref=e517]: "05"
+                - generic [ref=e518]:
+                  - generic [ref=e519]:
+                    - heading [level=4] [ref=e520]:
+                      - link "Flame Spread Across Liquids" [ref=e521] [cursor=pointer]:
+                        - /url: /research/19970020607
+                    - generic [ref=e522]: Conference Paper
+                  - paragraph [ref=e523]: The principal goal of our recent research on flame spread across liquid pools is the detailed identification of the mechanisms that control the rate and nature of flame spread when the liquid pool is initially at an isothermal bulk temperature that is below the fuel's flash point temperature. In our project, we specialize the subject to highlight the roles of buoyancy-related processes regarding the mechanisms of flame spread, an area of research cited recently by Linan and Williams as one that needs further attention and which microgravity (micro-g) experiments could help to resolve. Toward resolving the effects of buoyancy on this flame spread problem, comparisons - between 1-g and micro-g experimental observations, and between model predictions and experimental data at each of these gravitational levels - are extensively utilized. The present experimental and computational foundation is presented to support identification of the mechanisms that control flame spread in the pulsating flame spread regime for which long-duration, micro-g flame spread experiments have been conducted aboard a sounding rocket.
+                  - generic [ref=e524]:
+                    - generic [ref=e525]: Ross, Howard D.; Miller, Fletcher J.; Sirignano, William A.; Schiller, David
+                    - generic [ref=e526]: 1997-05-01
+                    - generic [ref=e527]: Glenn Research Center
+                  - generic [ref=e528]:
+                    - generic [ref=e529]: NASA NTRS ID 19970020607
+                    - link "View record details" [ref=e530] [cursor=pointer]:
+                      - /url: /research/19970020607
+                - link "Open Flame Spread Across Liquids on NASA NTRS" [ref=e533] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19970020607
+              - article [ref=e537]:
+                - generic [aria-hidden] [ref=e538]: "06"
+                - generic [ref=e539]:
+                  - generic [ref=e540]:
+                    - heading [level=4] [ref=e541]:
+                      - link "Flame Spread Along Free Edges of Thermally Thin Samples in Microgravity" [ref=e542] [cursor=pointer]:
+                        - /url: /research/20060050783
+                    - generic [ref=e543]: Conference Paper
+                  - paragraph [ref=e544]: "The effects of imposed flow velocity on flame spread along open edges of a thermally thin cellulosic sample in microgravity were studied experimentally and theoretically. In this study, the sample was ignited locally at the middle of the 4 cm wide sample, and subsequent flame spread reached both open edges of the sample along the direction of the flow. The following flame behaviors were observed in the experiments and predicted by the numerical calculation, in order of increased imposed flow velocity: (1) ignition but subsequent flame spread was not attained, (2) flame spread upstream (opposed mode) without any downstream flame, and (3) the upstream flame and two separate downstream flames traveled along the two open edges (concurrent mode). Generally, the upstream and downstream edge flame spread rates were faster than the central flame spread rate for an imposed flow velocity of up to 5 cm/s. This was due to greater oxygen supply from the outer free stream to the edge flames and more efficient heat transfer from the edge flames to the sample surface than the central flames. For the upstream edge flame, flame spread rate was nearly independent of, or decreased gradually with, the imposed flow velocity. The spread rate of the downstream edge, however, increased significantly with the imposed flow velocity."
+                  - generic [ref=e545]:
+                    - generic [ref=e546]: Mell, W E; Olson, S L; Kashiwagi, T
+                    - generic [ref=e547]: 2000-08-04
+                    - generic [ref=e548]: Glenn Research Center
+                  - generic [ref=e549]:
+                    - generic [ref=e550]: NASA NTRS ID 20060050783
+                    - link "View record details" [ref=e551] [cursor=pointer]:
+                      - /url: /research/20060050783
+                - link "Open Flame Spread Along Free Edges of Thermally Thin Samples in Microgravity on NASA NTRS" [ref=e554] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20060050783
+              - article [ref=e558]:
+                - generic [aria-hidden] [ref=e559]: "07"
+                - generic [ref=e560]:
+                  - generic [ref=e561]:
+                    - heading [level=4] [ref=e562]:
+                      - link "Flame spread across liquids" [ref=e563] [cursor=pointer]:
+                        - /url: /research/19960008391
+                    - generic [ref=e564]: Conference Paper
+                  - paragraph [ref=e565]: "Recent reviews of our understanding of flame spread across liquids show that there are many unresolved issues regarding the phenomenology and causal mechanisms affecting ignition susceptibility, flame spread characteristics, and flame spread rates. One area of discrepancy is the effect of buoyancy in both the uniform and pulsating spread regimes. The approach we have taken to resolving the importance of buoyancy for these flames is: (1) normal gravity (1g) and microgravity (micro g) experiments; and (2) numerical modeling at different gravitational levels. Of special interest to this work, as discussed at the previous workshop, is the determination of whether, and under what conditions, pulsating spread occurs in micro g. Microgravity offers a unique ability to modify and control the gas-phase flow pattern by utilizing a forced air flow over the pool surface."
+                  - generic [ref=e566]:
+                    - generic [ref=e567]: Ross, Howard D.; Miller, Fletcher; Schiller, David; Sirignano, William
+                    - generic [ref=e568]: 1995-08-01
+                    - generic [ref=e569]: Legacy CDMS
+                  - generic [ref=e570]:
+                    - generic [ref=e571]: NASA NTRS ID 19960008391
+                    - link "View record details" [ref=e572] [cursor=pointer]:
+                      - /url: /research/19960008391
+                - link "Open Flame spread across liquids on NASA NTRS" [ref=e575] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19960008391
+              - article [ref=e579]:
+                - generic [aria-hidden] [ref=e580]: "08"
+                - generic [ref=e581]:
+                  - generic [ref=e582]:
+                    - heading [level=4] [ref=e583]:
+                      - link "Opposed-Flow Flame Spread in a Narrow Channel Apparatus over Thin PMMA Sheets" [ref=e584] [cursor=pointer]:
+                        - /url: /research/20140004923
+                    - generic [ref=e585]: Conference Paper
+                  - paragraph [ref=e586]: Flame spread tests have been conducted over polymethylmethacrylate (PMMA) samples in San Diego State University's Narrow Channel Apparatus (SDSU NCA). The Narrow Channel Apparatus (NCA) has the ability to suppress buoyant flow in horizontally spreading flames, and is currently being investigated as a possible replacement or complement to NASA's current material flammability test standard for non-metallic solids, NASA-STD-(I)-6001B Test 1. The buoyant suppression achieved with a NCA allows for tests to be conducted in a simulated microgravity atmosphere-a characteristic that Test 1 lacks since flames present in Test 1 are buoyantly driven. The SDSU NCA allows for flame spread tests to be conducted with varying opposed flow oxidizer velocities, oxygen percent by volume, and total pressure. Also, since the test sample is placed symmetrically between two confining plates so that there is a gap above and below the sample, this gap can be adjusted. This gap height adjustment allows for a compromise between heat loss from the flame to the confining boundaries and buoyancy suppression achieved by those boundaries. This article explores the effect gap height has on the flame spread rate for 75 μm thick PMMA at 1 atm pressure and 21% oxygen concentration by volume in the SDSU NCA. Flame spread results from the SDSU NCA for thin cellulose fuels have previously been compared to results from tests in actual microgravity at various test conditions with the same sample materials and were found to be in good agreement. This article also presents results from the SDSU NCA for PMMA at 1 atm pressure, opposed oxidizer velocity ranging from 3 to 35 cm/s, oxygen concentration by volume at 21%, 30 %, and 50% and fuel thicknesses of 50 and 75 μm. These results are compared to results obtained in actual microgravity for PMMA obtained at the 4.5s drop tower of MGLAB in Gifu, Japan, and the 5.2s drop tower at NASA's Zero-Gravity Research Facility in Cleveland, OH. This comparison confirms that at 1 atm pressure, the SDSU NCA successfully simulates microgravity for not only thin cellulose fuels, but also for thin PMMA sheets as well. This further supports the idea that the NCA is a viable option to complement or replace NASA's Test 1 for material flammability testing. Tests with thick fuels will be conducted in the future to further characterize the SDSU NCA.
+                  - generic [ref=e587]:
+                    - generic [ref=e588]: Bornand, G. R.; Olson, Sandra L.; Miller, F. J.; Pepper, J. M.; Wichman, I. S.
+                    - generic [ref=e589]: 2013-05-19
+                    - generic [ref=e590]: Glenn Research Center
+                  - generic [ref=e591]:
+                    - generic [ref=e592]: NASA NTRS ID 20140004923
+                    - link "View record details" [ref=e593] [cursor=pointer]:
+                      - /url: /research/20140004923
+                - link "Open Opposed-Flow Flame Spread in a Narrow Channel Apparatus over Thin PMMA Sheets on NASA NTRS" [ref=e596] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20140004923
+              - article [ref=e600]:
+                - generic [aria-hidden] [ref=e601]: "09"
+                - generic [ref=e602]:
+                  - generic [ref=e603]:
+                    - heading [level=4] [ref=e604]:
+                      - link "Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgravity" [ref=e605] [cursor=pointer]:
+                        - /url: /research/20150008962
+                    - generic [ref=e606]: Conference Paper
+                  - paragraph [ref=e607]: As a part of the NASA BASS and BASS-II experimental projects aboard the International Space Station, flame growth, spread and extinction over a composite cotton-fiberglass fabric blend (referred to as the SIBAL fabric) were studied in low-speed concurrent forced flows. The tests were conducted in a small flow duct within the Microgravity Science Glovebox. The fuel samples measured 1.2 and 2.2 cm wide and 10 cm long. Ambient oxygen was varied from 21% down to 16% and flow speed from 40 cm/s down to 1 cm/s. A small flame resulted at low flow, enabling us to observe the entire history of flame development including ignition, flame growth, steady spread (in some cases) and decay at the end of the sample. In addition, by decreasing flow velocity during some of the tests, low-speed flame quenching extinction limits were found as a function of oxygen percentage. The quenching speeds were found to be between 1 and 5 cm/s with higher speed in lower oxygen atmosphere. The shape of the quenching boundary supports the prediction by earlier theoretical models. These long duration microgravity experiments provide a rare opportunity for solid fuel combustion since microgravity time in ground-based facilities is generally not sufficient. This is the first time that a low-speed quenching boundary in concurrent spread is determined in a clean and unambiguous manner.
+                  - generic [ref=e608]:
+                    - generic [ref=e609]: Zhao, Xiaoyang; T'ien, James S.; Ferkul, Paul V.; Olson, Sandra L.
+                    - generic [ref=e610]: 2015-05-17
+                    - generic [ref=e611]: Glenn Research Center
+                  - generic [ref=e612]:
+                    - generic [ref=e613]: NASA NTRS ID 20150008962
+                    - link "View record details" [ref=e614] [cursor=pointer]:
+                      - /url: /research/20150008962
+                - link "Open Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgravity on NASA NTRS" [ref=e617] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20150008962
+              - article [ref=e621]:
+                - generic [aria-hidden] [ref=e622]: "10"
+                - generic [ref=e623]:
+                  - generic [ref=e624]:
+                    - heading [level=4] [ref=e625]:
+                      - 'link "Flame Spread Across Liquids: Experimental Results" [ref=e626] [cursor=pointer]':
+                        - /url: /research/19990054039
+                    - generic [ref=e627]: Conference Paper
+                  - paragraph [ref=e628]: The goal of our research on flame spread across a pool of liquid fuel is the quantitative identification of the mechanisms that control the rate and nature of flame spread when the initial temperature of the liquid pool is below the fuel's flash point temperature. Besides numerous experiments in drop towers and 1 g laboratories, we have flown five microgravity (mu-g) experiments on sounding rockets. As described in earlier papers, the first three flights examined the effect of forced opposed airflow over a 2.5 cm deep x 2 cm wide x 30 cm long pool of 1-butanol in mu-g. It was found that the flame spread is much slower and steadier than in 1 g where flame spread has a pulsating character. It was speculated that the flame spread in mu-g resembled the character of pseudo-uniform spread in 1 g; Ito et al later confirmed this conclusively in 1 g experiments. Much of the mu-g flame is also farther from the surface, dimmer, and with less soot, when compared to the 1 g flame. Three-dimensional liquid-phase flow patterns that control the liquid preheating were discovered in both 1 g and mu-g. Our numerical model, restricted to two dimensions, had predicted faster, pulsating flame spread in mu-g for opposed airflow. In examining the differences in the dimensionality of the model and experiment, it was noted that the experiment allowed gas expansion in the lateral direction (across the width of the pool), for which the model could not account. Such lateral expansion could reduce the expansion in the forward and upward directions. Because only these latter directions could be modeled, it was decided to artificially reduce the gas thermal expansion in the predictions. When this was done, satisfactory agreement could be obtained between the predicted and observed spread rates and the steadiness of the spread in microgravity. In 1 g, however, the predicted flame spread character also changed to pseudo-uniform, which disagreed with our 1 g experiments where the spread is pulsating. It was then speculated that gas-phase buoyant flow might oppose the lateral gas expansion, so that the 1 g experiments retained their pulsating flame spread character. If this speculation was valid, a difference in lateral gas expansion should be observable when comparing 1 g and mu-g experiments. Specifically, it was anticipated that greater flow divergence caused by lateral expansion would be measured in mu-g in the absence of a buoyant flow directed towards the flame.
+                  - generic [ref=e629]:
+                    - generic [ref=e630]: Ross, H. D.; Miller, F. J.
+                    - generic [ref=e631]: 1999-05-01
+                    - generic [ref=e632]: Glenn Research Center
+                  - generic [ref=e633]:
+                    - generic [ref=e634]: NASA NTRS ID 19990054039
+                    - link "View record details" [ref=e635] [cursor=pointer]:
+                      - /url: /research/19990054039
+                - 'link "Open Flame Spread Across Liquids: Experimental Results on NASA NTRS" [ref=e638] [cursor=pointer]':
+                  - /url: https://ntrs.nasa.gov/citations/19990054039
+            - generic "Research results pages" [ref=e642]:
+              - button "Previous results page" [disabled] [ref=e643]: Previous
+              - generic [ref=e646]: Page 1 of 32
+              - button "Next results page" [ref=e647] [cursor=pointer]: Next
+      - region [ref=e158]:
+        - generic [ref=e159]:
+          - generic [ref=e160]:
+            - paragraph [ref=e161]: THE ROLE OF GRAVITY
+            - heading "Flame morphology comparison" [level=2] [ref=e162]
+          - generic [ref=e163]: Illustrative visualization
+        - paragraph [ref=e165]: On Earth, gravity-driven buoyant convection shapes a candle flame into a teardrop and carries soot toward its tip. In microgravity, with convective flows absent, NASA describes a spherical, soot-free, blue flame.
+        - group "Qualitative flame shape comparison" [ref=e166]:
+          - figure "On Earth Buoyancy-driven flow shapes an elongated flame." [ref=e167]:
+            - img "Qualitative teardrop-shaped flame schematic" [ref=e169]
+            - generic [ref=e174]:
+              - generic [ref=e175]: On Earth
+              - generic [ref=e176]: Buoyancy-driven flow shapes an elongated flame.
+          - generic [ref=e178]: Reduced buoyancy
+          - figure "In microgravity NASA describes a spherical, soot-free, blue flame." [ref=e179]:
+            - img "Qualitative spherical flame schematic" [ref=e181]
+            - generic [ref=e186]:
+              - generic [ref=e187]: In microgravity
+              - generic [ref=e188]: NASA describes a spherical, soot-free, blue flame.
+        - paragraph [ref=e189]:
+          - text: Qualitative schematic, not to scale and not a plot of experimental measurements.
+          - link "Read the NASA source" [ref=e190] [cursor=pointer]:
+            - /url: https://science.nasa.gov/image-detail/candle-flames-3/
+      - region "Published evidence and AI interpretation" [ref=e194]:
+        - article [ref=e195]:
+          - generic [ref=e197]:
+            - paragraph [ref=e198]: PUBLISHED EVIDENCE
+            - heading "Source statement" [level=3] [ref=e199]
+            - paragraph [ref=e200]: NASA describes the Earth candle flame as teardrop-shaped under buoyant convection, and the microgravity flame as spherical, soot-free, and blue.
+            - link "Inspect the NASA source" [ref=e201] [cursor=pointer]:
+              - /url: https://science.nasa.gov/image-detail/candle-flames-3/
+            - generic [ref=e205]: Faithful summary of the linked source page.
+        - article [ref=e206]:
+          - generic [ref=e208]:
+            - paragraph [ref=e209]: AI INTERPRETATION
+            - heading "Analysis is not connected" [level=3] [ref=e210]
+            - paragraph [ref=e211]: No generated scientific interpretation is shown in this milestone. Future synthesis will identify supporting evidence and link back to each source.
+            - generic [ref=e212]: Unavailable in this preview
+      - paragraph [ref=e213]: Search results are live records returned by NASA NTRS. The flame comparison remains illustrative and qualitative; it does not display experimental measurements.
+  - alert [ref=e214]

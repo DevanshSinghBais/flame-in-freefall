@@ -1,0 +1,347 @@
+- generic [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - generic [ref=f1e868]:
+      - button "Close workspace navigation" [expanded] [ref=f1e869] [cursor=pointer]
+      - link "FLAME IN FREEFALL home" [ref=f1e873] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f1e874]: FLAME
+        - generic [ref=f1e876]: IN FREEFALL
+    - button "Close navigation" [ref=f1e877]
+    - complementary [ref=f1e3]:
+      - generic [ref=f1e4]:
+        - link "FLAME IN FREEFALL home" [active] [ref=f1e5] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f1e6]: FLAME
+          - generic [ref=f1e8]: IN FREEFALL
+        - generic [ref=f1e9]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=f1e10]:
+        - link "Overview" [ref=f1e11] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=f1e18] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=f1e23] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=f1e27] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=f1e31] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=f1e38] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=f1e43] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=f1e47] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=f1e51] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=f1e55] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=f1e60] [cursor=pointer]:
+          - /url: /workspace/settings
+      - paragraph [ref=f1e67]: Research, with its sources in view.
+    - main [ref=f1e69]:
+      - generic [ref=f1e70]:
+        - generic [ref=f1e71]:
+          - paragraph [ref=f1e72]: MICROGRAVITY COMBUSTION RESEARCH
+          - heading [level=1] [ref=f1e878]: Research overview
+          - paragraph [ref=f1e74]: Discover and compare traceable source material on combustion beyond Earth.
+        - generic [ref=f1e75]: NASA NTRS · LIVE
+      - region [ref=f1e879]:
+        - heading [level=2] [ref=f1e880]: Search NASA Technical Reports Server research
+        - search [ref=f1e79]:
+          - generic [ref=f1e83]: Search NASA research
+          - searchbox [ref=f1e881]: microgravity combustion
+          - button [ref=f1e882] [cursor=pointer]: Search
+        - generic [ref=f1e89]:
+          - generic [ref=f1e90]: Filter by
+          - generic [ref=f1e92]:
+            - generic [ref=f1e93]: NASA document type
+            - combobox [ref=f1e883] [cursor=pointer]
+          - generic [ref=f1e95]:
+            - generic [ref=f1e96]: NASA center
+            - combobox [ref=f1e884] [cursor=pointer]
+          - generic [ref=f1e98]:
+            - generic [ref=f1e99]: NASA subject category
+            - combobox [ref=f1e885] [cursor=pointer]
+          - button [disabled] [ref=f1e886]: Clear filters
+          - generic [ref=f1e105]: NASA Technical Reports Server
+        - generic [ref=f1e106]:
+          - region [ref=f1e887]:
+            - generic [ref=f1e109]:
+              - heading [level=3] [ref=f1e888]: Continue your research
+              - paragraph [ref=f1e111]: Start with a source or compare the science.
+            - generic [ref=f1e112]:
+              - link [ref=f1e889] [cursor=pointer]:
+                - /url: https://science.nasa.gov/mission/acme/
+                - generic [ref=f1e117]:
+                  - strong [ref=f1e118]: Open the ACME overview
+                  - generic [ref=f1e119]: NASA mission source
+              - link [ref=f1e890] [cursor=pointer]:
+                - /url: /sources
+                - generic [ref=f1e128]:
+                  - strong [ref=f1e129]: Browse research sources
+                  - generic [ref=f1e130]: Curated NASA Science pages
+              - link [ref=f1e891] [cursor=pointer]:
+                - /url: "#flame-comparison"
+                - generic [ref=f1e140]:
+                  - strong [ref=f1e141]: Compare flame forms
+                  - generic [ref=f1e142]: Illustrative, qualitative view
+          - region [ref=f1e892]:
+            - generic [ref=f1e146]:
+              - generic [ref=f1e147]:
+                - heading [level=3] [ref=f1e893]: NASA research
+                - paragraph [ref=f1e149]: Live publication metadata from NASA NTRS
+              - generic [ref=f1e150]: 1–10 of 1,076 results
+            - generic [ref=f1e151]:
+              - article [ref=f1e651]:
+                - generic [aria-hidden] [ref=f1e652]: "01"
+                - generic [ref=f1e653]:
+                  - generic [ref=f1e654]:
+                    - heading [level=4] [ref=f1e894]:
+                      - link [ref=f1e895] [cursor=pointer]:
+                        - /url: /research/20150023100
+                        - text: NASA Microgravity Combustion Program
+                    - generic [ref=f1e657]: Presentation
+                  - paragraph [ref=f1e658]: These slides present an overview NASA's Microgravity Combustion Program to be presented to the MultiAgency Coordinating Committee on Combustion Research committee meeting.
+                  - generic [ref=f1e659]:
+                    - generic [ref=f1e660]: Urban, David L.
+                    - generic [ref=f1e661]: 2015-10-20
+                    - generic [ref=f1e662]: Glenn Research Center
+                  - generic [ref=f1e663]:
+                    - generic [ref=f1e664]: NASA NTRS ID 20150023100
+                    - link [ref=f1e896] [cursor=pointer]:
+                      - /url: /research/20150023100
+                      - text: View record details
+                - link [ref=f1e897] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20150023100
+              - article [ref=f1e672]:
+                - generic [aria-hidden] [ref=f1e673]: "02"
+                - generic [ref=f1e674]:
+                  - generic [ref=f1e675]:
+                    - heading [level=4] [ref=f1e898]:
+                      - link [ref=f1e899] [cursor=pointer]:
+                        - /url: /research/19970020547
+                        - text: Fourth International Microgravity Combustion Workshop
+                    - generic [ref=f1e678]: Conference Proceedings
+                  - paragraph [ref=f1e679]: This proceedings document is a compilation about work performed by a community of researchers from universities, industry and government laboratories across the United States and in Europe and Japan who have recognized the value of the reduced-gravity environment in attacking the fundamental and practical problems of combustion science. On their behalf, I am pleased to present this document to the assembled participants at the Fourth International Microgravity Combustion Workshop, to be held near the NASA Lewis Research Center in Cleveland, Ohio, on May 19-21, 1997.
+                  - generic [ref=f1e680]:
+                    - generic [ref=f1e681]: Kurt Sacksteder
+                    - generic [ref=f1e682]: 1997-05-01
+                    - generic [ref=f1e683]: Glenn Research Center
+                  - generic [ref=f1e684]:
+                    - generic [ref=f1e685]: NASA NTRS ID 19970020547
+                    - link [ref=f1e900] [cursor=pointer]:
+                      - /url: /research/19970020547
+                      - text: View record details
+                - link [ref=f1e901] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19970020547
+              - article [ref=f1e693]:
+                - generic [aria-hidden] [ref=f1e694]: "03"
+                - generic [ref=f1e695]:
+                  - generic [ref=f1e696]:
+                    - heading [level=4] [ref=f1e902]:
+                      - link [ref=f1e903] [cursor=pointer]:
+                        - /url: /research/19990053965
+                        - text: Fifth International Microgravity Combustion Workshop
+                    - generic [ref=f1e699]: Conference Publication (CP)
+                  - paragraph [ref=f1e700]: On behalf of the NASA Headquarters Microgravity Research Division and the Microgravity Combustion Science Discipline Working Group, we are pleased to present these proceedings of the Fifth International Microgravity Combustion Workshop. At the time we go to press we expect to welcome to the workshop over 250 presenters and participants from U.S. academia, industry, and government; and from at least 8 international partner countries. We come together for this workshop at the beginning of the International Space Station era, where the future of microgravity combustion science programs will unfold over the next few years. As we accelerate our preparations for the ISS, this book and the growing literature base cited herein provide a summary of the accomplishments of approximately forty space-flight experiment-missions (plus nearly countless drop tests and aircraft parabolas) and a valuable resource for the new experiment ideas of the future.
+                  - generic [ref=f1e701]:
+                    - generic [ref=f1e702]: Kurt R Sacksteder
+                    - generic [ref=f1e703]: 1999-05-18
+                    - generic [ref=f1e704]: Glenn Research Center
+                  - generic [ref=f1e705]:
+                    - generic [ref=f1e706]: NASA NTRS ID 19990053965
+                    - link [ref=f1e904] [cursor=pointer]:
+                      - /url: /research/19990053965
+                      - text: View record details
+                - link [ref=f1e905] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19990053965
+              - article [ref=f1e714]:
+                - generic [aria-hidden] [ref=f1e715]: "04"
+                - generic [ref=f1e716]:
+                  - generic [ref=f1e717]:
+                    - heading [level=4] [ref=f1e906]:
+                      - link [ref=f1e907] [cursor=pointer]:
+                        - /url: /research/19970020606
+                        - text: Smoldering Combustion Experiments in Microgravity
+                    - generic [ref=f1e720]: Conference Paper
+                  - paragraph [ref=f1e721]: The Microgravity Smoldering Combustion (MSC) experiment is part of a study of the smolder characteristics of porous combustible materials in a microgravity environment. Smoldering is a non-flaming form of combustion that takes place in the interior of porous materials and takes place in a number of processes ranging from smoldering of porous insulation materials to high temperature synthesis of metals. The objective of the study is to provide a better understanding of the controlling mechanisms of smolder, both in microgravity and normal-gravity. As with many forms of combustion, gravity affects the availability of oxidizer and transport of heat, and therefore the rate of combustion. Microgravity smolder experiments, in both a quiescent oxidizing environment, and in a forced oxidizing flow have been conducted aboard the NASA Space Shuttle (STS-69 and STS-77 missions) to determine the effect of the ambient oxygen concentration and oxidizer forced flow velocity on smolder combustion in microgravity. The experimental apparatus is contained within the NASA Get Away Special Canister (GAS-CAN) Payload. These two sets of experiments investigate the propagation of smolder along the polyurethane foam sample under both diffusion driven and forced flow driven smoldering. The results of the microgravity experiments are compared with identical ones carried out in normal gravity, and are used to verify present theories of smolder combustion. The results of this study will provide new insights into the smoldering combustion process. Thermocouple histories show that the microgravity smolder reaction temperatures (Ts) and propagation velocities (Us) lie between those of identical normal-gravity upward and downward tests. These observations indicate the effect of buoyancy on the transport of oxidizer to the reaction front.
+                  - generic [ref=f1e722]:
+                    - generic [ref=f1e723]: David C Walther; A Carlos Fernandez-Pello; David L Urban
+                    - generic [ref=f1e724]: 1997-05-01
+                    - generic [ref=f1e725]: Glenn Research Center
+                  - generic [ref=f1e726]:
+                    - generic [ref=f1e727]: NASA NTRS ID 19970020606
+                    - link [ref=f1e908] [cursor=pointer]:
+                      - /url: /research/19970020606
+                      - text: View record details
+                - link [ref=f1e909] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19970020606
+              - article [ref=f1e735]:
+                - generic [aria-hidden] [ref=f1e736]: "05"
+                - generic [ref=f1e737]:
+                  - generic [ref=f1e738]:
+                    - heading [level=4] [ref=f1e910]:
+                      - link [ref=f1e911] [cursor=pointer]:
+                        - /url: /research/19990054030
+                        - text: Combustion of Interacting Droplet Arrays in a Microgravity Environment
+                    - generic [ref=f1e741]: Conference Paper
+                  - paragraph [ref=f1e742]: Investigations into droplet interactions date back to Rex et al. Recently, Annamalai and Ryan and Annamalai published extensive reviews of droplet array and cloud combustion studies. The authors studied the change in the burning rate constant, k, (relative to that of the single droplet) that results from interactions. Under certain conditions, there exists a separation distance where the droplet lifetime reaches a minimum, or average burning rate constant is a maximum . Additionally, since inter-droplet separation distance, L, increases relative to the droplet size, D, as the burning proceeds, the burning rate is not constant throughout the burn, but changes continuously with time. Only Law and co-workers and Mikami et al. studied interactions under conditions where buoyant forces were negligible. Comparing their results with existing theory, Law and co-workers found that theory over predicted the persistency and intensity of droplet interactions. The droplet interactions also depended on the initial array configuration as well as the instantaneous array configuration. They also concluded that droplet heating was retarded due to interactions and that the burning process did not follow the "D-squared" law. Mikami et al. studied the combustion of a two-droplet array of heptane burning in air at one atm pressure in microgravity. They showed that the instantaneous burning rate constant increases throughout the droplet lifetime, even for a single droplet. Also, the burn time of the array reached a minimum at a critical inter-droplet spacing. In this article, we examine droplet interactions in normal and microgravity environments. The microgravity experiments were in the NASA GRC 2.2 and 5.2 second drop towers, and the JAMIC (Japan Microgravity Center) 10 second drop tower. Special emphasis is directed to combustion under conditions that yield finite extinction diameters, and to determine how droplet interactions affect the extinction process.
+                  - generic [ref=f1e743]:
+                    - generic [ref=f1e744]: Dietrich, D. L.; Struk, P. M.; Kitano, K.; Ikegami, M.
+                    - generic [ref=f1e745]: 1999-05-01
+                    - generic [ref=f1e746]: Glenn Research Center
+                  - generic [ref=f1e747]:
+                    - generic [ref=f1e748]: NASA NTRS ID 19990054030
+                    - link [ref=f1e912] [cursor=pointer]:
+                      - /url: /research/19990054030
+                      - text: View record details
+                - link [ref=f1e913] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19990054030
+              - article [ref=f1e756]:
+                - generic [aria-hidden] [ref=f1e757]: "06"
+                - generic [ref=f1e758]:
+                  - generic [ref=f1e759]:
+                    - heading [level=4] [ref=f1e914]:
+                      - link [ref=f1e915] [cursor=pointer]:
+                        - /url: /research/19990053966
+                        - text: NASA Microgravity Combustion Science Program
+                    - generic [ref=f1e762]: Conference Paper
+                  - paragraph [ref=f1e763]: Combustion has been a subject of increasingly vigorous scientific research for over a century, not surprising considering that combustion accounts for approximately 85% of the world's energy production and is a key element of many critical technologies used by contemporary society. Although combustion technology is vital to our standard of living, it also poses great challenges to maintaining a habitable environment. A major goal of combustion research is production of fundamental (foundational) knowledge that can be used in developing accurate simulations of complex combustion processes, replacing current "cut-and-try" approaches and allowing developers to improve the efficiency of combustion devices, to reduce the production of harmful emissions, and to reduce the incidence of accidental uncontrolled combustion. With full understanding of the physics and chemistry involved in a given combustion process, including details of the unit processes and their interactions, physically accurate models which can then be used for parametric exploration of new combustion domains via computer simulation can be developed, with possible resultant definition of radically different approaches to accomplishment of various combustion goals. Effects of gravitational forces on earth impede combustion studies more than they impede most other areas of science. The effects of buoyancy are so ubiquitous that we often do not appreciate the enormous negative impact that they have had on the rational development of combustion science. Microgravity offers potential for major gains in combustion science understanding in that it offers unique capability to establish the flow environment rather than having it dominated by uncontrollable (under normal gravity) buoyancy effects and, through this control, to extend the range of test conditions that can be studied. It cannot be emphasized too strongly that our program is dedicated to taking advantage of microgravity to untangle complications caused by gravity, allowing major strides in our understanding of combustion processes and in subsequent development of improved combustion devices leading to improved quality of life on Earth. Fire and/or explosion events aboard spacecraft could be devastating to international efforts to expand the human presence in space. Testing to date has shown that ignition and flame spread on fuel surfaces (e.g., paper, wire insulation) behave quite differently under partial gravity and microgravity conditions. In addition, fire signatures-i.e., heat release, smoke production, flame visibility, and radiation-are now known to be quite different in reduced gravity environments; this research has provided data to improve the effectiveness of fire prevention practices, smoke and fire detectors, and fire extinguishment systems. The more we can apply our scientific and technological understanding to potential fire behavior in microgravity and partial gravity, the more assurance can be given to those people whose lives depend on the environment aboard spacecraft or eventually on habitats on the Moon or Mars.
+                  - generic [ref=f1e764]:
+                    - generic [ref=f1e765]: Merrill K King
+                    - generic [ref=f1e766]: 1999-05-18
+                    - generic [ref=f1e767]: Glenn Research Center
+                  - generic [ref=f1e768]:
+                    - generic [ref=f1e769]: NASA NTRS ID 19990053966
+                    - link [ref=f1e916] [cursor=pointer]:
+                      - /url: /research/19990053966
+                      - text: View record details
+                - link [ref=f1e917] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19990053966
+              - article [ref=f1e777]:
+                - generic [aria-hidden] [ref=f1e778]: "07"
+                - generic [ref=f1e779]:
+                  - generic [ref=f1e780]:
+                    - heading [level=4] [ref=f1e918]:
+                      - link [ref=f1e919] [cursor=pointer]:
+                        - /url: /research/19970020548
+                        - text: NASA Microgravity Combustion Science Program
+                    - generic [ref=f1e783]: Conference Paper
+                  - paragraph [ref=f1e784]: Combustion is a key element of many critical technologies used by contemporary society. For example, electric power production, home heating, surface and air transportation, space propulsion, and materials synthesis all utilize combustion as a source of energy. Yet, although combustion technology is vital to our standard of living, it poses great challenges to maintaining a habitable environment. For example, pollutants, atmospheric change and global warming, unwanted fires and explosions, and the incineration of hazardous wastes are major problem areas which would benefit from improved understanding of combustion. Effects of gravitational forces impede combustion studies more than most other areas of science since combustion involves production of high-temperature gases whose low density results in buoyant motion, vastly complicating the execution and interpretation of experiments. Effects of buoyancy are so ubiquitous that their enormous negative impact on the rational development of combustion science is generally not recognized. Buoyant motion also triggers the onset of turbulence, yielding complicating unsteady effects. Finally, gravity forces cause particles and drops to settle, inhibiting deconvoluted studies of heterogeneous flames important to furnace, incineration and power generation technologies. Thus, effects of buoyancy have seriously limited our capabilities to carry out 'clean' experiments needed for fundamental understanding of flame phenomena. Combustion scientists can use microgravity to simplify the study of many combustion processes, allowing fresh insights into important problems via a deeper understanding of elemental phenomena also found in Earth-based combustion processes and to additionally provide valuable information concerning how fires behave in microgravity and how fire safety on spacecraft can be enhanced.
+                  - generic [ref=f1e785]:
+                    - generic [ref=f1e786]: Merrill K King
+                    - generic [ref=f1e787]: 1997-05-01
+                    - generic [ref=f1e788]: Headquarters
+                  - generic [ref=f1e789]:
+                    - generic [ref=f1e790]: NASA NTRS ID 19970020548
+                    - link [ref=f1e920] [cursor=pointer]:
+                      - /url: /research/19970020548
+                      - text: View record details
+                - link [ref=f1e921] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19970020548
+              - article [ref=f1e798]:
+                - generic [aria-hidden] [ref=f1e799]: "08"
+                - generic [ref=f1e800]:
+                  - generic [ref=f1e801]:
+                    - heading [level=4] [ref=f1e922]:
+                      - link [ref=f1e923] [cursor=pointer]:
+                        - /url: /research/20010073993
+                        - text: Sixth International Microgravity Combustion Workshop
+                    - generic [ref=f1e804]: Conference Proceedings
+                  - paragraph [ref=f1e805]: This conference proceedings document is a compilation of papers presented orally or as poster displays to the Sixth International Microgravity Combustion Workshop held in Cleveland, Ohio on May 22-24, 2001. The purpose of the workshop is to present and exchange research results from theoretical and experimental work in combustion science using the reduced-gravity environment as a research tool. The results are contributed by researchers funded by NASA throughout the United States at universities, industry and government research agencies, and by researchers from international partner countries that are also participating in the microgravity combustion science research discipline. These research results are intended for use by public and private sector organizations for academic purposes, for the development of technologies needed for Human Exploration and Development of Space, and to improve Earth-bound combustion and fire-safety related technologies.
+                  - generic [ref=f1e806]:
+                    - generic [ref=f1e807]: Sacksteder, Kurt
+                    - generic [ref=f1e808]: 2001-05-01
+                    - generic [ref=f1e809]: Glenn Research Center
+                  - generic [ref=f1e810]:
+                    - generic [ref=f1e811]: NASA NTRS ID 20010073993
+                    - link [ref=f1e924] [cursor=pointer]:
+                      - /url: /research/20010073993
+                      - text: View record details
+                - link [ref=f1e925] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20010073993
+              - article [ref=f1e819]:
+                - generic [aria-hidden] [ref=f1e820]: "09"
+                - generic [ref=f1e821]:
+                  - generic [ref=f1e822]:
+                    - heading [level=4] [ref=f1e926]:
+                      - link [ref=f1e927] [cursor=pointer]:
+                        - /url: /research/20210015913
+                        - text: Advanced Combustion via Microgravity Experiments (ACME) on the International Space Station (ISS)
+                    - generic [ref=f1e825]: Poster
+                  - paragraph [ref=f1e826]: Experimental studies of laminar, non-premixed flames of gaseous fuels are underway on the International Space Station (ISS) as part of NASA’s Advanced Combustion via Microgravity Experiments(ACME) project. The research is primarily focused on improving practical terrestrial combustion through fundamental microgravity research, where a secondary objective is spacecraft fire safety. Example goals are to improve understanding of flame stability and extinction limits, soot control and reduction, oxygen-enriched combustion which could enable practical carbon sequestration, combustion at fuel lean conditions where both optimum performance and low emissions can be achieved, the use of electric fields for combustion control, cool flame chemical kinetics, and materials flammability. The microgravity environment avoids buoyancy-induced flicker and enables the creation of spherical flames, allowing numerical models to focus computational power on transport phenomena and chemical kinetics. Compared to normal gravity, microgravity also provides longer residence times and larger length scales, yielding a broad range of flame conditions which are beneficial for simplified analysis, e.g., of limit behavior where chemical kinetics are important. Using modular hardware, research for six independent investigations is being carried out within the station’s Combustion Integrated Rack (CIR). While the ISS crew members set up the experimental hardware, the tests are remotely commanded with investigator input from the NASA Glenn Research Center. Over a thousand flames have been ignited since ACME operations began in Sept. 2017 and selected results from the first five experiments are summarized.
+                  - generic [ref=f1e827]:
+                    - generic [ref=f1e828]: Dennis Stocker
+                    - generic [ref=f1e829]: Glenn Research Center
+                  - generic [ref=f1e830]:
+                    - generic [ref=f1e831]: NASA NTRS ID 20210015913
+                    - link [ref=f1e928] [cursor=pointer]:
+                      - /url: /research/20210015913
+                      - text: View record details
+                - link [ref=f1e929] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20210015913
+              - article [ref=f1e839]:
+                - generic [aria-hidden] [ref=f1e840]: "10"
+                - generic [ref=f1e841]:
+                  - generic [ref=f1e842]:
+                    - heading [level=4] [ref=f1e930]:
+                      - link [ref=f1e931] [cursor=pointer]:
+                        - /url: /research/20010074042
+                        - text: Combustion of Interacting Droplet Arrays in a Microgravity Environment
+                    - generic [ref=f1e845]: Conference Paper
+                  - paragraph [ref=f1e846]: Investigations into droplet interactions date back to Rex et al. Annamalai and Ryan and Annamalai published extensive reviews of droplet array and cloud combustion studies. In the majority of the reviewed studies, the authors examined the change in the burning rate constant, k, (relative to that of the single droplet) that results from interactions. More recently, Niioka and co-workers have examined ignition and flame propagation along arrays of interacting droplets with the goal of relating these phenomena in this simplified geometry to the more practical spray configuration. Our work has focussed on droplet interactions under conditions where flame extinction occurs at a finite droplet diameter. In our previous work, we reported that in normal gravity, reduced pressure conditions, droplet interactions improved flame stability and extended flammability limits (by inference). In our recent work, we examine droplet interactions under conditions where the flame extinguishes at a finite droplet diameter in microgravity. The microgravity experiments were in the NASA GRC 2.2 and 5.2 second drop towers, and the JAMIC (Japan Microgravity Center) 10 second drop tower. We also present progress on a numerical model of single droplet combustion that is in the process of being extended to model a binary droplet array.
+                  - generic [ref=f1e847]:
+                    - generic [ref=f1e848]: Dietrich, D. L.; Struk, P. M.; Ikegami, M.; Nagaishi, H.; Honma, S.; Ikeda, K.
+                    - generic [ref=f1e849]: 2001-05-01
+                    - generic [ref=f1e850]: Glenn Research Center
+                  - generic [ref=f1e851]:
+                    - generic [ref=f1e852]: NASA NTRS ID 20010074042
+                    - link [ref=f1e932] [cursor=pointer]:
+                      - /url: /research/20010074042
+                      - text: View record details
+                - link [ref=f1e933] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20010074042
+            - generic [ref=f1e934]:
+              - button [disabled] [ref=f1e935]: Previous
+              - generic [ref=f1e864]: Page 1 of 108
+              - button [ref=f1e936] [cursor=pointer]: Next
+      - region [ref=f1e937]:
+        - generic [ref=f1e371]:
+          - generic [ref=f1e372]:
+            - paragraph [ref=f1e373]: THE ROLE OF GRAVITY
+            - heading [level=2] [ref=f1e938]: Flame morphology comparison
+          - generic [ref=f1e375]: Illustrative visualization
+        - paragraph [ref=f1e377]: On Earth, gravity-driven buoyant convection shapes a candle flame into a teardrop and carries soot toward its tip. In microgravity, with convective flows absent, NASA describes a spherical, soot-free, blue flame.
+        - group [ref=f1e939]:
+          - figure [ref=f1e940]:
+            - generic [ref=f1e386]:
+              - generic [ref=f1e387]: On Earth
+              - generic [ref=f1e388]: Buoyancy-driven flow shapes an elongated flame.
+          - generic [ref=f1e390]: Reduced buoyancy
+          - figure [ref=f1e944]:
+            - generic [ref=f1e398]:
+              - generic [ref=f1e399]: In microgravity
+              - generic [ref=f1e400]: NASA describes a spherical, soot-free, blue flame.
+        - paragraph [ref=f1e401]:
+          - text: Qualitative schematic, not to scale and not a plot of experimental measurements.
+          - link [ref=f1e946] [cursor=pointer]:
+            - /url: https://science.nasa.gov/image-detail/candle-flames-3/
+            - text: Read the NASA source
+      - region [ref=f1e947]:
+        - article [ref=f1e407]:
+          - generic [ref=f1e409]:
+            - paragraph [ref=f1e410]: PUBLISHED EVIDENCE
+            - heading [level=3] [ref=f1e948]: Source statement
+            - paragraph [ref=f1e412]: NASA describes the Earth candle flame as teardrop-shaped under buoyant convection, and the microgravity flame as spherical, soot-free, and blue.
+            - link [ref=f1e949] [cursor=pointer]:
+              - /url: https://science.nasa.gov/image-detail/candle-flames-3/
+              - text: Inspect the NASA source
+            - generic [ref=f1e417]: Faithful summary of the linked source page.
+        - article [ref=f1e418]:
+          - generic [ref=f1e420]:
+            - paragraph [ref=f1e421]: AI INTERPRETATION
+            - heading [level=3] [ref=f1e950]: Analysis is not connected
+            - paragraph [ref=f1e423]: No generated scientific interpretation is shown in this milestone. Future synthesis will identify supporting evidence and link back to each source.
+            - generic [ref=f1e424]: Unavailable in this preview
+      - paragraph [ref=f1e425]: Search results are live records returned by NASA NTRS. The flame comparison remains illustrative and qualitative; it does not display experimental measurements.
+  - alert [ref=f1e426]

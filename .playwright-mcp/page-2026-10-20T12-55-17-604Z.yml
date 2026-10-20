@@ -1,0 +1,350 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - complementary [ref=f1e3]:
+      - generic [ref=f1e4]:
+        - link "FLAME IN FREEFALL home" [ref=f1e5] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f1e6]: FLAME
+          - generic [ref=f1e8]: IN FREEFALL
+        - generic [ref=f1e9]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=f1e10]:
+        - link "Overview" [ref=f1e11] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=f1e18] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=f1e23] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=f1e27] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=f1e31] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=f1e38] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=f1e43] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=f1e47] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=f1e51] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=f1e55] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=f1e60] [cursor=pointer]:
+          - /url: /workspace/settings
+      - generic [ref=f1e65]:
+        - paragraph [ref=f1e67]: Research, with its sources in view.
+        - link "Sign in to save research" [ref=f1e68] [cursor=pointer]:
+          - /url: /sign-in
+    - main [ref=f1e74]:
+      - generic [ref=f1e75]:
+        - generic [ref=f1e76]:
+          - paragraph [ref=f1e77]: NASA TECHNICAL REPORTS SERVER
+          - heading "Research Explorer" [level=1] [ref=f1e78]
+          - paragraph [ref=f1e79]: Search live NASA publication records, refine the returned metadata, and open traceable source details.
+        - generic [ref=f1e80]: LIVE SOURCE
+      - region [ref=f1e82]:
+        - heading "Search NASA Technical Reports Server research" [level=2] [ref=f1e83]
+        - search [ref=f1e84]:
+          - generic [ref=f1e88]: Search NASA research
+          - searchbox "Search NASA research" [ref=f1e89]: microgravity ignition
+          - button "Search" [ref=f1e90] [cursor=pointer]
+        - generic [ref=f1e94]:
+          - generic [ref=f1e95]: Filter by
+          - generic [ref=f1e97]:
+            - generic [ref=f1e98]: NASA document type
+            - combobox "NASA document type" [ref=f1e99] [cursor=pointer]:
+              - option "All document types" [selected]
+              - option "CONFERENCE_PAPER (110)"
+              - option "OTHER (15)"
+              - option "CONFERENCE_PROCEEDINGS (11)"
+              - option "CONTRACTOR_REPORT (9)"
+              - option "ABSTRACT (6)"
+              - option "PREPRINT (5)"
+              - option "TECHNICAL_MEMORANDUM (5)"
+              - option "PRESENTATION (4)"
+              - option "REPRINT (2)"
+              - option "CONFERENCE_PUBLICATION (1)"
+              - option "CONTRACTOR_OR_GRANTEE_REPORT (1)"
+              - option "POSTER (1)"
+              - option "THESIS_DISSERTATION (1)"
+              - option "VIDEO (1)"
+          - generic [ref=f1e100]:
+            - generic [ref=f1e101]: NASA center
+            - combobox "NASA center" [ref=f1e102] [cursor=pointer]:
+              - option "All NASA centers" [selected]
+              - option "GRC (102)"
+              - option "CDMS (55)"
+              - option "JSC (7)"
+              - option "MSFC (5)"
+              - option "HQ (3)"
+          - generic [ref=f1e103]:
+            - generic [ref=f1e104]: NASA subject category
+            - combobox "NASA subject category" [ref=f1e105] [cursor=pointer]:
+              - option "All subject categories" [selected]
+              - option "Materials Processing (35)"
+              - option "Inorganic, Organic And Physical Chemistry (30)"
+              - option "Inorganic And Physical Chemistry (26)"
+              - option "Fluid Mechanics And Thermodynamics (13)"
+              - option "Propellants And Fuels (13)"
+              - option "Inorganic, Organic and Physical Chemistry (6)"
+              - option "Space Transportation And Safety (6)"
+              - option "Astronautics (General) (5)"
+              - option "Chemistry And Materials (General) (5)"
+              - option "Space Sciences (General) (4)"
+              - option "Spacecraft Propulsion And Power (4)"
+              - option "Aeronautics (General) (3)"
+              - option "Aircraft Propulsion And Power (3)"
+              - option "Composite Materials (3)"
+              - option "Instrumentation And Photography (3)"
+              - option "Mechanical Engineering (3)"
+              - option "Space Processing (3)"
+              - option "Engineering (General) (2)"
+              - option "Nonmetallic Materials (2)"
+              - option "Spacecraft Design, Testing And Performance (2)"
+          - button "Clear filters" [disabled] [ref=f1e106]
+          - generic [ref=f1e110]: NASA Technical Reports Server
+        - generic [ref=f1e111]:
+          - region [ref=f1e112]:
+            - generic [ref=f1e114]:
+              - heading "Continue your research" [level=3] [ref=f1e115]
+              - paragraph [ref=f1e116]: Start with a source or compare the science.
+            - generic [ref=f1e117]:
+              - link "Explore NASA research Search live NTRS records" [ref=f1e118] [cursor=pointer]:
+                - /url: /workspace/research-explorer?q=microgravity%20combustion
+                - generic [ref=f1e123]:
+                  - strong [ref=f1e124]: Explore NASA research
+                  - generic [ref=f1e125]: Search live NTRS records
+              - link "Compare source records Review returned metadata side by side" [ref=f1e128] [cursor=pointer]:
+                - /url: /workspace/experiment-comparison
+                - generic [ref=f1e135]:
+                  - strong [ref=f1e136]: Compare source records
+                  - generic [ref=f1e137]: Review returned metadata side by side
+              - link "Open your Paper Library Saved records and private notes" [ref=f1e140] [cursor=pointer]:
+                - /url: /workspace/paper-library
+                - generic [ref=f1e144]:
+                  - strong [ref=f1e145]: Open your Paper Library
+                  - generic [ref=f1e146]: Saved records and private notes
+          - region [ref=f1e149]:
+            - generic [ref=f1e150]:
+              - generic [ref=f1e151]:
+                - heading "NASA research" [level=3] [ref=f1e152]
+                - paragraph [ref=f1e153]: Live publication metadata from NASA NTRS
+              - generic [ref=f1e171]:
+                - generic [ref=f1e172]: 11–20 of 172 results
+                - button "Save search" [ref=f1e173] [cursor=pointer]
+            - generic [ref=f1e154]:
+              - article [ref=f1e925]:
+                - generic [aria-hidden] [ref=f1e926]: "11"
+                - generic [ref=f1e927]:
+                  - generic [ref=f1e928]:
+                    - heading [level=4] [ref=f1e929]:
+                      - link "Combustion of Interacting Droplet Arrays in a Microgravity Environment" [ref=f1e930] [cursor=pointer]:
+                        - /url: /research/20010074042
+                    - generic [ref=f1e931]: Conference Paper
+                  - paragraph [ref=f1e932]: Investigations into droplet interactions date back to Rex et al. Annamalai and Ryan and Annamalai published extensive reviews of droplet array and cloud combustion studies. In the majority of the reviewed studies, the authors examined the change in the burning rate constant, k, (relative to that of the single droplet) that results from interactions. More recently, Niioka and co-workers have examined ignition and flame propagation along arrays of interacting droplets with the goal of relating these phenomena in this simplified geometry to the more practical spray configuration. Our work has focussed on droplet interactions under conditions where flame extinction occurs at a finite droplet diameter. In our previous work, we reported that in normal gravity, reduced pressure conditions, droplet interactions improved flame stability and extended flammability limits (by inference). In our recent work, we examine droplet interactions under conditions where the flame extinguishes at a finite droplet diameter in microgravity. The microgravity experiments were in the NASA GRC 2.2 and 5.2 second drop towers, and the JAMIC (Japan Microgravity Center) 10 second drop tower. We also present progress on a numerical model of single droplet combustion that is in the process of being extended to model a binary droplet array.
+                  - generic [ref=f1e933]:
+                    - generic [ref=f1e934]: 2001-05-01
+                    - generic [ref=f1e935]: Glenn Research Center
+                    - generic [ref=f1e936]: Dietrich, D. L.; Struk, P. M.; Ikegami, M.; Nagaishi, H.; Honma, S.; Ikeda, K.
+                  - generic [ref=f1e937]:
+                    - generic [ref=f1e938]: NASA NTRS ID 20010074042
+                    - link "View record details" [ref=f1e939] [cursor=pointer]:
+                      - /url: /research/20010074042
+                    - link "Sign in to save" [ref=f1e942] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F20010074042
+                - link "Open Combustion of Interacting Droplet Arrays in a Microgravity Environment on NASA NTRS" [ref=f1e945] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20010074042
+              - article [ref=f1e949]:
+                - generic [aria-hidden] [ref=f1e950]: "12"
+                - generic [ref=f1e951]:
+                  - generic [ref=f1e952]:
+                    - heading [level=4] [ref=f1e953]:
+                      - link "Ignition and combustion of bulk metals in a microgravity environment" [ref=f1e954] [cursor=pointer]:
+                        - /url: /research/19950011667
+                    - generic [ref=f1e955]: Contractor Report (CR)
+                  - paragraph [ref=f1e956]: Knowledge of the oxidation, ignition, and combustion of bulk metals is important for fire safety in the production, management, and utilization of liquid and gaseous oxygen for ground based and space applications. This report summarizes research under NASA support to investigate the ignition and combustion characteristics of bulk metals under varying gravity conditions. Metal ignition and combustion have not been studied previously under these conditions and the results are important not only for improved fire safety but also to increase knowledge of basic ignition and combustion mechanisms. The studies completed to date have led to the development of a clean and reproducible ignition source and diagnostic techniques for combustion measurements and have provided normal gravity combustion data on ten different pure metals. Metal specimens were ignited using a xenon short-arc lamp and measurements were made of the radiant energy flux, surface temperature history, spectroscopy of surface and gas products, and surface morphology and chemistry. Elevated gravity was provided by the University of Colorado Geotechnical Centrifuge.
+                  - generic [ref=f1e957]:
+                    - generic [ref=f1e958]: 1994-12-15
+                    - generic [ref=f1e959]: Legacy CDMS
+                    - generic [ref=f1e960]: Branch, Melvyn C.; Daily, J. W.; Abbud-Madrid, Angel
+                  - generic [ref=f1e961]:
+                    - generic [ref=f1e962]: NASA NTRS ID 19950011667
+                    - link "View record details" [ref=f1e963] [cursor=pointer]:
+                      - /url: /research/19950011667
+                    - link "Sign in to save" [ref=f1e966] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F19950011667
+                - link "Open Ignition and combustion of bulk metals in a microgravity environment on NASA NTRS" [ref=f1e969] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19950011667
+              - article [ref=f1e973]:
+                - generic [aria-hidden] [ref=f1e974]: "13"
+                - generic [ref=f1e975]:
+                  - generic [ref=f1e976]:
+                    - heading [level=4] [ref=f1e977]:
+                      - link "Fourth International Microgravity Combustion Workshop" [ref=f1e978] [cursor=pointer]:
+                        - /url: /research/19970020547
+                    - generic [ref=f1e979]: Conference Proceedings
+                  - paragraph [ref=f1e980]: This proceedings document is a compilation about work performed by a community of researchers from universities, industry and government laboratories across the United States and in Europe and Japan who have recognized the value of the reduced-gravity environment in attacking the fundamental and practical problems of combustion science. On their behalf, I am pleased to present this document to the assembled participants at the Fourth International Microgravity Combustion Workshop, to be held near the NASA Lewis Research Center in Cleveland, Ohio, on May 19-21, 1997.
+                  - generic [ref=f1e981]:
+                    - generic [ref=f1e982]: 1997-05-01
+                    - generic [ref=f1e983]: Glenn Research Center
+                    - generic [ref=f1e984]: Kurt Sacksteder
+                  - generic [ref=f1e985]:
+                    - generic [ref=f1e986]: NASA NTRS ID 19970020547
+                    - link "View record details" [ref=f1e987] [cursor=pointer]:
+                      - /url: /research/19970020547
+                    - link "Sign in to save" [ref=f1e990] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F19970020547
+                - link "Open Fourth International Microgravity Combustion Workshop on NASA NTRS" [ref=f1e993] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19970020547
+              - article [ref=f1e997]:
+                - generic [aria-hidden] [ref=f1e998]: "14"
+                - generic [ref=f1e999]:
+                  - generic [ref=f1e1000]:
+                    - heading [level=4] [ref=f1e1001]:
+                      - link "Reaction Kernel Structure of a Slot Jet Diffusion Flame in Microgravity" [ref=f1e1002] [cursor=pointer]:
+                        - /url: /research/20010074023
+                    - generic [ref=f1e1003]: Conference Paper
+                  - paragraph [ref=f1e1004]: Diffusion flame stabilization in normal earth gravity (1 g) has long been a fundamental research subject in combustion. Local flame-flow phenomena, including heat and species transport and chemical reactions, around the flame base in the vicinity of condensed surfaces control flame stabilization and fire spreading processes. Therefore, gravity plays an important role in the subject topic because buoyancy induces flow in the flame zone, thus increasing the convective (and diffusive) oxygen transport into the flame zone and, in turn, reaction rates. Recent computations show that a peak reactivity (heat-release or oxygen-consumption rate) spot, or reaction kernel, is formed in the flame base by back-diffusion and reactions of radical species in the incoming oxygen-abundant flow at relatively low temperatures (about 1550 K). Quasi-linear correlations were found between the peak heat-release or oxygen-consumption rate and the velocity at the reaction kernel for cases including both jet and flat-plate diffusion flames in airflow. The reaction kernel provides a stationary ignition source to incoming reactants, sustains combustion, and thus stabilizes the trailing diffusion flame. In a quiescent microgravity environment, no buoyancy-induced flow exits and thus purely diffusive transport controls the reaction rates. Flame stabilization mechanisms in such purely diffusion-controlled regime remain largely unstudied. Therefore, it will be a rigorous test for the reaction kernel correlation if it can be extended toward zero velocity conditions in the purely diffusion-controlled regime. The objectives of this study are to reveal the structure of the flame-stabilizing region of a two-dimensional (2D) laminar jet diffusion flame in microgravity and develop a unified diffusion flame stabilization mechanism. This paper reports the recent progress in the computation and experiment performed in microgravity.
+                  - generic [ref=f1e1005]:
+                    - generic [ref=f1e1006]: 2001-05-01
+                    - generic [ref=f1e1007]: Glenn Research Center
+                    - generic [ref=f1e1008]: Takahashi, F.; Katta, V. R.
+                  - generic [ref=f1e1009]:
+                    - generic [ref=f1e1010]: NASA NTRS ID 20010074023
+                    - link "View record details" [ref=f1e1011] [cursor=pointer]:
+                      - /url: /research/20010074023
+                    - link "Sign in to save" [ref=f1e1014] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F20010074023
+                - link "Open Reaction Kernel Structure of a Slot Jet Diffusion Flame in Microgravity on NASA NTRS" [ref=f1e1017] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20010074023
+              - article [ref=f1e1021]:
+                - generic [aria-hidden] [ref=f1e1022]: "15"
+                - generic [ref=f1e1023]:
+                  - generic [ref=f1e1024]:
+                    - heading [level=4] [ref=f1e1025]:
+                      - link "Candle Flames in Microgravity" [ref=f1e1026] [cursor=pointer]:
+                        - /url: /research/19970020585
+                    - generic [ref=f1e1027]: Conference Paper
+                  - paragraph [ref=f1e1028]: This work is a study of a candle flame in a microgravity environment. The purpose of the work is to determine if a steady (or quasi-steady) flame can exist in a microgravity environment, study the characteristics of the steady flame, investigate the pre-extinction flame oscillations observed in a previous experiment in more detail, and finally, determine the nature of the interactions between two closely spaced candle flames. The candle flame is used as a model combustion system, in that in microgravity it is one of the only examples of a non-propagating, steady-state, pure diffusion flame. Others have used the candle to study a number of combustion phenomena including flame flicker, flame oscillations, electric field effects and enhanced and reduced gravitational effects in flames. The present work is a continuation of a small-scale Shuttle experiment on candle flames. That study showed that the candle flame lifetimes were on the order of 40 seconds, the flames were dim blue after a transient ignition period, and that just prior to extinction the flames oscillated spontaneously for about five seconds at a frequency of 1 Hz. The authors postulated that the gas phase in the immediate vicinity of the flame was quasi-steady. Further away from the flame, however, the assertion of a quasi-steady flame was less certain, thus the authors did not prove that a steady flame could exist. They also speculated that the short lifetime of the candle flame was due to the presence of the small, weakly perforated box that surrounded the candle. The Candle Flames in Microgravity (CFM) experiment, with revised hardware, was recently flown aboard the Mir orbiting station, and conducted inside the glovebox facility by Dr. Shannon Lucid. In addition to the purposes described above, the experiments were NASA's first ability to ascertain the merits of the Mir environment for combustion science studies. In this article, we present the results of that experiment. We are also in the process of developing a numerical model of the microgravity candle flame. The status and results of the modeling efforts to date are also presented.
+                  - generic [ref=f1e1029]:
+                    - generic [ref=f1e1030]: 1997-05-01
+                    - generic [ref=f1e1031]: Glenn Research Center
+                    - generic [ref=f1e1032]: Daniel L Dietrich; Howard D Ross; David T Frate; James S Tien; Yong Shu
+                  - generic [ref=f1e1033]:
+                    - generic [ref=f1e1034]: NASA NTRS ID 19970020585
+                    - link "View record details" [ref=f1e1035] [cursor=pointer]:
+                      - /url: /research/19970020585
+                    - link "Sign in to save" [ref=f1e1038] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F19970020585
+                - link "Open Candle Flames in Microgravity on NASA NTRS" [ref=f1e1041] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19970020585
+              - article [ref=f1e1045]:
+                - generic [aria-hidden] [ref=f1e1046]: "16"
+                - generic [ref=f1e1047]:
+                  - generic [ref=f1e1048]:
+                    - heading [level=4] [ref=f1e1049]:
+                      - link "Fifth International Microgravity Combustion Workshop" [ref=f1e1050] [cursor=pointer]:
+                        - /url: /research/19990053965
+                    - generic [ref=f1e1051]: Conference Publication (CP)
+                  - paragraph [ref=f1e1052]: On behalf of the NASA Headquarters Microgravity Research Division and the Microgravity Combustion Science Discipline Working Group, we are pleased to present these proceedings of the Fifth International Microgravity Combustion Workshop. At the time we go to press we expect to welcome to the workshop over 250 presenters and participants from U.S. academia, industry, and government; and from at least 8 international partner countries. We come together for this workshop at the beginning of the International Space Station era, where the future of microgravity combustion science programs will unfold over the next few years. As we accelerate our preparations for the ISS, this book and the growing literature base cited herein provide a summary of the accomplishments of approximately forty space-flight experiment-missions (plus nearly countless drop tests and aircraft parabolas) and a valuable resource for the new experiment ideas of the future.
+                  - generic [ref=f1e1053]:
+                    - generic [ref=f1e1054]: 1999-05-18
+                    - generic [ref=f1e1055]: Glenn Research Center
+                    - generic [ref=f1e1056]: Kurt R Sacksteder
+                  - generic [ref=f1e1057]:
+                    - generic [ref=f1e1058]: NASA NTRS ID 19990053965
+                    - link "View record details" [ref=f1e1059] [cursor=pointer]:
+                      - /url: /research/19990053965
+                    - link "Sign in to save" [ref=f1e1062] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F19990053965
+                - link "Open Fifth International Microgravity Combustion Workshop on NASA NTRS" [ref=f1e1065] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19990053965
+              - article [ref=f1e1069]:
+                - generic [aria-hidden] [ref=f1e1070]: "17"
+                - generic [ref=f1e1071]:
+                  - generic [ref=f1e1072]:
+                    - heading [level=4] [ref=f1e1073]:
+                      - link "Microgravity smoldering combustion on the USML-1 Space Shuttle mission" [ref=f1e1074] [cursor=pointer]:
+                        - /url: /research/19960008388
+                    - generic [ref=f1e1075]: Conference Paper
+                  - paragraph [ref=f1e1076]: Preliminary results from an experimental study of the smolder characteristics of a porous combustible material (flexible polyurethane foam) in normal and microgravity are presented. The experiments, limited in fuel sample size and power available for ignition, show that the smolder process was primarily controlled by heat losses from the reaction to the surrounding environment In microgravity, the reduced heat losses due to the absence of natural convection result in only slightly higher temperatures in the quiescent microgravity test than in normal gravity, but a dramatically larger production of combustion products in all microgravity tests. Particularly significant is the proportionately larger amount of carbon monoxide and light organic compounds produced in microgravity, despite comparable temperatures and similar char patterns. This excessive production of fuel-rich combustion products may be a generic characteristic of smoldering polyurethane in microgravity, with an associated increase in the toxic hazard of smolder in spacecraft.
+                  - generic [ref=f1e1077]:
+                    - generic [ref=f1e1078]: 1995-08-01
+                    - generic [ref=f1e1079]: Legacy CDMS
+                    - generic [ref=f1e1080]: Stocker, Dennis P.; Olson, Sandra L.; Torero, Jose L.; Fernandez-Pello, A. Carlos
+                  - generic [ref=f1e1081]:
+                    - generic [ref=f1e1082]: NASA NTRS ID 19960008388
+                    - link "View record details" [ref=f1e1083] [cursor=pointer]:
+                      - /url: /research/19960008388
+                    - link "Sign in to save" [ref=f1e1086] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F19960008388
+                - link "Open Microgravity smoldering combustion on the USML-1 Space Shuttle mission on NASA NTRS" [ref=f1e1089] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19960008388
+              - article [ref=f1e1093]:
+                - generic [aria-hidden] [ref=f1e1094]: "18"
+                - generic [ref=f1e1095]:
+                  - generic [ref=f1e1096]:
+                    - heading [level=4] [ref=f1e1097]:
+                      - link "Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgravity" [ref=f1e1098] [cursor=pointer]:
+                        - /url: /research/20150008962
+                    - generic [ref=f1e1099]: Conference Paper
+                  - paragraph [ref=f1e1100]: As a part of the NASA BASS and BASS-II experimental projects aboard the International Space Station, flame growth, spread and extinction over a composite cotton-fiberglass fabric blend (referred to as the SIBAL fabric) were studied in low-speed concurrent forced flows. The tests were conducted in a small flow duct within the Microgravity Science Glovebox. The fuel samples measured 1.2 and 2.2 cm wide and 10 cm long. Ambient oxygen was varied from 21% down to 16% and flow speed from 40 cm/s down to 1 cm/s. A small flame resulted at low flow, enabling us to observe the entire history of flame development including ignition, flame growth, steady spread (in some cases) and decay at the end of the sample. In addition, by decreasing flow velocity during some of the tests, low-speed flame quenching extinction limits were found as a function of oxygen percentage. The quenching speeds were found to be between 1 and 5 cm/s with higher speed in lower oxygen atmosphere. The shape of the quenching boundary supports the prediction by earlier theoretical models. These long duration microgravity experiments provide a rare opportunity for solid fuel combustion since microgravity time in ground-based facilities is generally not sufficient. This is the first time that a low-speed quenching boundary in concurrent spread is determined in a clean and unambiguous manner.
+                  - generic [ref=f1e1101]:
+                    - generic [ref=f1e1102]: 2015-05-17
+                    - generic [ref=f1e1103]: Glenn Research Center
+                    - generic [ref=f1e1104]: Zhao, Xiaoyang; T'ien, James S.; Ferkul, Paul V.; Olson, Sandra L.
+                  - generic [ref=f1e1105]:
+                    - generic [ref=f1e1106]: NASA NTRS ID 20150008962
+                    - link "View record details" [ref=f1e1107] [cursor=pointer]:
+                      - /url: /research/20150008962
+                    - link "Sign in to save" [ref=f1e1110] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F20150008962
+                - link "Open Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgravity on NASA NTRS" [ref=f1e1113] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20150008962
+              - article [ref=f1e1117]:
+                - generic [aria-hidden] [ref=f1e1118]: "19"
+                - generic [ref=f1e1119]:
+                  - generic [ref=f1e1120]:
+                    - heading [level=4] [ref=f1e1121]:
+                      - link "Radiative Ignition and the Transition to Flame Spread Investigated in the Japan Microgravity Center's 10-sec Drop Shaft" [ref=f1e1122] [cursor=pointer]:
+                        - /url: /research/20050176400
+                    - generic [ref=f1e1123]: Other
+                  - paragraph [ref=f1e1124]: The Radiative Ignition and Transition to Spread Investigation (RITSI) is a shuttle middeck Glovebox combustion experiment developed by the NASA Lewis Research Center, the National Institute for Standards and Technology (NIST), and Aerospace Design and Fabrication (ADF). It is scheduled to fly on the third United States Microgravity Payload (USMP-3) mission in February 1996. The objective of RITSI is to experimentally study radiative ignition and the subsequent transition to flame spread in low gravity in the presence of very low speed air flows in two- and three-dimensional configurations. Toward this objective, a unique collaboration between NASA, NIST, and the University of Hokkaido was established to conduct 15 science and engineering tests in Japan's 10-sec drop shaft. For these tests, the RITSI engineering hardware was mounted in a sealed chamber with a variable oxygen atmosphere. Ashless filter paper was ignited during each drop by a tungsten-halogen heat lamp focused on a small spot in the center of the paper. The flame spread outward from that point. Data recorded included fan voltage (a measure of air flow), radiant heater voltage (a measure of radiative ignition energy), and surface temperatures (measured by up to three surface thermocouples) during ignition and flame spread.
+                  - generic [ref=f1e1125]:
+                    - generic [ref=f1e1126]: 1996-03-01
+                    - generic [ref=f1e1127]: Legacy CDMS
+                  - generic [ref=f1e1128]:
+                    - generic [ref=f1e1129]: NASA NTRS ID 20050176400
+                    - link "View record details" [ref=f1e1130] [cursor=pointer]:
+                      - /url: /research/20050176400
+                    - link "Sign in to save" [ref=f1e1133] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F20050176400
+                - link "Open Radiative Ignition and the Transition to Flame Spread Investigated in the Japan Microgravity Center's 10-sec Drop Shaft on NASA NTRS" [ref=f1e1136] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20050176400
+              - article [ref=f1e1140]:
+                - generic [aria-hidden] [ref=f1e1141]: "20"
+                - generic [ref=f1e1142]:
+                  - generic [ref=f1e1143]:
+                    - heading [level=4] [ref=f1e1144]:
+                      - link "Material Ignition and Suppression Test (MIST) in Space Exploration Atmospheres, Summary of Research" [ref=f1e1145] [cursor=pointer]:
+                        - /url: /research/20150023467
+                    - generic [ref=f1e1146]: Contractor or Grantee Report
+                  - paragraph [ref=f1e1147]: "The Material Ignition and Suppression Test (MIST) project has had the objective of evaluating the ease of ignition and the fire suppression of materials used in spacecraft under environmental condition expected in a spacecraft. For this purpose, an experimental and theoretical research program is being conducted on the effect of space exploration atmospheres (SEA) on the piloted ignition of representative combustible materials, and on their fire suppression characteristics. The experimental apparatus and test methodology is derived from the Forced Ignition and Flame Spread Test (FIST), a well-developed bench scale test designed to extract material properties relevant to prediction of material flammability. In the FIST test, materials are exposed to an external radiant flux and the ignition delay and critical mass flux at ignition are determined as a function of the type of material and environmental conditions. In the original MIST design, a small-scale cylindrical flow duct with fuel samples attached to its inside wall was heated by a cylindrical heater located at the central axis of the cylinder. However, as the project evolved it was decided by NASA that it would be better to produce an experimental design that could accommodate other experiments with different experimental concepts. Based on those instructions and input from the requirements of other researchers that may share the hardware in an ISS/CIR experiment, a cylindrical design based on placing the sample at the center of an optically transparent tube with heaters equally spaced along the exterior of the cylinder was developed. Piloted ignition is attained by a hot wire igniter downstream of the fuel sample. Environment variables that can be studied via this experimental apparatus include: external radiant flux, oxidizer oxygen concentration, flow velocity, ambient pressure, and gravity level (if flown in the ISS/CIR). This constitutes the current experimental design, which maintains fairly good consistency with Dr Tien's and Dr Olson's project approaches. A further goal of the project has been to develop a combined solid/gas phase numerical model based on the MIST test methodology to predict the flammability behavior of practical materials in spacecraft."
+                  - generic [ref=f1e1148]:
+                    - generic [ref=f1e1149]: 2013-05-13
+                    - generic [ref=f1e1150]: Glenn Research Center
+                    - generic [ref=f1e1151]: Fernandez-Pello, Carlos
+                  - generic [ref=f1e1152]:
+                    - generic [ref=f1e1153]: NASA NTRS ID 20150023467
+                    - link "View record details" [ref=f1e1154] [cursor=pointer]:
+                      - /url: /research/20150023467
+                    - link "Sign in to save" [ref=f1e1157] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F20150023467
+                - link "Open Material Ignition and Suppression Test (MIST) in Space Exploration Atmospheres, Summary of Research on NASA NTRS" [ref=f1e1160] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20150023467
+            - generic "Research results pages" [ref=f1e1164]:
+              - button "Previous results page" [ref=f1e1165] [cursor=pointer]: Previous
+              - generic [ref=f1e1168]: Page 2 of 18
+              - button "Next results page" [ref=f1e1169] [cursor=pointer]: Next
+      - paragraph [ref=f1e161]: Record titles, abstracts, authors, dates, and identifiers are displayed only when returned by NASA NTRS. Search coverage is limited to the source response for the query above.
+  - button "Open Next.js Dev Tools" [ref=f1e167] [cursor=pointer]
+  - alert [ref=f1e422]

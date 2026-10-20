@@ -1,0 +1,55 @@
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - button "Open workspace navigation" [ref=f3e4] [cursor=pointer]
+      - link "FLAME IN FREEFALL home" [ref=f3e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f3e7]: FLAME
+        - generic [ref=f3e9]: IN FREEFALL
+    - complementary [aria-hidden] [ref=f3e10]:
+      - generic [ref=f3e11]:
+        - link [ref=f3e12] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f3e13]: FLAME
+          - generic [ref=f3e15]: IN FREEFALL
+        - generic [ref=f3e16]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation [ref=f3e17]:
+        - link [ref=f3e18] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f3e24]: Overview
+        - link [ref=f3e25] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+          - generic [ref=f3e29]: Research Explorer
+        - link [ref=f3e30] [cursor=pointer]:
+          - /url: /workspace/paper-library
+          - generic [ref=f3e33]: Paper Library
+        - link [ref=f3e34] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+          - generic [ref=f3e37]: AI Research Assistant
+        - link [ref=f3e38] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+          - generic [ref=f3e44]: Experiment Comparison
+        - link [ref=f3e45] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+          - generic [ref=f3e49]: Scenario Explorer
+        - link [ref=f3e50] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+          - generic [ref=f3e53]: Evidence Gaps
+        - link [ref=f3e54] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+          - generic [ref=f3e57]: Scientific Analytics
+        - link [ref=f3e58] [cursor=pointer]:
+          - /url: /workspace/collections
+          - generic [ref=f3e61]: Collections
+        - link [ref=f3e62] [cursor=pointer]:
+          - /url: /workspace/reports
+          - generic [ref=f3e66]: Reports
+        - link [ref=f3e67] [cursor=pointer]:
+          - /url: /workspace/settings
+          - generic [ref=f3e71]: Settings
+      - paragraph [ref=f3e74]: Research, with its sources in view.
+    - main [ref=f3e76]:
+      - status [ref=f3e77]:
+        - heading "Loading NASA research record" [level=1] [ref=f3e79]
+        - paragraph [ref=f3e80]: Retrieving citation 999999999999 from NASA NTRS.
+  - alert [ref=f3e81]

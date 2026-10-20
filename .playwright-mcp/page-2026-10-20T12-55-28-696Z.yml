@@ -1,0 +1,351 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - complementary [ref=f1e3]:
+      - generic [ref=f1e4]:
+        - link "FLAME IN FREEFALL home" [ref=f1e5] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f1e6]: FLAME
+          - generic [ref=f1e8]: IN FREEFALL
+        - generic [ref=f1e9]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=f1e10]:
+        - link "Overview" [ref=f1e11] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=f1e18] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=f1e23] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=f1e27] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=f1e31] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=f1e38] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=f1e43] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=f1e47] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=f1e51] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=f1e55] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=f1e60] [cursor=pointer]:
+          - /url: /workspace/settings
+      - generic [ref=f1e65]:
+        - paragraph [ref=f1e67]: Research, with its sources in view.
+        - link "Sign in to save research" [ref=f1e68] [cursor=pointer]:
+          - /url: /sign-in
+    - main [ref=f1e74]:
+      - generic [ref=f1e75]:
+        - generic [ref=f1e76]:
+          - paragraph [ref=f1e77]: NASA TECHNICAL REPORTS SERVER
+          - heading "Research Explorer" [level=1] [ref=f1e78]
+          - paragraph [ref=f1e79]: Search live NASA publication records, refine the returned metadata, and open traceable source details.
+        - generic [ref=f1e80]: LIVE SOURCE
+      - region [ref=f1e82]:
+        - heading "Search NASA Technical Reports Server research" [level=2] [ref=f1e83]
+        - search [ref=f1e84]:
+          - generic [ref=f1e88]: Search NASA research
+          - searchbox "Search NASA research" [ref=f1e89]: microgravity ignition
+          - button "Search" [ref=f1e90] [cursor=pointer]
+        - generic [ref=f1e94]:
+          - generic [ref=f1e95]: Filter by
+          - generic [ref=f1e97]:
+            - generic [ref=f1e98]: NASA document type
+            - combobox "NASA document type" [ref=f1e99] [cursor=pointer]:
+              - option "All document types" [selected]
+              - option "CONFERENCE_PAPER (110)"
+              - option "OTHER (15)"
+              - option "CONFERENCE_PROCEEDINGS (11)"
+              - option "CONTRACTOR_REPORT (9)"
+              - option "ABSTRACT (6)"
+              - option "PREPRINT (5)"
+              - option "TECHNICAL_MEMORANDUM (5)"
+              - option "PRESENTATION (4)"
+              - option "REPRINT (2)"
+              - option "CONFERENCE_PUBLICATION (1)"
+              - option "CONTRACTOR_OR_GRANTEE_REPORT (1)"
+              - option "POSTER (1)"
+              - option "THESIS_DISSERTATION (1)"
+              - option "VIDEO (1)"
+          - generic [ref=f1e100]:
+            - generic [ref=f1e101]: NASA center
+            - combobox "NASA center" [ref=f1e102] [cursor=pointer]:
+              - option "All NASA centers" [selected]
+              - option "GRC (102)"
+              - option "CDMS (55)"
+              - option "JSC (7)"
+              - option "MSFC (5)"
+              - option "HQ (3)"
+          - generic [ref=f1e103]:
+            - generic [ref=f1e104]: NASA subject category
+            - combobox "NASA subject category" [ref=f1e105] [cursor=pointer]:
+              - option "All subject categories" [selected]
+              - option "Materials Processing (35)"
+              - option "Inorganic, Organic And Physical Chemistry (30)"
+              - option "Inorganic And Physical Chemistry (26)"
+              - option "Fluid Mechanics And Thermodynamics (13)"
+              - option "Propellants And Fuels (13)"
+              - option "Inorganic, Organic and Physical Chemistry (6)"
+              - option "Space Transportation And Safety (6)"
+              - option "Astronautics (General) (5)"
+              - option "Chemistry And Materials (General) (5)"
+              - option "Space Sciences (General) (4)"
+              - option "Spacecraft Propulsion And Power (4)"
+              - option "Aeronautics (General) (3)"
+              - option "Aircraft Propulsion And Power (3)"
+              - option "Composite Materials (3)"
+              - option "Instrumentation And Photography (3)"
+              - option "Mechanical Engineering (3)"
+              - option "Space Processing (3)"
+              - option "Engineering (General) (2)"
+              - option "Nonmetallic Materials (2)"
+              - option "Spacecraft Design, Testing And Performance (2)"
+          - button "Clear filters" [disabled] [ref=f1e106]
+          - generic [ref=f1e110]: NASA Technical Reports Server
+        - generic [ref=f1e111]:
+          - region [ref=f1e112]:
+            - generic [ref=f1e114]:
+              - heading "Continue your research" [level=3] [ref=f1e115]
+              - paragraph [ref=f1e116]: Start with a source or compare the science.
+            - generic [ref=f1e117]:
+              - link "Explore NASA research Search live NTRS records" [ref=f1e118] [cursor=pointer]:
+                - /url: /workspace/research-explorer?q=microgravity%20combustion
+                - generic [ref=f1e123]:
+                  - strong [ref=f1e124]: Explore NASA research
+                  - generic [ref=f1e125]: Search live NTRS records
+              - link "Compare source records Review returned metadata side by side" [ref=f1e128] [cursor=pointer]:
+                - /url: /workspace/experiment-comparison
+                - generic [ref=f1e135]:
+                  - strong [ref=f1e136]: Compare source records
+                  - generic [ref=f1e137]: Review returned metadata side by side
+              - link "Open your Paper Library Saved records and private notes" [ref=f1e140] [cursor=pointer]:
+                - /url: /workspace/paper-library
+                - generic [ref=f1e144]:
+                  - strong [ref=f1e145]: Open your Paper Library
+                  - generic [ref=f1e146]: Saved records and private notes
+          - region [ref=f1e149]:
+            - generic [ref=f1e150]:
+              - generic [ref=f1e151]:
+                - heading "NASA research" [level=3] [ref=f1e152]
+                - paragraph [ref=f1e153]: Live publication metadata from NASA NTRS
+              - generic [ref=f1e171]:
+                - generic [ref=f1e172]: 1–10 of 172 results
+                - button "Save search" [ref=f1e173] [cursor=pointer]
+            - generic [ref=f1e154]:
+              - article [ref=f1e1172]:
+                - generic [aria-hidden] [ref=f1e1173]: "01"
+                - generic [ref=f1e1174]:
+                  - generic [ref=f1e1175]:
+                    - heading [level=4] [ref=f1e1176]:
+                      - link "Microgravity ignition experiment" [ref=f1e1177] [cursor=pointer]:
+                        - /url: /research/19940021214
+                    - generic [ref=f1e1178]: Conference Paper
+                  - paragraph [ref=f1e1179]: The purpose of this project is to develop a flight-ready apparatus of the microgravity ignition experiment for the GASCAN 2 program. The microgravity ignition experiment is designed to study how a microgravity environment affects the time to ignition of a sample of alpha-cellulose paper. A microgravity environment will result in a decrease in the heat transferred from the sample due to a lack of convection currents, which would decrease time to ignition. A lack of convection current would also cause the oxygen supply at the sample not to be renewed, which could delay or even prevent ignition. When this experiment is conducted aboard GASCAN 2, the dominant result of the lack of ignition will be determined. The experiment consists of four canisters containing four thermocouples and a sensor to detect ignition of the paper sample. This year the interior of the canister was redesigned and a mathematical model of the heat transfer around the sample was developed. This heat transfer model predicts an ignition time of approximately 5.5 seconds if the decrease of heat loss from the sample is the dominant factor of the lack of convection currents.
+                  - generic [ref=f1e1180]:
+                    - generic [ref=f1e1181]: 1992-01-01
+                    - generic [ref=f1e1182]: Legacy CDMS
+                    - generic [ref=f1e1183]: Motevalli, Vahid; Elliott, William; Garrant, Keith; Marcotte, Ryan
+                  - generic [ref=f1e1184]:
+                    - generic [ref=f1e1185]: NASA NTRS ID 19940021214
+                    - link "View record details" [ref=f1e1186] [cursor=pointer]:
+                      - /url: /research/19940021214
+                    - link "Sign in to save" [ref=f1e1189] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F19940021214
+                - link "Open Microgravity ignition experiment on NASA NTRS" [ref=f1e1192] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19940021214
+              - article [ref=f1e1196]:
+                - generic [aria-hidden] [ref=f1e1197]: "02"
+                - generic [ref=f1e1198]:
+                  - generic [ref=f1e1199]:
+                    - heading [level=4] [ref=f1e1200]:
+                      - link "Microgravity ignition experiment" [ref=f1e1201] [cursor=pointer]:
+                        - /url: /research/19930008864
+                    - generic [ref=f1e1202]: Contractor Report (CR)
+                  - paragraph [ref=f1e1203]: The purpose of this project is to develop a flight ready apparatus of the microgravity ignition experiment for the GASCan 2 program. This involved redesigning, testing, and making final modifications to the existing apparatus. The microgravity ignition experiment is intended to test the effect of microgravity on the time to ignition of a sample of alpha-cellulose paper. An infrared heat lamp is used to heat the paper sample within a sealed canister. The interior of the canister was redesigned to increase stability and minimize conductive heat transfer to the sample. This design was fabricated and tested and a heat transfer model of the paper sample was developed.
+                  - generic [ref=f1e1204]:
+                    - generic [ref=f1e1205]: 1992-01-01
+                    - generic [ref=f1e1206]: Legacy CDMS
+                    - generic [ref=f1e1207]: Motevalli, Vahid; Elliott, William; Garrant, Keith
+                  - generic [ref=f1e1208]:
+                    - generic [ref=f1e1209]: NASA NTRS ID 19930008864
+                    - link "View record details" [ref=f1e1210] [cursor=pointer]:
+                      - /url: /research/19930008864
+                    - link "Sign in to save" [ref=f1e1213] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F19930008864
+                - link "Open Microgravity ignition experiment on NASA NTRS" [ref=f1e1216] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19930008864
+              - article [ref=f1e1220]:
+                - generic [aria-hidden] [ref=f1e1221]: "03"
+                - generic [ref=f1e1222]:
+                  - generic [ref=f1e1223]:
+                    - heading [level=4] [ref=f1e1224]:
+                      - link "Ignition, Transition, Flame Spread in Multidimensional Configurations in Microgravity" [ref=f1e1225] [cursor=pointer]:
+                        - /url: /research/19970020613
+                    - generic [ref=f1e1226]: Conference Paper
+                  - paragraph [ref=f1e1227]: Ignition of solid fuels by external thermal radiation and subsequent transition to flame spread are processes that not only are of considerable scientific interest but which also have fire safety applications. A material which undergoes a momentary ignition might be tolerable but a material which permits a transition to subsequent flame spread would significantly increase the fire hazard in a spacecraft. Therefore, the limiting condition under which flame cannot spread should be calculated from a model of the transition from ignition instead of by the traditional approach based on limits to a steady flame spread model. However, although the fundamental processes involved in ignition have been suggested there have been no definitive experimental or modeling studies due to the flow motion generated by buoyancy near the heated sample surface. In this study, microgravity experiments which required longer test times such as in air and surface smoldering experiment were conducted in the space shuttle STS-75 flight; shorter experimental tests such as in 35% and 50% oxygen were conducted in the droptower in the Japan Microgravity Center, JAMIC. Their experimental data along with theoretically calculated results from solving numerically the time-dependent Navier-Stokes equations are summarized in this paper.
+                  - generic [ref=f1e1228]:
+                    - generic [ref=f1e1229]: 1997-05-01
+                    - generic [ref=f1e1230]: Glenn Research Center
+                    - generic [ref=f1e1231]: Takashi Kashiwagi; William E Mell; Kevin B McGrattan; Howard R Baum; Sandra L Olson; Osamu Fujita; Masao Kikuchi; Kenichi Ito
+                  - generic [ref=f1e1232]:
+                    - generic [ref=f1e1233]: NASA NTRS ID 19970020613
+                    - link "View record details" [ref=f1e1234] [cursor=pointer]:
+                      - /url: /research/19970020613
+                    - link "Sign in to save" [ref=f1e1237] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F19970020613
+                - link "Open Ignition, Transition, Flame Spread in Multidimensional Configurations in Microgravity on NASA NTRS" [ref=f1e1240] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19970020613
+              - article [ref=f1e1244]:
+                - generic [aria-hidden] [ref=f1e1245]: "04"
+                - generic [ref=f1e1246]:
+                  - generic [ref=f1e1247]:
+                    - heading [level=4] [ref=f1e1248]:
+                      - link "Ignition and subsequent transition to flame spread in a microgravity environment" [ref=f1e1249] [cursor=pointer]:
+                        - /url: /research/19960008418
+                    - generic [ref=f1e1250]: Conference Paper
+                  - paragraph [ref=f1e1251]: The fire safety strategy in a spacecraft is (1) to detect any fire as early as possible, (2) to keep any fire as small as possible, and (3) to extinguish any fire as quickly as possible. This suggests that a material which undergoes a momentary, localized ignition might be tolerable but a material which permits a transition to flame spread would significantly increase the fire hazard. Therefore, it is important to understand how the transition from localized ignition to flame spread occurs and what parameters significantly affect the transition. The fundamental processes involved in ignition and flame spread have been extensively studied, but they have been studied separately. Some of the steady state flame models start from ignition to reach a steady state, but since the objective of such a calculation is to obtain the steady state flame spread rate, the calculation through the transition process is made without high accuracy to save computational time. We have studied the transition from a small localized ignition at the center of a thermally thin paper in a microgravity environment. The configuration for that study was axisymmetric, but more general versions of the numerical scheme have been developed by including the effects of a slow, external flow in both two and three dimensions. By exploiting the non-buoyant nature of the flow, it is possible to achieve resolution of fractions of millimeters for 3D flow domains on the order of 10 centimeters. Because the calculations are time dependent, we can study the evolution of multiple flame fronts originating from a localized ignition source. The interaction of these fronts determines whether or not they will eventually achieve steady state spread. Most flame spread studies in microgravity consider two-dimensional flame spread initiated by ignition at one end of a sample strip with or against a slow external flow. In this configuration there is only one flame front. A more realistic scenario involves separate, oppositely directed fronts in two dimensions, or a continuous, radially directed front in three dimensions. We present here some results of both the two and three dimensional codes.
+                  - generic [ref=f1e1252]:
+                    - generic [ref=f1e1253]: 1995-08-01
+                    - generic [ref=f1e1254]: Legacy CDMS
+                    - generic [ref=f1e1255]: Kashiwagi, Takashi; Mcgrattan, Kevin; Baum, Howard
+                  - generic [ref=f1e1256]:
+                    - generic [ref=f1e1257]: NASA NTRS ID 19960008418
+                    - link "View record details" [ref=f1e1258] [cursor=pointer]:
+                      - /url: /research/19960008418
+                    - link "Sign in to save" [ref=f1e1261] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F19960008418
+                - link "Open Ignition and subsequent transition to flame spread in a microgravity environment on NASA NTRS" [ref=f1e1264] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19960008418
+              - article [ref=f1e1268]:
+                - generic [aria-hidden] [ref=f1e1269]: "05"
+                - generic [ref=f1e1270]:
+                  - generic [ref=f1e1271]:
+                    - heading [level=4] [ref=f1e1272]:
+                      - link "Theoretical Prediction of Microgravity Ignition Delay of Polymeric Fuels in Low Velocity Flows" [ref=f1e1273] [cursor=pointer]:
+                        - /url: /research/20010074015
+                    - generic [ref=f1e1274]: Conference Paper
+                  - paragraph [ref=f1e1275]: A new flammability apparatus and protocol, FIST (Forced Flow Ignition and Flame Spread Test), is under development. Based on the LIFT (Lateral Ignition and Flame Spread Test) protocol, FIST better reflects the environments expected in spacebased facilities. The final objective of the FIST research is to provide NASA with a test methodology that complements the existing protocol and provides a more comprehensive assessment of material flammability of practical materials for space applications. Theoretical modeling, an extensive normal gravity data bank and a few validation space experiments will support the testing methodology. The objective of the work presented here is to predict the ignition delay and critical heat flux for ignition of solid fuels in microgravity at airflow velocities below those induced in normal gravity. This is achieved through the application of a numerical model previously developed of piloted ignition of solid polymeric materials exposed to an external radiant heat flux. The model predictions will provide quantitative results about ignition of practical materials in the limiting conditions expected in space facilities. Experimental data of surface temperature histories and ignition delay obtained in the KC-135 aircraft are used to determine the critical pyrolysate mass flux for ignition and this value is subsequently used to predict the ignition delay and the critical heat flux for ignition of the material. Surface temperature and piloted ignition delay calculations for Polymethylmethacrylate (PMMA) and a Polypropylene/Fiberglass (PP/GL) composite were conducted under both reduced and normal gravity conditions. It was found that ignition delay times are significantly shorter at velocities below those induced by natural convection.
+                  - generic [ref=f1e1276]:
+                    - generic [ref=f1e1277]: 2001-05-01
+                    - generic [ref=f1e1278]: Glenn Research Center
+                    - generic [ref=f1e1279]: Fernandez-Pello, A. C.; Torero, J. L.; Zhou, Y. Y.; Walther, D.; Ross, H. D.
+                  - generic [ref=f1e1280]:
+                    - generic [ref=f1e1281]: NASA NTRS ID 20010074015
+                    - link "View record details" [ref=f1e1282] [cursor=pointer]:
+                      - /url: /research/20010074015
+                    - link "Sign in to save" [ref=f1e1285] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F20010074015
+                - link "Open Theoretical Prediction of Microgravity Ignition Delay of Polymeric Fuels in Low Velocity Flows on NASA NTRS" [ref=f1e1288] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20010074015
+              - article [ref=f1e1292]:
+                - generic [aria-hidden] [ref=f1e1293]: "06"
+                - generic [ref=f1e1294]:
+                  - generic [ref=f1e1295]:
+                    - heading [level=4] [ref=f1e1296]:
+                      - 'link "Flow Effects on the Flammability Diagrams of Solid Fuels: Microgravity Influence on Ignition Delay" [ref=f1e1297] [cursor=pointer]':
+                        - /url: /research/19990053973
+                    - generic [ref=f1e1298]: Conference Paper
+                  - paragraph [ref=f1e1299]: The possibility of an accidental fire in space-based facilities is a primary concern of space exploration programs. Spacecraft environments generally present low velocity air currents produced by ventilation and heating systems (of the order of 0.1 m/s), and fluctuating oxygen concentrations around that of air due to CO2 removal systems. Recent experiments of flame spread in microgravity show the spread rate to be faster and the limiting oxygen concentration lower than in normal-gravity. To date, there is not a material flammability-testing protocol that specifically addresses issues related to microgravity conditions. The present project (FIST) aims to establish a testing methodology that is suitable for the specific conditions of reduced gravity. The concepts underlying the operation of the LIFT apparatus, ASTM-E 1321-93, have been used to develop the Forced-flow Ignition and flame-Spread Test (FIST). As in the LIFT, the FIST is used to obtain the flammability diagrams of the material, i.e., graphs of ignition delay time and flame spread rate as a function of the externally applied radiant flux, but under forced flow rather than natural convection conditions, and for different oxygen concentrations. Although the flammability diagrams are similar, the flammability properties obtained with the FIST are found to depend on the flow characteristics. A research program is currently underway with the purpose of implementing the FIST as a protocol to characterize the flammability performance of solid materials to be used in microgravity facilities. To this point, tests have been performed with the FIST apparatus in both normal-gravity and microgravity conditions to determine the effects of oxidizer flow characteristics on the flammability diagrams of polymethylmethacrylate (PMMA) fuel samples. The experiments are conducted at reduced gravity in a KC- 135 aircraft following a parabolic flight trajectory that provides up to 25 seconds of low gravity. The objective of the experiments is to obtain data of ignition delay and flame spread rate at low flow velocities (0.1 to 0.2 m/s), which cannot be obtained under normal gravity because of the natural convection induced flows (approx. 0.5 m/s). Due to the limited reduced gravity time, the data can only be obtained for high radiant fluxes, and are consequently limited in scope. These tests do, however, provide insight into the flammability diagram characteristics at low velocity and reduced gravity, and also into the implications of the flow-dependence of the flammability properties under environments similar to those encountered in space facilities.
+                  - generic [ref=f1e1300]:
+                    - generic [ref=f1e1301]: 1999-05-01
+                    - generic [ref=f1e1302]: Glenn Research Center
+                    - generic [ref=f1e1303]: Cordova, J. L.; Walther, D. C.; Fernandez-Pello, A. C.; Steinhaus, T.; Torero, J. L.; Quintere, J. G.; Ross, H. D.
+                  - generic [ref=f1e1304]:
+                    - generic [ref=f1e1305]: NASA NTRS ID 19990053973
+                    - link "View record details" [ref=f1e1306] [cursor=pointer]:
+                      - /url: /research/19990053973
+                    - link "Sign in to save" [ref=f1e1309] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F19990053973
+                - 'link "Open Flow Effects on the Flammability Diagrams of Solid Fuels: Microgravity Influence on Ignition Delay on NASA NTRS" [ref=f1e1312] [cursor=pointer]':
+                  - /url: https://ntrs.nasa.gov/citations/19990053973
+              - article [ref=f1e1316]:
+                - generic [aria-hidden] [ref=f1e1317]: "07"
+                - generic [ref=f1e1318]:
+                  - generic [ref=f1e1319]:
+                    - heading [level=4] [ref=f1e1320]:
+                      - link "Multidimensional Effects on Ignition, Transition, and Flame Spread in Microgravity" [ref=f1e1321] [cursor=pointer]:
+                        - /url: /research/20010074014
+                    - generic [ref=f1e1322]: Conference Paper
+                  - paragraph [ref=f1e1323]: Localized ignition is initiated by an external radiant source at the middle of a thermally thin sample under external slow flow, simulating fire initiation in a spacecraft with a slow ventilation flow. Two ignition configurations are simulated, one across the sample surface creating a line shaped flame front (two-dimensional, 2-D, configuration) and the other a small circular ignition (three-dimensional, 3-D, configuration). Ignition, subsequent transition to simultaneously upstream and downstream flame spread, and flame growth behavior are studied experimentally and theoretically. Details of our theoretical models and numerical techniques can be found in previous publications. The effects of the sample width on the transition and subsequent flame spread, and flame spread along open edges of a thermally thin paper sample are determined. Experimental observations of flame spread phenomena were conducted in the 10 s drop tower and also on the space shuttle STS-75 flight to determine the effects of oxygen concentration and external flow velocity on flame spread rate and flame growth pattern. Finally, effects of confinement in a small test chamber on the transition and subsequent flame spread are examined. The results of these studies are briefly reported.
+                  - generic [ref=f1e1324]:
+                    - generic [ref=f1e1325]: 2001-05-01
+                    - generic [ref=f1e1326]: Glenn Research Center
+                    - generic [ref=f1e1327]: Kashiwagi, T.; Mell, W. E.; Nakamura, Y.; Olson, S. L.; Baum, H. R.; McGrattan, K. B.
+                  - generic [ref=f1e1328]:
+                    - generic [ref=f1e1329]: NASA NTRS ID 20010074014
+                    - link "View record details" [ref=f1e1330] [cursor=pointer]:
+                      - /url: /research/20010074014
+                    - link "Sign in to save" [ref=f1e1333] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F20010074014
+                - link "Open Multidimensional Effects on Ignition, Transition, and Flame Spread in Microgravity on NASA NTRS" [ref=f1e1336] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20010074014
+              - article [ref=f1e1340]:
+                - generic [aria-hidden] [ref=f1e1341]: "08"
+                - generic [ref=f1e1342]:
+                  - generic [ref=f1e1343]:
+                    - heading [level=4] [ref=f1e1344]:
+                      - link "Ignition, Transition, Flame Spread in Multidimensional Configurations in Microgravity" [ref=f1e1345] [cursor=pointer]:
+                        - /url: /research/19990054042
+                    - generic [ref=f1e1346]: Conference Paper
+                  - paragraph [ref=f1e1347]: In the inhabited quarters of orbiting spacecraft, fire is a greatly feared hazard. Thus, the fire safety strategy in a spacecraft is (1) to keep any fire as small as possible, (2) to detect any fire as early as possible, and (3) to extinguish any fire as quickly as possible. This suggests that a material which undergoes a momentary ignition might be tolerable but a material which permits a transition from a localized ignition to flame spread would significantly increase the fire hazard in a spacecraft. If the transition does not take place, fire growth does not occur. Therefore, it is critical to understand what process controls the transition. Many previous works have studied ignition and flame spread separately or were limited to a two-dimensional configuration. In this study, time-dependent phenomena of the transition over a thermally thin sample is studied experimentally and theoretically in two- and three-dimensional (2D,3D) configurations. Furthermore, localized ignition can be initiated at the center portion of thermally thin paper sample instead of at one end of the sample. Thus, the transition to flame spread could occur either toward upstream or downstream or both directions simultaneously with an external flow. In this presentation, the difference in the transition between the 3D and 2D configurations is explained with the numerically calculated data. For sufficiently narrow samples edge effects exist. Some results on this issue are presented. New analysis of the surface smoldering experiments conducted in the space shuttle STS-75 flight is also described.
+                  - generic [ref=f1e1348]:
+                    - generic [ref=f1e1349]: 1999-05-01
+                    - generic [ref=f1e1350]: Glenn Research Center
+                    - generic [ref=f1e1351]: Kashiwagi, Takashi; Mell, William E.; Baum, Howard R.; Olson, Sandra
+                  - generic [ref=f1e1352]:
+                    - generic [ref=f1e1353]: NASA NTRS ID 19990054042
+                    - link "View record details" [ref=f1e1354] [cursor=pointer]:
+                      - /url: /research/19990054042
+                    - link "Sign in to save" [ref=f1e1357] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F19990054042
+                - link "Open Ignition, Transition, Flame Spread in Multidimensional Configurations in Microgravity on NASA NTRS" [ref=f1e1360] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19990054042
+              - article [ref=f1e1364]:
+                - generic [aria-hidden] [ref=f1e1365]: "09"
+                - generic [ref=f1e1366]:
+                  - generic [ref=f1e1367]:
+                    - heading [level=4] [ref=f1e1368]:
+                      - link "Localized Ignition And Subsequent Flame Spread Over Solid Fuels In Microgravity" [ref=f1e1369] [cursor=pointer]:
+                        - /url: /research/20040053565
+                    - generic [ref=f1e1370]: Conference Paper
+                  - paragraph [ref=f1e1371]: Localized ignition is initiated by an external radiant source at the middle of a thin solid sheet under external slow flow, simulating fire initiation in a spacecraft with a slow ventilation flow. Ignition behavior, subsequent transition simultaneously to upstream and downstream flame spread, and flame growth behavior are studied theoretically and experimentally. There are two transition stages in this study; one is the first transition from the onset of the ignition to form an initial anchored flame close to the sample surface, near the ignited area. The second transition is the flame growth stage from the anchored flame to a steady fire spread state (i.e. no change in flame size or in heat release rate) or a quasi-steady state, if either exists. Observations of experimental spot ignition characteristics and of the second transition over a thermally thin paper were made to determine the effects of external flow velocity. Both transitions have been studied theoretically to determine the effects of the confinement by a relatively small test chamber, of the ignition configuration (ignition across the sample width vs spot ignition), and of the external flow velocity on the two transitions over a thermally thin paper. This study is currently extending to two new areas; one is to include a thermoplastic sample such poly(methymethacrylate), PMMA, and the other is to determine the effects of sample thickness on the transitions. The recent results of these new studies on the first transition are briefly reported.
+                  - generic [ref=f1e1372]:
+                    - generic [ref=f1e1373]: 2003-08-01
+                    - generic [ref=f1e1374]: Glenn Research Center
+                    - generic [ref=f1e1375]: Kashiwagi, T.; Nakamura, Y.; Prasad, K.; Baum, H.; Olson, S.; Fujita, O.; Nishizawa, K.; Ito, K.
+                  - generic [ref=f1e1376]:
+                    - generic [ref=f1e1377]: NASA NTRS ID 20040053565
+                    - link "View record details" [ref=f1e1378] [cursor=pointer]:
+                      - /url: /research/20040053565
+                    - link "Sign in to save" [ref=f1e1381] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F20040053565
+                - link "Open Localized Ignition And Subsequent Flame Spread Over Solid Fuels In Microgravity on NASA NTRS" [ref=f1e1384] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20040053565
+              - article [ref=f1e1388]:
+                - generic [aria-hidden] [ref=f1e1389]: "10"
+                - generic [ref=f1e1390]:
+                  - generic [ref=f1e1391]:
+                    - heading [level=4] [ref=f1e1392]:
+                      - link "Ultrasound Imaging System Implementation and Ignition Protocol for the Microgravity Smoldering Combustion (MSC) Experiments" [ref=f1e1393] [cursor=pointer]:
+                        - /url: /research/20000005011
+                    - generic [ref=f1e1394]: Conference Paper
+                  - paragraph [ref=f1e1395]: The Microgravity Smoldering Combustion (MSC) experiment is a study of the smolder characteristics of porous combustible materials in a microgravity environment. The objective of the study is to provide a better understanding of the controlling mechanisms of smolder, both in microgravity and normal earth gravity. Experiments have been conducted aboard the NASA Space Shuttle in the Get Away Special Canister (GAS-CAN), an apparatus requiring completely remote operation. Future GAS-CAN experiments will utilize an ultrasound imaging system (UIS) which has been incorporated into the MSC experimental apparatus. Thermocouples are currently used to measure temperature and reaction front velocities. A less intrusive method is desirable, however, as smolder is a very weak reaction and it has been found that heat transfer along the thermocouple is sufficient to affect the smolder reaction. It is expected that the UIS system will eventually replace the existing array of thermocouples as a non-intrusive technique without compromising data acquisition. The UIS measures line of sight permeability, providing information about the reaction front position and extent. Additionally, the ignition sequence of the MSC experiments has been optimized from previous experiments to provide longer periods of self-supported smolder. An ignition protocol of a fixed power to the igniter for a fixed time is now implemented. This, rather than a controlled temperature profile ignition protocol at the igniter surface, along with the UIS system, will allow for better study of the effect of gravity on a smolder reaction.
+                  - generic [ref=f1e1396]:
+                    - generic [ref=f1e1397]: 1999-01-01
+                    - generic [ref=f1e1398]: Legacy CDMS
+                    - generic [ref=f1e1399]: Walther, David C.; Anthenien, Ralph A.; Roslon, Mark; Fernandez-Pello, A. Carlos; Urban, David L.
+                  - generic [ref=f1e1400]:
+                    - generic [ref=f1e1401]: NASA NTRS ID 20000005011
+                    - link "View record details" [ref=f1e1402] [cursor=pointer]:
+                      - /url: /research/20000005011
+                    - link "Sign in to save" [ref=f1e1405] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F20000005011
+                - link "Open Ultrasound Imaging System Implementation and Ignition Protocol for the Microgravity Smoldering Combustion (MSC) Experiments on NASA NTRS" [ref=f1e1408] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20000005011
+            - generic "Research results pages" [ref=f1e1412]:
+              - button "Previous results page" [disabled] [ref=f1e1413]: Previous
+              - generic [ref=f1e1416]: Page 1 of 18
+              - button "Next results page" [ref=f1e1417] [cursor=pointer]: Next
+      - paragraph [ref=f1e161]: Record titles, abstracts, authors, dates, and identifiers are displayed only when returned by NASA NTRS. Search coverage is limited to the source response for the query above.
+  - button "Open Next.js Dev Tools" [ref=f1e167] [cursor=pointer]
+  - alert [ref=f1e422]

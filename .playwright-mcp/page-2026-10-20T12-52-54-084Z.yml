@@ -1,0 +1,49 @@
+- generic [active] [ref=f14e1]:
+  - banner [ref=f14e2]:
+    - generic [ref=f14e3]:
+      - link "FLAME IN FREEFALL home" [ref=f14e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f14e5]: FLAME
+        - generic [ref=f14e7]: IN FREEFALL
+      - navigation "Main navigation" [ref=f14e8]:
+        - link "About the Science" [ref=f14e9] [cursor=pointer]:
+          - /url: /about
+        - link "Research Sources" [ref=f14e10] [cursor=pointer]:
+          - /url: /sources
+        - link "Sign In" [ref=f14e11] [cursor=pointer]:
+          - /url: /sign-in
+  - main [ref=f14e12]:
+    - region [ref=f14e13]:
+      - paragraph [ref=f14e14]: FLAME IN FREEFALL · SECURE RESEARCH WORKSPACE
+      - heading "Sign in to your workspace" [level=1] [ref=f14e15]
+      - paragraph [ref=f14e16]: Your public NASA research search remains available without an account.
+      - generic [ref=f14e17]:
+        - generic [ref=f14e18]:
+          - generic [ref=f14e19]: Email address
+          - textbox "Email address" [ref=f14e20]
+        - generic [ref=f14e21]:
+          - generic [ref=f14e22]: Password
+          - textbox "Password" [ref=f14e23]
+        - button "Sign in" [ref=f14e24] [cursor=pointer]
+      - navigation "Account actions" [ref=f14e25]:
+        - link "Forgot password?" [ref=f14e26] [cursor=pointer]:
+          - /url: /forgot-password
+        - generic [ref=f14e27]:
+          - text: New to FLAME IN FREEFALL?
+          - link "Create an account" [ref=f14e28] [cursor=pointer]:
+            - /url: /sign-up
+  - contentinfo [ref=f14e29]:
+    - generic [ref=f14e30]:
+      - link "FLAME IN FREEFALL home" [ref=f14e31] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f14e32]: FLAME
+        - generic [ref=f14e34]: IN FREEFALL
+      - paragraph [ref=f14e35]: A clearer path through microgravity combustion research.
+      - navigation "Footer navigation" [ref=f14e36]:
+        - link "About the Science" [ref=f14e37] [cursor=pointer]:
+          - /url: /about
+        - link "Research Sources" [ref=f14e38] [cursor=pointer]:
+          - /url: /sources
+        - link "Sign In" [ref=f14e39] [cursor=pointer]:
+          - /url: /sign-in
+  - button "Open Next.js Dev Tools" [ref=f14e45] [cursor=pointer]

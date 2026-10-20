@@ -1,0 +1,138 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - link "FLAME IN FREEFALL home" [ref=e5] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=e6]: FLAME
+          - generic [ref=e8]: IN FREEFALL
+        - generic [ref=e9]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=e10]:
+        - link "Overview" [ref=e11] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=e18] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=e23] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=e27] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=e31] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=e38] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=e43] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=e47] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=e51] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=e55] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=e60] [cursor=pointer]:
+          - /url: /workspace/settings
+      - paragraph [ref=e67]: Research, with its sources in view.
+    - main [ref=e69]:
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - paragraph [ref=e72]: MICROGRAVITY COMBUSTION RESEARCH
+          - heading "Research overview" [level=1] [ref=e73]
+          - paragraph [ref=e74]: Discover and compare traceable source material on combustion beyond Earth.
+        - generic [ref=e75]: SOURCE PREVIEW
+      - region [ref=e77]:
+        - heading "Search curated NASA research sources" [level=2] [ref=e78]
+        - search [ref=e79]:
+          - generic [ref=e83]: Search microgravity combustion research
+          - searchbox "Search microgravity combustion research" [ref=e84]: no-matching-source
+          - button "Search" [active] [ref=e85] [cursor=pointer]
+        - generic [ref=e89]:
+          - generic [ref=e90]: Filter by
+          - generic [ref=e92]:
+            - generic [ref=e93]: Research area
+            - combobox "Research area" [ref=e94] [cursor=pointer]:
+              - option "All research areas" [selected]
+              - option "Combustion research"
+              - option "Flame structure"
+              - option "Materials flammability"
+              - option "Flame control"
+              - option "Soot and emissions"
+          - generic [ref=e95]:
+            - generic [ref=e96]: Source type
+            - combobox "Source type" [ref=e97] [cursor=pointer]:
+              - option "All source types" [selected]
+              - option "Mission overview"
+              - option "Investigation"
+          - button "Clear filters" [ref=e98] [cursor=pointer]
+          - generic [ref=e102]: Curated NASA source pages
+        - generic [ref=e103]:
+          - region [ref=e104]:
+            - generic [ref=e106]:
+              - heading "Continue your research" [level=3] [ref=e107]
+              - paragraph [ref=e108]: Start with a source or compare the science.
+            - generic [ref=e109]:
+              - link "Open the ACME overview NASA mission source" [ref=e110] [cursor=pointer]:
+                - /url: https://science.nasa.gov/mission/acme/
+                - generic [ref=e114]:
+                  - strong [ref=e115]: Open the ACME overview
+                  - generic [ref=e116]: NASA mission source
+              - link "Browse research sources Curated NASA source pages" [ref=e120] [cursor=pointer]:
+                - /url: /sources
+                - generic [ref=e125]:
+                  - strong [ref=e126]: Browse research sources
+                  - generic [ref=e127]: Curated NASA source pages
+              - link "Compare flame forms Illustrative, qualitative view" [ref=e130] [cursor=pointer]:
+                - /url: "#flame-comparison"
+                - generic [ref=e137]:
+                  - strong [ref=e138]: Compare flame forms
+                  - generic [ref=e139]: Illustrative, qualitative view
+          - region [ref=e142]:
+            - generic [ref=e143]:
+              - generic [ref=e144]:
+                - heading "Recent research" [level=3] [ref=e145]
+                - paragraph [ref=e146]: Starter source set · not a live or recency-ranked index
+              - generic [ref=e147]: 0 sources
+            - generic [ref=e281]:
+              - generic [ref=e286]:
+                - heading "No source pages match these filters" [level=4] [ref=e287]
+                - paragraph [ref=e288]: This curated set is limited. No matching record does not mean there is no evidence.
+              - button "Clear filters" [ref=e289] [cursor=pointer]
+            - status [ref=e208]: Research source list updated.
+      - region [ref=e210]:
+        - generic [ref=e211]:
+          - generic [ref=e212]:
+            - paragraph [ref=e213]: THE ROLE OF GRAVITY
+            - heading "Flame morphology comparison" [level=2] [ref=e214]
+          - generic [ref=e215]: Illustrative visualization
+        - paragraph [ref=e217]: On Earth, gravity-driven buoyant convection shapes a candle flame into a teardrop and carries soot toward its tip. In microgravity, with convective flows absent, NASA describes a spherical, soot-free, blue flame.
+        - group "Qualitative flame shape comparison" [ref=e218]:
+          - figure "On Earth Buoyancy-driven flow shapes an elongated flame." [ref=e219]:
+            - img "Qualitative teardrop-shaped flame schematic" [ref=e221]
+            - generic [ref=e226]:
+              - generic [ref=e227]: On Earth
+              - generic [ref=e228]: Buoyancy-driven flow shapes an elongated flame.
+          - generic [ref=e230]: Reduced buoyancy
+          - figure "In microgravity NASA describes a spherical, soot-free, blue flame." [ref=e231]:
+            - img "Qualitative spherical flame schematic" [ref=e233]
+            - generic [ref=e238]:
+              - generic [ref=e239]: In microgravity
+              - generic [ref=e240]: NASA describes a spherical, soot-free, blue flame.
+        - paragraph [ref=e241]:
+          - text: Qualitative schematic, not to scale and not a plot of experimental measurements.
+          - link "Read the NASA source" [ref=e242] [cursor=pointer]:
+            - /url: https://science.nasa.gov/image-detail/candle-flames-3/
+      - region "Published evidence and AI interpretation" [ref=e246]:
+        - article [ref=e247]:
+          - generic [ref=e249]:
+            - paragraph [ref=e250]: PUBLISHED EVIDENCE
+            - heading "Source statement" [level=3] [ref=e251]
+            - paragraph [ref=e252]: NASA describes the Earth candle flame as teardrop-shaped under buoyant convection, and the microgravity flame as spherical, soot-free, and blue.
+            - link "Inspect the NASA source" [ref=e253] [cursor=pointer]:
+              - /url: https://science.nasa.gov/image-detail/candle-flames-3/
+            - generic [ref=e257]: Faithful summary of the linked source page.
+        - article [ref=e258]:
+          - generic [ref=e260]:
+            - paragraph [ref=e261]: AI INTERPRETATION
+            - heading "Analysis is not connected" [level=3] [ref=e262]
+            - paragraph [ref=e263]: No generated scientific interpretation is shown in this milestone. Future synthesis will identify supporting evidence and link back to each source.
+            - generic [ref=e264]: Unavailable in this preview
+      - paragraph [ref=e265]: This preview is a curated set of NASA Science pages, not a complete research index. Source descriptions link to their original records.
+  - alert [ref=e266]

@@ -1,0 +1,317 @@
+- generic [active] [ref=f6e1]:
+  - generic [ref=f6e2]:
+    - complementary [ref=f6e3]:
+      - generic [ref=f6e4]:
+        - link "FLAME IN FREEFALL home" [ref=f6e5] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f6e6]: FLAME
+        - generic [ref=f6e7]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=f6e8]:
+        - link "Overview" [ref=f6e9] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=f6e16] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=f6e21] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=f6e25] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=f6e29] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=f6e36] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=f6e41] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=f6e45] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=f6e49] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=f6e53] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=f6e58] [cursor=pointer]:
+          - /url: /workspace/settings
+      - generic [ref=f6e63]:
+        - paragraph: Research, with its sources in view.
+        - link "Sign in to save research" [ref=f6e65] [cursor=pointer]:
+          - /url: /sign-in
+    - main [ref=f6e71]:
+      - generic [ref=f6e72]:
+        - generic [ref=f6e73]:
+          - paragraph [ref=f6e74]: FLAME IN FREEFALL · RESEARCH WORKSPACE
+          - heading "Scientific Analytics" [level=1] [ref=f6e75]
+          - paragraph [ref=f6e76]: Explore source-backed publication metadata. The available NTRS metadata does not provide a structured measurement corpus.
+        - generic [ref=f6e77]: NTRS METADATA
+      - generic [ref=f6e79]:
+        - region [ref=f6e80]:
+          - generic [ref=f6e81]:
+            - generic [ref=f6e82]:
+              - paragraph [ref=f6e83]: LIVE CORPUS QUERY
+              - heading "Analyze returned record metadata" [level=2] [ref=f6e84]
+              - paragraph [ref=f6e85]: View publication metadata distributions from one reproducible NTRS query. No experimental measurements are inferred.
+            - generic [ref=f6e86]: NASA NTRS
+          - search [ref=f6e88]:
+            - generic [ref=f6e89]: Research query
+            - generic [ref=f6e90]:
+              - textbox "Research query" [ref=f6e94]:
+                - /placeholder: Search microgravity combustion research
+                - text: microgravity combustion
+              - button "Run metadata analysis" [ref=f6e95] [cursor=pointer]
+            - generic [ref=f6e96]: Search is limited to records returned by NASA NTRS for this query.
+          - status [ref=f6e107]: NASA NTRS returned 1,076 records for “microgravity combustion”. This view inspected 100 records from one result page.
+        - region [ref=f6e108]:
+          - generic [ref=f6e109]:
+            - generic [ref=f6e110]:
+              - paragraph [ref=f6e111]: DATA LIMITS
+              - heading "Metadata coverage" [level=2] [ref=f6e112]
+              - paragraph [ref=f6e113]: Counts below use the records returned in the inspected page, not the full reported result total.
+            - generic [ref=f6e114]: n = 100
+          - generic [ref=f6e115]:
+            - table [ref=f6e116]:
+              - rowgroup [ref=f6e117]:
+                - row [ref=f6e118]:
+                  - columnheader "Metadata field" [ref=f6e119]
+                  - columnheader "Returned" [ref=f6e120]
+                  - columnheader "Not returned" [ref=f6e121]
+              - rowgroup [ref=f6e122]:
+                - row [ref=f6e123]:
+                  - rowheader "Abstract" [ref=f6e124]
+                  - cell "100 / 100" [ref=f6e125]
+                  - cell "0 / 100" [ref=f6e126]
+                - row [ref=f6e127]:
+                  - rowheader "Author names" [ref=f6e128]
+                  - cell "97 / 100" [ref=f6e129]
+                  - cell "3 / 100" [ref=f6e130]
+                - row [ref=f6e131]:
+                  - rowheader "Publication date" [ref=f6e132]
+                  - cell "96 / 100" [ref=f6e133]
+                  - cell "4 / 100" [ref=f6e134]
+                - row [ref=f6e135]:
+                  - rowheader "Document type" [ref=f6e136]
+                  - cell "100 / 100" [ref=f6e137]
+                  - cell "0 / 100" [ref=f6e138]
+                - row [ref=f6e139]:
+                  - rowheader "NASA center" [ref=f6e140]
+                  - cell "100 / 100" [ref=f6e141]
+                  - cell "0 / 100" [ref=f6e142]
+                - row [ref=f6e143]:
+                  - rowheader "DOI" [ref=f6e144]
+                  - cell "0 / 100" [ref=f6e145]
+                  - cell "100 / 100" [ref=f6e146]
+                - row [ref=f6e147]:
+                  - rowheader "Subject categories" [ref=f6e148]
+                  - cell "100 / 100" [ref=f6e149]
+                  - cell "0 / 100" [ref=f6e150]
+            - paragraph [ref=f6e151]: This coverage summary describes only these 100 returned records. It does not measure all published research or prove that an unreturned field is absent from a paper.
+        - generic [ref=f6e152]:
+          - figure [ref=f6e154]:
+            - generic [ref=f6e155]:
+              - heading "Document type" [level=3] [ref=f6e156]
+              - paragraph [ref=f6e157]: Counts among 100 records returned for the current query.
+            - list [ref=f6e158]:
+              - listitem [ref=f6e159]:
+                - generic [ref=f6e160]: Conference Paper
+                - generic [ref=f6e163]: "77"
+              - listitem [ref=f6e164]:
+                - generic [ref=f6e165]: Conference Proceedings
+                - generic [ref=f6e168]: "6"
+              - listitem [ref=f6e169]:
+                - generic [ref=f6e170]: Technical Memorandum (TM)
+                - generic [ref=f6e173]: "5"
+              - listitem [ref=f6e174]:
+                - generic [ref=f6e175]: Presentation
+                - generic [ref=f6e178]: "4"
+              - listitem [ref=f6e179]:
+                - generic [ref=f6e180]: Poster
+                - generic [ref=f6e183]: "2"
+              - listitem [ref=f6e184]:
+                - generic [ref=f6e185]: Abstract
+                - generic [ref=f6e188]: "1"
+              - listitem [ref=f6e189]:
+                - generic [ref=f6e190]: Conference Publication (CP)
+                - generic [ref=f6e193]: "1"
+              - listitem [ref=f6e194]:
+                - generic [ref=f6e195]: Other
+                - generic [ref=f6e198]: "1"
+              - listitem [ref=f6e199]:
+                - generic [ref=f6e200]: Other - NASA Tech Brief
+                - generic [ref=f6e203]: "1"
+              - listitem [ref=f6e204]:
+                - generic [ref=f6e205]: Preprint (Draft being sent to journal)
+                - generic [ref=f6e208]: "1"
+              - listitem [ref=f6e209]:
+                - generic [ref=f6e210]: Reprint (Version printed in journal)
+                - generic [ref=f6e213]: "1"
+            - table [ref=f6e214]:
+              - caption [ref=f6e215]: Document type data
+              - rowgroup [ref=f6e216]:
+                - row [ref=f6e217]:
+                  - columnheader "Category" [ref=f6e218]
+                  - columnheader "Record count" [ref=f6e219]
+              - rowgroup [ref=f6e220]:
+                - row [ref=f6e221]:
+                  - rowheader "Conference Paper" [ref=f6e222]
+                  - cell "77" [ref=f6e223]
+                - row [ref=f6e224]:
+                  - rowheader "Conference Proceedings" [ref=f6e225]
+                  - cell "6" [ref=f6e226]
+                - row [ref=f6e227]:
+                  - rowheader "Technical Memorandum (TM)" [ref=f6e228]
+                  - cell "5" [ref=f6e229]
+                - row [ref=f6e230]:
+                  - rowheader "Presentation" [ref=f6e231]
+                  - cell "4" [ref=f6e232]
+                - row [ref=f6e233]:
+                  - rowheader "Poster" [ref=f6e234]
+                  - cell "2" [ref=f6e235]
+                - row [ref=f6e236]:
+                  - rowheader "Abstract" [ref=f6e237]
+                  - cell "1" [ref=f6e238]
+                - row [ref=f6e239]:
+                  - rowheader "Conference Publication (CP)" [ref=f6e240]
+                  - cell "1" [ref=f6e241]
+                - row [ref=f6e242]:
+                  - rowheader "Other" [ref=f6e243]
+                  - cell "1" [ref=f6e244]
+                - row [ref=f6e245]:
+                  - rowheader "Other - NASA Tech Brief" [ref=f6e246]
+                  - cell "1" [ref=f6e247]
+                - row [ref=f6e248]:
+                  - rowheader "Preprint (Draft being sent to journal)" [ref=f6e249]
+                  - cell "1" [ref=f6e250]
+                - row [ref=f6e251]:
+                  - rowheader "Reprint (Version printed in journal)" [ref=f6e252]
+                  - cell "1" [ref=f6e253]
+          - figure [ref=f6e255]:
+            - generic [ref=f6e256]:
+              - heading "Publication year" [level=3] [ref=f6e257]
+              - paragraph [ref=f6e258]: Counts among 100 records returned for the current query.
+            - list [ref=f6e259]:
+              - listitem [ref=f6e260]:
+                - generic [ref=f6e261]: "1997"
+                - generic [ref=f6e264]: "19"
+              - listitem [ref=f6e265]:
+                - generic [ref=f6e266]: "1995"
+                - generic [ref=f6e269]: "14"
+              - listitem [ref=f6e270]:
+                - generic [ref=f6e271]: "1999"
+                - generic [ref=f6e274]: "13"
+              - listitem [ref=f6e275]:
+                - generic [ref=f6e276]: "2001"
+                - generic [ref=f6e279]: "13"
+              - listitem [ref=f6e280]:
+                - generic [ref=f6e281]: "1993"
+                - generic [ref=f6e284]: "12"
+              - listitem [ref=f6e285]:
+                - generic [ref=f6e286]: "2003"
+                - generic [ref=f6e289]: "6"
+              - listitem [ref=f6e290]:
+                - generic [ref=f6e291]: "2014"
+                - generic [ref=f6e294]: "4"
+              - listitem [ref=f6e295]:
+                - generic [ref=f6e296]: Not provided by NASA NTRS
+                - generic [ref=f6e299]: "4"
+              - listitem [ref=f6e300]:
+                - generic [ref=f6e301]: "1988"
+                - generic [ref=f6e304]: "2"
+              - listitem [ref=f6e305]:
+                - generic [ref=f6e306]: "1989"
+                - generic [ref=f6e309]: "2"
+              - listitem [ref=f6e310]:
+                - generic [ref=f6e311]: "2002"
+                - generic [ref=f6e314]: "2"
+              - listitem [ref=f6e315]:
+                - generic [ref=f6e316]: "1983"
+                - generic [ref=f6e319]: "1"
+              - listitem [ref=f6e320]:
+                - generic [ref=f6e321]: "1990"
+                - generic [ref=f6e324]: "1"
+              - listitem [ref=f6e325]:
+                - generic [ref=f6e326]: "1991"
+                - generic [ref=f6e329]: "1"
+              - listitem [ref=f6e330]:
+                - generic [ref=f6e331]: "1992"
+                - generic [ref=f6e334]: "1"
+              - listitem [ref=f6e335]:
+                - generic [ref=f6e336]: "1994"
+                - generic [ref=f6e339]: "1"
+              - listitem [ref=f6e340]:
+                - generic [ref=f6e341]: "1996"
+                - generic [ref=f6e344]: "1"
+              - listitem [ref=f6e345]:
+                - generic [ref=f6e346]: "2007"
+                - generic [ref=f6e349]: "1"
+              - listitem [ref=f6e350]:
+                - generic [ref=f6e351]: "2015"
+                - generic [ref=f6e354]: "1"
+              - listitem [ref=f6e355]:
+                - generic [ref=f6e356]: "2017"
+                - generic [ref=f6e359]: "1"
+            - table [ref=f6e360]:
+              - caption [ref=f6e361]: Publication year data
+              - rowgroup [ref=f6e362]:
+                - row [ref=f6e363]:
+                  - columnheader "Category" [ref=f6e364]
+                  - columnheader "Record count" [ref=f6e365]
+              - rowgroup [ref=f6e366]:
+                - row [ref=f6e367]:
+                  - rowheader "1997" [ref=f6e368]
+                  - cell "19" [ref=f6e369]
+                - row [ref=f6e370]:
+                  - rowheader "1995" [ref=f6e371]
+                  - cell "14" [ref=f6e372]
+                - row [ref=f6e373]:
+                  - rowheader "1999" [ref=f6e374]
+                  - cell "13" [ref=f6e375]
+                - row [ref=f6e376]:
+                  - rowheader "2001" [ref=f6e377]
+                  - cell "13" [ref=f6e378]
+                - row [ref=f6e379]:
+                  - rowheader "1993" [ref=f6e380]
+                  - cell "12" [ref=f6e381]
+                - row [ref=f6e382]:
+                  - rowheader "2003" [ref=f6e383]
+                  - cell "6" [ref=f6e384]
+                - row [ref=f6e385]:
+                  - rowheader "2014" [ref=f6e386]
+                  - cell "4" [ref=f6e387]
+                - row [ref=f6e388]:
+                  - rowheader "Not provided by NASA NTRS" [ref=f6e389]
+                  - cell "4" [ref=f6e390]
+                - row [ref=f6e391]:
+                  - rowheader "1988" [ref=f6e392]
+                  - cell "2" [ref=f6e393]
+                - row [ref=f6e394]:
+                  - rowheader "1989" [ref=f6e395]
+                  - cell "2" [ref=f6e396]
+                - row [ref=f6e397]:
+                  - rowheader "2002" [ref=f6e398]
+                  - cell "2" [ref=f6e399]
+                - row [ref=f6e400]:
+                  - rowheader "1983" [ref=f6e401]
+                  - cell "1" [ref=f6e402]
+                - row [ref=f6e403]:
+                  - rowheader "1990" [ref=f6e404]
+                  - cell "1" [ref=f6e405]
+                - row [ref=f6e406]:
+                  - rowheader "1991" [ref=f6e407]
+                  - cell "1" [ref=f6e408]
+                - row [ref=f6e409]:
+                  - rowheader "1992" [ref=f6e410]
+                  - cell "1" [ref=f6e411]
+                - row [ref=f6e412]:
+                  - rowheader "1994" [ref=f6e413]
+                  - cell "1" [ref=f6e414]
+                - row [ref=f6e415]:
+                  - rowheader "1996" [ref=f6e416]
+                  - cell "1" [ref=f6e417]
+                - row [ref=f6e418]:
+                  - rowheader "2007" [ref=f6e419]
+                  - cell "1" [ref=f6e420]
+                - row [ref=f6e421]:
+                  - rowheader "2015" [ref=f6e422]
+                  - cell "1" [ref=f6e423]
+                - row [ref=f6e424]:
+                  - rowheader "2017" [ref=f6e425]
+                  - cell "1" [ref=f6e426]
+        - paragraph [ref=f6e427]: These summaries describe NTRS record metadata for the query shown. The available metadata does not include a structured, comparable set of experimental measurements, so no scientific outcome chart is produced.
+  - button "Open Next.js Dev Tools" [ref=f6e102] [cursor=pointer]
+  - alert [ref=f6e106]

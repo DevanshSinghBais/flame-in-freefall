@@ -1,0 +1,289 @@
+- generic [active] [ref=f10e1]:
+  - generic [ref=f10e2]:
+    - complementary [ref=f10e3]:
+      - generic [ref=f10e4]:
+        - link "FLAME IN FREEFALL home" [ref=f10e5] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=f10e6]: FLAME
+          - generic [ref=f10e8]: IN FREEFALL
+        - generic [ref=f10e9]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation "Workspace navigation" [ref=f10e10]:
+        - link "Overview" [ref=f10e11] [cursor=pointer]:
+          - /url: /workspace/overview
+        - link "Research Explorer" [ref=f10e18] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+        - link "Paper Library" [ref=f10e23] [cursor=pointer]:
+          - /url: /workspace/paper-library
+        - link "AI Research Assistant" [ref=f10e27] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+        - link "Experiment Comparison" [ref=f10e31] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+        - link "Scenario Explorer" [ref=f10e38] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+        - link "Evidence Gaps" [ref=f10e43] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+        - link "Scientific Analytics" [ref=f10e47] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+        - link "Collections" [ref=f10e51] [cursor=pointer]:
+          - /url: /workspace/collections
+        - link "Reports" [ref=f10e55] [cursor=pointer]:
+          - /url: /workspace/reports
+        - link "Settings" [ref=f10e60] [cursor=pointer]:
+          - /url: /workspace/settings
+      - generic [ref=f10e65]:
+        - paragraph [ref=f10e67]: Research, with its sources in view.
+        - link "Sign in to save research" [ref=f10e68] [cursor=pointer]:
+          - /url: /sign-in
+    - main [ref=f10e74]:
+      - generic [ref=f10e75]:
+        - generic [ref=f10e76]:
+          - paragraph [ref=f10e77]: FLAME IN FREEFALL · RESEARCH WORKSPACE
+          - heading "Evidence Gaps" [level=1] [ref=f10e78]
+          - paragraph [ref=f10e79]: Inspect the metadata returned for a bounded NASA NTRS query and see what this response does not contain.
+        - generic [ref=f10e80]: QUERY COVERAGE
+      - generic [ref=f10e82]:
+        - region [ref=f10e83]:
+          - generic [ref=f10e84]:
+            - generic [ref=f10e85]:
+              - paragraph [ref=f10e86]: LIVE CORPUS QUERY
+              - heading "Inspect metadata coverage" [level=2] [ref=f10e87]
+              - paragraph [ref=f10e88]: Check which metadata fields NASA returned for a bounded search sample. This is not a literature review.
+            - generic [ref=f10e89]: NASA NTRS
+          - search [ref=f10e91]:
+            - generic [ref=f10e92]: Research query
+            - generic [ref=f10e93]:
+              - textbox "Research query" [ref=f10e97]:
+                - /placeholder: Search microgravity combustion research
+                - text: microgravity combustion
+              - button "Inspect coverage" [ref=f10e98] [cursor=pointer]
+            - generic [ref=f10e99]: Search is limited to records returned by NASA NTRS for this query.
+          - status [ref=f10e110]: NASA NTRS returned 1,076 records for “microgravity combustion”. This view inspected 50 records from one result page.
+        - region [ref=f10e111]:
+          - generic [ref=f10e112]:
+            - generic [ref=f10e113]:
+              - paragraph [ref=f10e114]: OBSERVED RESPONSE FIELDS
+              - heading "Metadata availability in this sample" [level=2] [ref=f10e115]
+            - generic [ref=f10e116]: n = 50
+          - generic [ref=f10e117]:
+            - table [ref=f10e118]:
+              - rowgroup [ref=f10e119]:
+                - row [ref=f10e120]:
+                  - columnheader "Metadata field" [ref=f10e121]
+                  - columnheader "Returned" [ref=f10e122]
+                  - columnheader "Not returned" [ref=f10e123]
+              - rowgroup [ref=f10e124]:
+                - row [ref=f10e125]:
+                  - rowheader "Abstract" [ref=f10e126]
+                  - cell "50 / 50" [ref=f10e127]
+                  - cell "0 / 50" [ref=f10e128]
+                - row [ref=f10e129]:
+                  - rowheader "Author names" [ref=f10e130]
+                  - cell "48 / 50" [ref=f10e131]
+                  - cell "2 / 50" [ref=f10e132]
+                - row [ref=f10e133]:
+                  - rowheader "Publication date" [ref=f10e134]
+                  - cell "49 / 50" [ref=f10e135]
+                  - cell "1 / 50" [ref=f10e136]
+                - row [ref=f10e137]:
+                  - rowheader "Document type" [ref=f10e138]
+                  - cell "50 / 50" [ref=f10e139]
+                  - cell "0 / 50" [ref=f10e140]
+                - row [ref=f10e141]:
+                  - rowheader "NASA center" [ref=f10e142]
+                  - cell "50 / 50" [ref=f10e143]
+                  - cell "0 / 50" [ref=f10e144]
+                - row [ref=f10e145]:
+                  - rowheader "DOI" [ref=f10e146]
+                  - cell "0 / 50" [ref=f10e147]
+                  - cell "50 / 50" [ref=f10e148]
+                - row [ref=f10e149]:
+                  - rowheader "Subject categories" [ref=f10e150]
+                  - cell "50 / 50" [ref=f10e151]
+                  - cell "0 / 50" [ref=f10e152]
+            - paragraph [ref=f10e153]: This coverage summary describes only these 50 returned records. It does not measure all published research or prove that an unreturned field is absent from a paper.
+        - region [ref=f10e154]:
+          - generic [ref=f10e156]:
+            - paragraph [ref=f10e157]: SOURCE SCOPE
+            - heading "Records inspected" [level=2] [ref=f10e158]
+            - paragraph [ref=f10e159]: Open a NASA source record to review the publication itself.
+          - list [ref=f10e160]:
+            - listitem [ref=f10e161]:
+              - generic [ref=f10e162]:
+                - paragraph [ref=f10e163]:
+                  - generic [ref=f10e164]: NASA NTRS ID 20150023100
+                  - generic [ref=f10e165]: 2015-10-20
+                - heading [level=3] [ref=f10e166]:
+                  - link "NASA Microgravity Combustion Program" [ref=f10e167] [cursor=pointer]:
+                    - /url: /research/20150023100
+                - generic [ref=f10e168]:
+                  - generic [ref=f10e169]: NASA NTRS ID 20150023100
+                  - generic [ref=f10e170]: Presentation
+                  - generic [ref=f10e171]: 2015-10-20
+                  - generic [ref=f10e172]: Glenn Research Center
+              - link "Open NASA Microgravity Combustion Program on NASA NTRS" [ref=f10e173] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/citations/20150023100
+            - listitem [ref=f10e177]:
+              - generic [ref=f10e178]:
+                - paragraph [ref=f10e179]:
+                  - generic [ref=f10e180]: NASA NTRS ID 19970020547
+                  - generic [ref=f10e181]: 1997-05-01
+                - heading [level=3] [ref=f10e182]:
+                  - link "Fourth International Microgravity Combustion Workshop" [ref=f10e183] [cursor=pointer]:
+                    - /url: /research/19970020547
+                - generic [ref=f10e184]:
+                  - generic [ref=f10e185]: NASA NTRS ID 19970020547
+                  - generic [ref=f10e186]: Conference Proceedings
+                  - generic [ref=f10e187]: 1997-05-01
+                  - generic [ref=f10e188]: Glenn Research Center
+              - link "Open Fourth International Microgravity Combustion Workshop on NASA NTRS" [ref=f10e189] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/citations/19970020547
+            - listitem [ref=f10e193]:
+              - generic [ref=f10e194]:
+                - paragraph [ref=f10e195]:
+                  - generic [ref=f10e196]: NASA NTRS ID 19990053965
+                  - generic [ref=f10e197]: 1999-05-18
+                - heading [level=3] [ref=f10e198]:
+                  - link "Fifth International Microgravity Combustion Workshop" [ref=f10e199] [cursor=pointer]:
+                    - /url: /research/19990053965
+                - generic [ref=f10e200]:
+                  - generic [ref=f10e201]: NASA NTRS ID 19990053965
+                  - generic [ref=f10e202]: Conference Publication (CP)
+                  - generic [ref=f10e203]: 1999-05-18
+                  - generic [ref=f10e204]: Glenn Research Center
+              - link "Open Fifth International Microgravity Combustion Workshop on NASA NTRS" [ref=f10e205] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/citations/19990053965
+            - listitem [ref=f10e209]:
+              - generic [ref=f10e210]:
+                - paragraph [ref=f10e211]:
+                  - generic [ref=f10e212]: NASA NTRS ID 19970020606
+                  - generic [ref=f10e213]: 1997-05-01
+                - heading [level=3] [ref=f10e214]:
+                  - link "Smoldering Combustion Experiments in Microgravity" [ref=f10e215] [cursor=pointer]:
+                    - /url: /research/19970020606
+                - generic [ref=f10e216]:
+                  - generic [ref=f10e217]: NASA NTRS ID 19970020606
+                  - generic [ref=f10e218]: Conference Paper
+                  - generic [ref=f10e219]: 1997-05-01
+                  - generic [ref=f10e220]: Glenn Research Center
+              - link "Open Smoldering Combustion Experiments in Microgravity on NASA NTRS" [ref=f10e221] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/citations/19970020606
+            - listitem [ref=f10e225]:
+              - generic [ref=f10e226]:
+                - paragraph [ref=f10e227]:
+                  - generic [ref=f10e228]: NASA NTRS ID 19990054030
+                  - generic [ref=f10e229]: 1999-05-01
+                - heading [level=3] [ref=f10e230]:
+                  - link "Combustion of Interacting Droplet Arrays in a Microgravity Environment" [ref=f10e231] [cursor=pointer]:
+                    - /url: /research/19990054030
+                - generic [ref=f10e232]:
+                  - generic [ref=f10e233]: NASA NTRS ID 19990054030
+                  - generic [ref=f10e234]: Conference Paper
+                  - generic [ref=f10e235]: 1999-05-01
+                  - generic [ref=f10e236]: Glenn Research Center
+              - link "Open Combustion of Interacting Droplet Arrays in a Microgravity Environment on NASA NTRS" [ref=f10e237] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/citations/19990054030
+            - listitem [ref=f10e241]:
+              - generic [ref=f10e242]:
+                - paragraph [ref=f10e243]:
+                  - generic [ref=f10e244]: NASA NTRS ID 19990053966
+                  - generic [ref=f10e245]: 1999-05-18
+                - heading [level=3] [ref=f10e246]:
+                  - link "NASA Microgravity Combustion Science Program" [ref=f10e247] [cursor=pointer]:
+                    - /url: /research/19990053966
+                - generic [ref=f10e248]:
+                  - generic [ref=f10e249]: NASA NTRS ID 19990053966
+                  - generic [ref=f10e250]: Conference Paper
+                  - generic [ref=f10e251]: 1999-05-18
+                  - generic [ref=f10e252]: Glenn Research Center
+              - link "Open NASA Microgravity Combustion Science Program on NASA NTRS" [ref=f10e253] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/citations/19990053966
+            - listitem [ref=f10e257]:
+              - generic [ref=f10e258]:
+                - paragraph [ref=f10e259]:
+                  - generic [ref=f10e260]: NASA NTRS ID 19970020548
+                  - generic [ref=f10e261]: 1997-05-01
+                - heading [level=3] [ref=f10e262]:
+                  - link "NASA Microgravity Combustion Science Program" [ref=f10e263] [cursor=pointer]:
+                    - /url: /research/19970020548
+                - generic [ref=f10e264]:
+                  - generic [ref=f10e265]: NASA NTRS ID 19970020548
+                  - generic [ref=f10e266]: Conference Paper
+                  - generic [ref=f10e267]: 1997-05-01
+                  - generic [ref=f10e268]: Headquarters
+              - link "Open NASA Microgravity Combustion Science Program on NASA NTRS" [ref=f10e269] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/citations/19970020548
+            - listitem [ref=f10e273]:
+              - generic [ref=f10e274]:
+                - paragraph [ref=f10e275]:
+                  - generic [ref=f10e276]: NASA NTRS ID 20010073993
+                  - generic [ref=f10e277]: 2001-05-01
+                - heading [level=3] [ref=f10e278]:
+                  - link "Sixth International Microgravity Combustion Workshop" [ref=f10e279] [cursor=pointer]:
+                    - /url: /research/20010073993
+                - generic [ref=f10e280]:
+                  - generic [ref=f10e281]: NASA NTRS ID 20010073993
+                  - generic [ref=f10e282]: Conference Proceedings
+                  - generic [ref=f10e283]: 2001-05-01
+                  - generic [ref=f10e284]: Glenn Research Center
+              - link "Open Sixth International Microgravity Combustion Workshop on NASA NTRS" [ref=f10e285] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/citations/20010073993
+            - listitem [ref=f10e289]:
+              - generic [ref=f10e290]:
+                - paragraph [ref=f10e291]:
+                  - generic [ref=f10e292]: NASA NTRS ID 20210015913
+                - heading [level=3] [ref=f10e293]:
+                  - link "Advanced Combustion via Microgravity Experiments (ACME) on the International Space Station (ISS)" [ref=f10e294] [cursor=pointer]:
+                    - /url: /research/20210015913
+                - generic [ref=f10e295]:
+                  - generic [ref=f10e296]: NASA NTRS ID 20210015913
+                  - generic [ref=f10e297]: Poster
+                  - generic [ref=f10e298]: Glenn Research Center
+              - link "Open Advanced Combustion via Microgravity Experiments (ACME) on the International Space Station (ISS) on NASA NTRS" [ref=f10e299] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/citations/20210015913
+            - listitem [ref=f10e303]:
+              - generic [ref=f10e304]:
+                - paragraph [ref=f10e305]:
+                  - generic [ref=f10e306]: NASA NTRS ID 20010074042
+                  - generic [ref=f10e307]: 2001-05-01
+                - heading [level=3] [ref=f10e308]:
+                  - link "Combustion of Interacting Droplet Arrays in a Microgravity Environment" [ref=f10e309] [cursor=pointer]:
+                    - /url: /research/20010074042
+                - generic [ref=f10e310]:
+                  - generic [ref=f10e311]: NASA NTRS ID 20010074042
+                  - generic [ref=f10e312]: Conference Paper
+                  - generic [ref=f10e313]: 2001-05-01
+                  - generic [ref=f10e314]: Glenn Research Center
+              - link "Open Combustion of Interacting Droplet Arrays in a Microgravity Environment on NASA NTRS" [ref=f10e315] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/citations/20010074042
+            - listitem [ref=f10e319]:
+              - generic [ref=f10e320]:
+                - paragraph [ref=f10e321]:
+                  - generic [ref=f10e322]: NASA NTRS ID 19970020591
+                  - generic [ref=f10e323]: 1997-05-01
+                - heading [level=3] [ref=f10e324]:
+                  - link "Selected Diagnostics for Microgravity Combustion Science" [ref=f10e325] [cursor=pointer]:
+                    - /url: /research/19970020591
+                - generic [ref=f10e326]:
+                  - generic [ref=f10e327]: NASA NTRS ID 19970020591
+                  - generic [ref=f10e328]: Conference Paper
+                  - generic [ref=f10e329]: 1997-05-01
+                  - generic [ref=f10e330]: Glenn Research Center
+              - link "Open Selected Diagnostics for Microgravity Combustion Science on NASA NTRS" [ref=f10e331] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/citations/19970020591
+            - listitem [ref=f10e335]:
+              - generic [ref=f10e336]:
+                - paragraph [ref=f10e337]:
+                  - generic [ref=f10e338]: NASA NTRS ID 19970020587
+                  - generic [ref=f10e339]: 1997-05-01
+                - heading [level=3] [ref=f10e340]:
+                  - link "Numerical Modeling for Combustion of Thermoplastic Materials in Microgravity" [ref=f10e341] [cursor=pointer]:
+                    - /url: /research/19970020587
+                - generic [ref=f10e342]:
+                  - generic [ref=f10e343]: NASA NTRS ID 19970020587
+                  - generic [ref=f10e344]: Conference Paper
+                  - generic [ref=f10e345]: 1997-05-01
+                  - generic [ref=f10e346]: Glenn Research Center
+              - link "Open Numerical Modeling for Combustion of Thermoplastic Materials in Microgravity on NASA NTRS" [ref=f10e347] [cursor=pointer]:
+                - /url: https://ntrs.nasa.gov/citations/19970020587
+  - button "Open Next.js Dev Tools" [ref=f10e105] [cursor=pointer]
+  - alert [ref=f10e109]

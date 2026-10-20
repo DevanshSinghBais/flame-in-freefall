@@ -1,0 +1,276 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e231]:
+      - button "Open workspace navigation" [ref=e232] [cursor=pointer]
+      - link "FLAME IN FREEFALL home" [ref=e234] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e235]: FLAME
+        - generic [ref=e237]: IN FREEFALL
+    - complementary [aria-hidden] [ref=e3]:
+      - generic [ref=e4]:
+        - link [ref=e238] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=e6]: FLAME
+          - generic [ref=e8]: IN FREEFALL
+        - generic [ref=e9]: MICROGRAVITY COMBUSTION RESEARCH
+      - navigation [ref=e239]:
+        - link [ref=e240] [cursor=pointer]:
+          - /url: /workspace/overview
+          - generic [ref=e17]: Overview
+        - link [ref=e241] [cursor=pointer]:
+          - /url: /workspace/research-explorer
+          - generic [ref=e22]: Research Explorer
+        - link [ref=e242] [cursor=pointer]:
+          - /url: /workspace/paper-library
+          - generic [ref=e26]: Paper Library
+        - link [ref=e243] [cursor=pointer]:
+          - /url: /workspace/ai-research-assistant
+          - generic [ref=e30]: AI Research Assistant
+        - link [ref=e244] [cursor=pointer]:
+          - /url: /workspace/experiment-comparison
+          - generic [ref=e37]: Experiment Comparison
+        - link [ref=e245] [cursor=pointer]:
+          - /url: /workspace/scenario-explorer
+          - generic [ref=e42]: Scenario Explorer
+        - link [ref=e246] [cursor=pointer]:
+          - /url: /workspace/evidence-gaps
+          - generic [ref=e46]: Evidence Gaps
+        - link [ref=e247] [cursor=pointer]:
+          - /url: /workspace/scientific-analytics
+          - generic [ref=e50]: Scientific Analytics
+        - link [ref=e248] [cursor=pointer]:
+          - /url: /workspace/collections
+          - generic [ref=e54]: Collections
+        - link [ref=e249] [cursor=pointer]:
+          - /url: /workspace/reports
+          - generic [ref=e59]: Reports
+        - link [ref=e250] [cursor=pointer]:
+          - /url: /workspace/settings
+          - generic [ref=e64]: Settings
+      - generic [ref=e65]:
+        - paragraph [ref=e67]: Research, with its sources in view.
+        - link [ref=e251] [cursor=pointer]:
+          - /url: /sign-in
+          - generic [ref=e72]: Sign in to save research
+    - main [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - paragraph [ref=e77]: MICROGRAVITY COMBUSTION RESEARCH
+          - heading "Research overview" [level=1] [ref=e78]
+          - paragraph [ref=e79]: Discover and compare traceable source material on combustion beyond Earth.
+        - generic [ref=e80]: NASA NTRS · LIVE
+      - region [ref=e82]:
+        - heading "Search NASA Technical Reports Server research" [level=2] [ref=e83]
+        - search [ref=e84]:
+          - generic [ref=e88]: Search NASA research
+          - searchbox "Search NASA research" [ref=e89]: microgravity combustion
+          - button "Search" [ref=e90] [cursor=pointer]
+        - generic [ref=e94]:
+          - generic [ref=e95]: Filter by
+          - generic [ref=e97]:
+            - generic [ref=e98]: NASA document type
+            - combobox "NASA document type" [ref=e99] [cursor=pointer]:
+              - option "All document types" [selected]
+              - option "CONFERENCE_PAPER (631)"
+              - option "OTHER (105)"
+              - option "TECHNICAL_MEMORANDUM (56)"
+              - option "CONFERENCE_PROCEEDINGS (50)"
+              - option "PREPRINT (46)"
+              - option "PRESENTATION (41)"
+              - option "ABSTRACT (34)"
+              - option "REPRINT (32)"
+              - option "CONTRACTOR_REPORT (29)"
+              - option "ACCEPTED_MANUSCRIPT (20)"
+              - option "VIDEO (9)"
+              - option "CONTRACTOR_OR_GRANTEE_REPORT (7)"
+              - option "EXTENDED_ABSTRACT (4)"
+              - option "POSTER (4)"
+              - option "CONFERENCE_PUBLICATION (2)"
+              - option "TECHNICAL_PUBLICATION (2)"
+              - option "THESIS_DISSERTATION (2)"
+              - option "BOOK (1)"
+              - option "SPECIAL_PUBLICATION (1)"
+          - generic [ref=e100]:
+            - generic [ref=e101]: NASA center
+            - combobox "NASA center" [ref=e102] [cursor=pointer]:
+              - option "All NASA centers" [selected]
+              - option "GRC (611)"
+              - option "CDMS (331)"
+              - option "MSFC (43)"
+              - option "HQ (39)"
+              - option "JSC (25)"
+              - option "GSFC (3)"
+              - option "JPL (3)"
+              - option "KSC (2)"
+              - option "LaRC (2)"
+              - option "ARC (1)"
+          - generic [ref=e103]:
+            - generic [ref=e104]: NASA subject category
+            - combobox "NASA subject category" [ref=e105] [cursor=pointer]:
+              - option "All subject categories" [selected]
+              - option "Materials Processing (217)"
+              - option "Inorganic, Organic And Physical Chemistry (167)"
+              - option "Inorganic And Physical Chemistry (137)"
+              - option "Fluid Mechanics And Thermodynamics (82)"
+              - option "Space Processing (50)"
+              - option "Propellants And Fuels (46)"
+              - option "Inorganic, Organic and Physical Chemistry (41)"
+              - option "Space Transportation And Safety (25)"
+              - option "Chemistry And Materials (General) (24)"
+              - option "Space Sciences (General) (23)"
+              - option "Spacecraft Design, Testing And Performance (22)"
+              - option "Instrumentation And Photography (19)"
+              - option "Astronautics (General) (18)"
+              - option "Man/System Technology And Life Support (14)"
+              - option "Spacecraft Propulsion And Power (13)"
+              - option "Aircraft Propulsion And Power (12)"
+              - option "Mechanical Engineering (11)"
+              - option "Aerospace Medicine (9)"
+              - option "Engineering (General) (9)"
+              - option "Aeronautics (General) (8)"
+          - button "Clear filters" [disabled] [ref=e106]
+          - generic [ref=e110]: NASA Technical Reports Server
+        - generic [ref=e111]:
+          - region [ref=e112]:
+            - generic [ref=e114]:
+              - heading "Continue your research" [level=3] [ref=e115]
+              - paragraph [ref=e116]: Start with a source or compare the science.
+            - generic [ref=e117]:
+              - link "Explore NASA research Search live NTRS records" [ref=e118] [cursor=pointer]:
+                - /url: /workspace/research-explorer?q=microgravity%20combustion
+                - generic [ref=e123]:
+                  - strong [ref=e124]: Explore NASA research
+                  - generic [ref=e125]: Search live NTRS records
+              - link "Compare source records Review returned metadata side by side" [ref=e128] [cursor=pointer]:
+                - /url: /workspace/experiment-comparison
+                - generic [ref=e135]:
+                  - strong [ref=e136]: Compare source records
+                  - generic [ref=e137]: Review returned metadata side by side
+              - link "Open your Paper Library Saved records and private notes" [ref=e140] [cursor=pointer]:
+                - /url: /workspace/paper-library
+                - generic [ref=e144]:
+                  - strong [ref=e145]: Open your Paper Library
+                  - generic [ref=e146]: Saved records and private notes
+          - region [ref=e149]:
+            - generic [ref=e150]:
+              - generic [ref=e151]:
+                - heading "Recent research" [level=3] [ref=e152]
+                - paragraph [ref=e153]: Live publication metadata from NASA NTRS
+              - generic [ref=e154]:
+                - generic [ref=e252]: 1–4 of 1,076 results
+                - link "View all" [ref=e155] [cursor=pointer]:
+                  - /url: /workspace/research-explorer?q=microgravity+combustion
+            - generic [ref=e158]:
+              - article [ref=e253]:
+                - generic [aria-hidden] [ref=e254]: "01"
+                - generic [ref=e255]:
+                  - generic [ref=e256]:
+                    - heading [level=4] [ref=e257]:
+                      - link "NASA Microgravity Combustion Program" [ref=e258] [cursor=pointer]:
+                        - /url: /research/20150023100
+                    - generic [ref=e259]: Presentation
+                  - generic [ref=e260]:
+                    - generic [ref=e261]: 2015-10-20
+                    - generic [ref=e262]: Glenn Research Center
+                    - generic [ref=e263]: Urban, David L.
+                  - generic [ref=e264]:
+                    - generic [ref=e265]: NASA NTRS ID 20150023100
+                    - link "Sign in to save" [ref=e266] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F20150023100
+                - link "Open NASA Microgravity Combustion Program on NASA NTRS" [ref=e269] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/20150023100
+              - article [ref=e273]:
+                - generic [aria-hidden] [ref=e274]: "02"
+                - generic [ref=e275]:
+                  - generic [ref=e276]:
+                    - heading [level=4] [ref=e277]:
+                      - link "Fourth International Microgravity Combustion Workshop" [ref=e278] [cursor=pointer]:
+                        - /url: /research/19970020547
+                    - generic [ref=e279]: Conference Proceedings
+                  - generic [ref=e280]:
+                    - generic [ref=e281]: 1997-05-01
+                    - generic [ref=e282]: Glenn Research Center
+                    - generic [ref=e283]: Kurt Sacksteder
+                  - generic [ref=e284]:
+                    - generic [ref=e285]: NASA NTRS ID 19970020547
+                    - link "Sign in to save" [ref=e286] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F19970020547
+                - link "Open Fourth International Microgravity Combustion Workshop on NASA NTRS" [ref=e289] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19970020547
+              - article [ref=e293]:
+                - generic [aria-hidden] [ref=e294]: "03"
+                - generic [ref=e295]:
+                  - generic [ref=e296]:
+                    - heading [level=4] [ref=e297]:
+                      - link "Fifth International Microgravity Combustion Workshop" [ref=e298] [cursor=pointer]:
+                        - /url: /research/19990053965
+                    - generic [ref=e299]: Conference Publication (CP)
+                  - generic [ref=e300]:
+                    - generic [ref=e301]: 1999-05-18
+                    - generic [ref=e302]: Glenn Research Center
+                    - generic [ref=e303]: Kurt R Sacksteder
+                  - generic [ref=e304]:
+                    - generic [ref=e305]: NASA NTRS ID 19990053965
+                    - link "Sign in to save" [ref=e306] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F19990053965
+                - link "Open Fifth International Microgravity Combustion Workshop on NASA NTRS" [ref=e309] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19990053965
+              - article [ref=e313]:
+                - generic [aria-hidden] [ref=e314]: "04"
+                - generic [ref=e315]:
+                  - generic [ref=e316]:
+                    - heading [level=4] [ref=e317]:
+                      - link "Smoldering Combustion Experiments in Microgravity" [ref=e318] [cursor=pointer]:
+                        - /url: /research/19970020606
+                    - generic [ref=e319]: Conference Paper
+                  - generic [ref=e320]:
+                    - generic [ref=e321]: 1997-05-01
+                    - generic [ref=e322]: Glenn Research Center
+                    - generic [ref=e323]: David C Walther; A Carlos Fernandez-Pello; David L Urban
+                  - generic [ref=e324]:
+                    - generic [ref=e325]: NASA NTRS ID 19970020606
+                    - link "Sign in to save" [ref=e326] [cursor=pointer]:
+                      - /url: /sign-in?next=%2Fresearch%2F19970020606
+                - link "Open Smoldering Combustion Experiments in Microgravity on NASA NTRS" [ref=e329] [cursor=pointer]:
+                  - /url: https://ntrs.nasa.gov/citations/19970020606
+      - region [ref=e166]:
+        - generic [ref=e167]:
+          - generic [ref=e168]:
+            - paragraph [ref=e169]: THE ROLE OF GRAVITY
+            - heading "Flame morphology comparison" [level=2] [ref=e170]
+          - generic [ref=e171]: Illustrative visualization
+        - paragraph [ref=e173]: On Earth, gravity-driven buoyant convection shapes a candle flame into a teardrop and carries soot toward its tip. In microgravity, with convective flows absent, NASA describes a spherical, soot-free, blue flame.
+        - group "Qualitative flame shape comparison" [ref=e174]:
+          - figure "On Earth Buoyancy-driven flow shapes an elongated flame." [ref=e175]:
+            - img "Qualitative teardrop-shaped flame schematic" [ref=e177]
+            - generic [ref=e182]:
+              - generic [ref=e183]: On Earth
+              - generic [ref=e184]: Buoyancy-driven flow shapes an elongated flame.
+          - generic [ref=e186]: Reduced buoyancy
+          - figure "In microgravity NASA describes a spherical, soot-free, blue flame." [ref=e187]:
+            - img "Qualitative spherical flame schematic" [ref=e189]
+            - generic [ref=e194]:
+              - generic [ref=e195]: In microgravity
+              - generic [ref=e196]: NASA describes a spherical, soot-free, blue flame.
+        - paragraph [ref=e197]:
+          - text: Qualitative schematic, not to scale and not a plot of experimental measurements.
+          - link "Read the NASA source" [ref=e198] [cursor=pointer]:
+            - /url: https://science.nasa.gov/image-detail/candle-flames-3/
+      - region "Published evidence and AI interpretation" [ref=e202]:
+        - article [ref=e203]:
+          - generic [ref=e205]:
+            - paragraph [ref=e206]: PUBLISHED EVIDENCE
+            - heading "Source statement" [level=3] [ref=e207]
+            - paragraph [ref=e208]: NASA describes the Earth candle flame as teardrop-shaped under buoyant convection, and the microgravity flame as spherical, soot-free, and blue.
+            - link "Inspect the NASA source" [ref=e209] [cursor=pointer]:
+              - /url: https://science.nasa.gov/image-detail/candle-flames-3/
+            - generic [ref=e213]: Faithful summary of the linked source page.
+        - article [ref=e214]:
+          - generic [ref=e216]:
+            - paragraph [ref=e217]: AI INTERPRETATION
+            - heading "Analysis is not connected" [level=3] [ref=e218]
+            - paragraph [ref=e219]: No generated scientific interpretation is shown in this milestone. Future synthesis will identify supporting evidence and link back to each source.
+            - generic [ref=e220]: Unavailable in this preview
+      - paragraph [ref=e221]: Search results are live records returned by NASA NTRS. The flame comparison remains illustrative and qualitative; it does not display experimental measurements.
+  - button "Open Next.js Dev Tools" [ref=e227] [cursor=pointer]
+  - alert [ref=e335]
