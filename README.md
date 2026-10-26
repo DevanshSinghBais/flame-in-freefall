@@ -10,6 +10,15 @@ AI-Powered Research on Combustion Beyond Earth
 </p>
 
 <p align="center">
+  <a href="https://flame-in-freefall-two.vercel.app">
+    <img src="https://img.shields.io/badge/🚀_LIVE_DEMO-Explore_App-00C853?style=for-the-badge" alt="Live Demo">
+  </a>
+  <a href="https://github.com/DevanshSinghBais/flame-in-freefall">
+    <img src="https://img.shields.io/badge/GitHub-View_Source-181717?style=for-the-badge&logo=github" alt="GitHub Repository">
+  </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Next.js-16-black?logo=next.js" alt="Next.js">
   <img src="https://img.shields.io/badge/TypeScript-Strict-blue?logo=typescript" alt="TypeScript">
   <img src="https://img.shields.io/badge/Supabase-Authentication%20%26%20Data-3FCF8E?logo=supabase" alt="Supabase">
@@ -34,6 +43,12 @@ Understanding these differences matters for spacecraft fire safety, future space
 **Flame in Freefall** is an aerospace-themed research platform designed to make this scientific literature easier to explore, compare, and interpret.
 
 Instead of treating AI-generated answers as facts, the platform connects research discovery with traceable source records and explicit evidence limitations.
+
+<p align="center">
+  <a href="https://flame-in-freefall-two.vercel.app">
+    <strong>🚀 Launch Flame in Freefall →</strong>
+  </a>
+</p>
 
 ## ✨ What It Does
 
@@ -139,6 +154,7 @@ The availability of source records does not guarantee that every question can be
 | AI synthesis | Google Gemini API |
 | Validation | Automated tests, TypeScript checks, citation validation |
 | Development | Node.js, npm, Git, GitHub |
+| Deployment | Vercel |
 
 ---
 
@@ -151,169 +167,8 @@ The availability of source records does not guarantee that every question can be
 - A Supabase project
 - A Google Gemini API key for AI synthesis
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/flame-in-freefall.git
+git clone https://github.com/DevanshSinghBais/flame-in-freefall.git
 cd flame-in-freefall
-```
-
-Replace `YOUR_GITHUB_USERNAME` with the repository owner's GitHub username.
-
-### 2. Install dependencies
-
-```bash
-npm install
-```
-
-### 3. Configure environment variables
-
-Create a local environment file:
-
-```bash
-cp .env.example .env.local
-```
-
-If `.env.example` is not present in the repository, create `.env.local` manually using the variable names below.
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
-
-GEMINI_API_KEY=
-GEMINI_SYNTHESIS_MODEL=gemini-3.8-flash
-GEMINI_FALLBACK_MODEL=gemini-3.5-flash-lite
-```
-
-Fill in the values from your own Supabase and Google AI Studio projects.
-
-**Never commit `.env.local` or expose API keys in client-side code.**
-
-The Gemini API key must remain server-side. AI synthesis may be unavailable when the provider experiences quota, availability, or timeout errors.
-
-### 4. Configure Supabase
-
-Configure Supabase Auth for your local development origin.
-
-For a development server running at `http://localhost:3000`, configure the local Site URL and allow the appropriate callback and recovery redirects.
-
-If Next.js starts on another port, keep the application URL and authentication redirect configuration aligned.
-
-Apply the database migrations included in the repository only after verifying the target Supabase project and reviewing the migration files.
-
-For a separately configured Supabase project, the Supabase CLI workflow is:
-
-```bash
-npx supabase login
-npx supabase link --project-ref YOUR_PROJECT_REF
-npx supabase db push
-```
-
-Replace `YOUR_PROJECT_REF` with the intended project's reference.
-
-Review the target and pending migrations before applying them. Do not run this procedure against an unrelated production database.
-
-### 5. Start the development server
-
-```bash
-npm run dev
-```
-
-Open the local URL reported by Next.js, normally:
-
-http://localhost:3000
-
-If that port is occupied, Next.js may select another available port.
-
----
-
-## 🧪 Quality Checks
-
-Run the available project checks before submitting changes or preparing a deployment.
-
-### Automated tests
-
-```bash
-npm test
-```
-
-### TypeScript
-
-```bash
-npm run typecheck
-```
-
-### Production build
-
-```bash
-npm run build
-```
-
-The automated suite covers application logic, research-workspace behavior, authentication helpers, Gemini reliability handling, and citation validation.
-
-Passing automated tests does not establish that every external service is available or that every authenticated workflow has been tested against a live deployment.
-
----
-
-## 🔐 Security Principles
-
-Flame in Freefall is designed to keep account data and provider credentials protected.
-
-- API keys remain server-side.
-- Authentication is enforced for protected features.
-- User-specific records rely on Supabase ownership policies and RLS.
-- Generated citation references are validated against retrieved records.
-- Provider failures do not justify bypassing evidence validation.
-- Environment files and generated build output should not be committed.
-- Database changes should be applied only to the intended Supabase project.
-
-Never disable RLS or expose service-role credentials to make a feature work.
-
----
-
-## 🔭 Current Limitations
-
-This project is an evolving research platform, and its limitations are documented explicitly.
-
-**Gemini availability:** The synthesis integration is implemented, but live requests have intermittently returned upstream HTTP 503 and HTTP 504 errors. When this occurs, the application preserves the retrieved NASA records and does not display an unvalidated conclusion.
-
-**Evidence availability:** NASA NTRS metadata and abstracts do not necessarily contain every experimental measurement required for a rigorous quantitative comparison.
-
-**Scenario exploration:** The current scenario tool records assumptions; it does not run a validated combustion solver.
-
-**Scientific analytics:** The current analysis focuses on available publication metadata rather than a comprehensive structured experimental-measurement dataset.
-
-**Evidence coverage:** Search results represent the corpus inspected by the application and should not be interpreted as an exhaustive review of all scientific literature.
-
-These limitations are important to the project's research integrity. An unavailable calculation, missing measurement, or failed AI request should never be disguised as a scientific result.
-
----
-
-## 🎯 Project Goals
-
-Flame in Freefall aims to make microgravity combustion research more accessible through:
-
-- Traceable research discovery
-- Source-grounded AI interpretation
-- Personal literature organization
-- Transparent evidence limitations
-- Reproducible research workflows
-- Careful separation of measurements, assumptions, and generated interpretations
-
-The long-term direction is to support richer structured experimental datasets, validated quantitative comparisons, and more advanced combustion research workflows as suitable data becomes available.
-
----
-
-## 📌 Disclaimer
-
-Flame in Freefall is an independent research software project. It is not an official NASA product and is not endorsed by NASA.
-
-NASA NTRS is used as a source of technical research records. Scientific conclusions should be checked against the original publications and their limitations.
-
----
-
-<p align="center">
-  <strong>FLAME IN FREEFALL</strong><br>
-  <em>Understanding combustion beyond Earth.</em>
-</p>
