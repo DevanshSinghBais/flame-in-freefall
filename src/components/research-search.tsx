@@ -215,12 +215,12 @@ export function ResearchSearch({ initialQuery = INITIAL_QUERY, initialFilters = 
             </Link>
             <Link className="shortcut-row" href="/workspace/experiment-comparison">
               <span className="shortcut-icon"><GitCompare size={18} aria-hidden="true" /></span>
-              <span><strong>Compare source records</strong><small>Review returned metadata side by side</small></span>
+              <span><strong>Build an evidence matrix</strong><small>See what records share or omit</small></span>
               <ArrowRight size={16} aria-hidden="true" />
             </Link>
             <Link className="shortcut-row" href="/workspace/scenario-explorer">
               <span className="shortcut-icon"><Flame size={18} aria-hidden="true" /></span>
-              <span><strong>Explore a scenario</strong><small>Review documented conditions</small></span>
+              <span><strong>Bridge a scenario to evidence</strong><small>Turn conditions into a NASA search</small></span>
               <ArrowRight size={16} aria-hidden="true" />
             </Link>
           </div>

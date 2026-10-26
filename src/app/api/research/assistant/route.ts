@@ -2,13 +2,14 @@ import { randomUUID } from "node:crypto";
 import { NextResponse } from "next/server";
 import { AssistantServiceError, normalizeAssistantRequest, readBoundedJsonBody, runGroundedResearchAssistant } from "@/lib/ai-research-assistant-core";
 import { GeminiProviderError, generateGroundedAnswer, getGeminiServerConfig, type GeminiServerConfig } from "@/lib/server/gemini-provider";
+import { buildEvidenceOnlyAnswer, generateGroundedAnswerWithOllama, isOllamaConfigured, OllamaProviderError } from "@/lib/server/ollama-provider";
 import { requireApiUser, privateJson } from "@/lib/server/api-auth";
 import { NtrsProviderError, getNtrsCitation, searchNtrs } from "@/lib/server/ntrs-provider";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 // The grounded workflow may use the full bounded Gemini request deadline.
-export const maxDuration = 60;
+export const maxDuration = 90;
 
 type PublicError = { code: string; message: string; status: number };
 
@@ -30,6 +31,11 @@ function publicError(error: unknown): PublicError {
     if (error.kind === "timeout") return { code: error.kind, message: error.message, status: 504 };
     if (error.kind === "quota") return { code: error.kind, message: error.message, status: 429 };
     return { code: error.kind, message: error.message, status: 502 };
+  }
+  if (error instanceof OllamaProviderError) {
+    if (error.kind === "timeout") return { code: "local_timeout", message: "The local research fallback took too long to respond. The NASA source records are still available below.", status: 504 };
+    if (error.kind === "not_available") return { code: "local_unavailable", message: "The local research fallback is not running. The NASA source records are still available below.", status: 503 };
+    return { code: "local_upstream", message: "The local research fallback could not complete this synthesis. The NASA source records are still available below.", status: 502 };
   }
   if (error instanceof NtrsProviderError) {
     if (error.kind === "timeout") return { code: "ntrs_timeout", message: "NASA NTRS is taking too long to respond. Please try again.", status: 504 };
@@ -78,7 +84,27 @@ function eventStream(
         const result = await runGroundedResearchAssistant(rawInput, {
           search: searchNtrs,
           getCitation: getNtrsCitation,
-          generate: config ? (input, generationSignal) => generateGroundedAnswer(input, config, generationSignal, requestId) : null,
+          // Deterministic retrieval is faster and more reliable than spending the
+          // first half of the request on a second model call. Synthesis still uses
+          // the full question and every selected NASA abstract.
+          planQueries: null,
+          generate: async (input, generationSignal) => {
+            if (config) {
+              try {
+                return await generateGroundedAnswer(input, config, generationSignal, requestId);
+              } catch (error) {
+                logAssistantStage({ requestId, stage: "gemini_fallback", outcome: "ollama_attempted", errorCode: error instanceof GeminiProviderError ? error.kind : "upstream" });
+              }
+            }
+            if (isOllamaConfigured()) {
+              try {
+                return await generateGroundedAnswerWithOllama(input, generationSignal, requestId);
+              } catch (error) {
+                logAssistantStage({ requestId, stage: "local_fallback", outcome: "evidence_extraction", errorCode: error instanceof OllamaProviderError ? error.kind : "upstream" });
+              }
+            }
+            return buildEvidenceOnlyAnswer(input);
+          },
           synthesisUnavailable: configFailure ?? undefined,
           synthesisFailure: (error) => {
             const mapped = publicError(error);

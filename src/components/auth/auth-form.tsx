@@ -6,6 +6,7 @@ import type { AuthActionState } from "@/app/auth/actions";
 
 type AuthMode = "sign-in" | "sign-up" | "forgot-password" | "reset-password";
 type AuthAction = (state: AuthActionState, data: FormData) => Promise<AuthActionState>;
+const idleAuthAction: AuthAction = async (state) => state;
 
 const modeCopy: Record<AuthMode, { title: string; submit: string; pending: string }> = {
   "sign-in": { title: "Sign in to your workspace", submit: "Sign in", pending: "Signing in…" },
@@ -15,14 +16,21 @@ const modeCopy: Record<AuthMode, { title: string; submit: string; pending: strin
 };
 const initialState: AuthActionState = { status: "idle", message: "" };
 
-export function AuthForm({ mode, action, next = "/workspace/overview", initialMessage }: {
+export function AuthForm({ mode, action, googleAction, next = "/workspace/overview", initialMessage }: {
   mode: AuthMode;
   action: AuthAction;
+  googleAction?: AuthAction;
   next?: string;
   initialMessage?: string;
 }) {
   const [state, formAction, pending] = useActionState(action, { ...initialState, message: initialMessage ?? "" });
+  const [googleState, googleFormAction, googlePending] = useActionState(googleAction ?? idleAuthAction, initialState);
   const copy = modeCopy[mode];
+  const supportsGoogle = mode === "sign-in" || mode === "sign-up";
+
+  function GoogleMark() {
+    return <svg className="google-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.35 12.27c0-.79-.07-1.55-.22-2.27H12v4.3h5.24a4.48 4.48 0 0 1-1.94 2.94v2.45h3.14c1.84-1.69 2.91-4.18 2.91-7.42Z" /><path fill="#34A853" d="M12 21.5c2.63 0 4.84-.87 6.45-2.36l-3.14-2.45c-.87.58-1.98.92-3.31.92-2.54 0-4.7-1.72-5.47-4.03H3.28v2.53A9.74 9.74 0 0 0 12 21.5Z" /><path fill="#FBBC05" d="M6.53 13.58A5.85 5.85 0 0 1 6.22 12c0-.55.1-1.08.31-1.58V7.89H3.28A9.72 9.72 0 0 0 2.25 12c0 1.57.38 3.05 1.03 4.11l3.25-2.53Z" /><path fill="#EA4335" d="M12 6.39c1.43 0 2.71.49 3.72 1.46l2.79-2.79C16.83 3.47 14.63 2.5 12 2.5a9.74 9.74 0 0 0-8.72 5.39l3.25 2.53C7.3 8.11 9.46 6.39 12 6.39Z" /></svg>;
+  }
 
   return (
     <section className="auth-panel" aria-labelledby="auth-form-title">
@@ -30,6 +38,14 @@ export function AuthForm({ mode, action, next = "/workspace/overview", initialMe
       <h1 id="auth-form-title">{copy.title}</h1>
       {mode === "sign-up" && <p className="auth-description">Save NASA research, organize collections, and keep private notes alongside source records.</p>}
       {mode === "sign-in" && <p className="auth-description">Your public NASA research search remains available without an account.</p>}
+      {supportsGoogle && <>
+        <form className="auth-oauth-form" action={googleFormAction} aria-busy={googlePending}>
+          <input type="hidden" name="next" value={next} />
+          <button className="button button-google" type="submit" disabled={pending || googlePending}><GoogleMark />{googlePending ? "Connecting to Google…" : "Continue with Google"}</button>
+        </form>
+        {googleState.message && <p className={`auth-message auth-message-${googleState.status}`} role={googleState.status === "error" ? "alert" : "status"}>{googleState.message}</p>}
+        <div className="auth-divider"><span>or continue with email</span></div>
+      </>}
       <form className="auth-form" action={formAction} aria-busy={pending}>
         {mode === "sign-in" && <input type="hidden" name="next" value={next} />}
         {mode === "sign-up" && (

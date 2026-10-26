@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowUpRight, Check, Download, LoaderCircle, RotateCcw, Search, Send, X } from "lucide-react";
 import type { NtrsRecord, NtrsSearchResult } from "@/lib/ntrs-provider-core";
 import type { AssistantClaim, AssistantResult, AssistantSource } from "@/lib/ai-research-assistant-core";
-import { countByLabel, createScenarioAssumptionRecord, getMetadataCoverage, publicationYear, type ScenarioAssumptions } from "@/lib/research-workspace-core";
+import { buildScenarioSearchQuery, countByLabel, createScenarioAssumptionRecord, getEvidenceGapAnalysis, getMetadataCoverage, getResearchLandscapeSummary, getScenarioCompletion, getScenarioFingerprint, publicationYear, type ScenarioAssumptions } from "@/lib/research-workspace-core";
 
 type ErrorPayload = { error?: { message?: string } };
 
@@ -231,9 +231,9 @@ export function AiResearchAssistantWorkspace({ synthesisAvailable = true }: { sy
 
   return (
     <div className="workspace-tool-page assistant-workspace">
-      {!synthesisAvailable && <section className="assistant-unavailable" aria-labelledby="assistant-unavailable-title">
-        <span className="tool-semantic-marker" aria-hidden="true" />
-        <div><p className="semantic-label">NASA RETRIEVAL · AI INTERPRETATION</p><h2 id="assistant-unavailable-title">Gemini synthesis is not connected</h2><p>Questions can still retrieve real NASA NTRS records here with a deterministic search plan. No generated findings or scientific conclusions will be shown until Gemini is configured.</p></div>
+       {!synthesisAvailable && <section className="assistant-unavailable" aria-labelledby="assistant-unavailable-title">
+         <span className="tool-semantic-marker" aria-hidden="true" />
+         <div><p className="semantic-label">NASA RETRIEVAL · AI INTERPRETATION</p><h2 id="assistant-unavailable-title">AI synthesis is not connected</h2><p>Questions can still retrieve real NASA NTRS records here. Generated findings will appear after an AI provider or the local research fallback is configured.</p></div>
       </section>}
 
       <section className="tool-panel assistant-composer-panel" aria-labelledby="assistant-composer-title">
@@ -246,15 +246,15 @@ export function AiResearchAssistantWorkspace({ synthesisAvailable = true }: { sy
 
         <form className="assistant-composer" onSubmit={(event) => void ask(event)}>
           <label htmlFor="assistant-question">Research question</label>
-          <textarea ref={composerRef} id="assistant-question" value={question} onChange={(event) => setQuestion(event.target.value)} maxLength={500} rows={3} required disabled={busy} placeholder="Ask about microgravity combustion, flame spread, ignition, extinction, or spacecraft fire safety…" />
-          <div className="assistant-composer-footer"><small>Up to 500 characters. The full question is kept for synthesis; concise NASA queries are generated deterministically.</small><button className="button button-primary" type="submit" disabled={busy || !question.trim()}>{busy ? <><LoaderCircle size={16} aria-hidden="true" className="assistant-spinner" /> Working…</> : <><Send size={15} aria-hidden="true" /> Ask the assistant</>}</button></div>
+           <textarea ref={composerRef} id="assistant-question" value={question} onChange={(event) => setQuestion(event.target.value)} maxLength={500} rows={3} required disabled={busy} placeholder="Ask about microgravity combustion, flame spread, ignition, extinction, or spacecraft fire safety…" />
+           <div className="assistant-composer-footer"><small>Up to 500 characters. NASA retrieval stays bounded, then Gemini synthesizes the retrieved source abstracts with citations.</small><button className="button button-primary" type="submit" disabled={busy || !question.trim()}>{busy ? <><LoaderCircle size={16} aria-hidden="true" className="assistant-spinner" /> Working…</> : <><Send size={15} aria-hidden="true" /> Ask the assistant</>}</button></div>
         </form>
         {error && <div className="tool-error assistant-error" role="alert"><X size={17} aria-hidden="true" /><div><strong>{errorHeading(error.code)}</strong><p>{error.message}</p></div></div>}
       </section>
 
       {busy && <section className="assistant-progress" role="status" aria-live="polite" aria-busy="true">
         <span className="tool-semantic-marker" aria-hidden="true" />
-        <div className="assistant-progress-copy"><span className="assistant-progress-kicker">{stage === "retrieval" ? "SOURCE RETRIEVAL" : "AI INTERPRETATION"}</span><h2>{stage === "retrieval" ? "Retrieving NASA research" : "Synthesizing the retrieved evidence"}</h2><p>{stage === "retrieval" ? "Searching NASA NTRS with deterministic queries based on your full question…" : "Sending retrieved NASA metadata and abstracts for synthesis…"}</p>{stage === "retrieval" && activeQueries.length > 0 && <ul className="assistant-active-queries">{activeQueries.map((query) => <li key={query}>{query}</li>)}</ul>}<div className="assistant-skeleton" aria-hidden="true"><span /><span /><span /></div></div>
+         <div className="assistant-progress-copy"><span className="assistant-progress-kicker">{stage === "retrieval" ? "SOURCE RETRIEVAL" : "AI INTERPRETATION"}</span><h2>{stage === "retrieval" ? "Retrieving NASA research" : "Synthesizing the retrieved evidence"}</h2><p>{stage === "retrieval" ? "Searching NASA NTRS with a bounded query plan based on your full question…" : "Sending retrieved NASA metadata and abstracts for a structured, cited synthesis…"}</p>{stage === "retrieval" && activeQueries.length > 0 && <ul className="assistant-active-queries">{activeQueries.map((query) => <li key={query}>{query}</li>)}</ul>}<div className="assistant-skeleton" aria-hidden="true"><span /><span /><span /></div></div>
       </section>}
 
       {turns.length > 0 && <div className="assistant-conversation-heading"><div><p className="eyebrow">RESEARCH THREAD</p><h2>Questions and source-grounded answers</h2><p>Each answer retains its own NASA records and clickable citations.</p></div><button className="button button-secondary assistant-new-question" type="button" onClick={beginNewQuestion} disabled={busy}><RotateCcw size={15} aria-hidden="true" /> Start a new question</button></div>}
@@ -263,8 +263,8 @@ export function AiResearchAssistantWorkspace({ synthesisAvailable = true }: { sy
         <header className="assistant-user-question"><span>QUESTION {String(index + 1).padStart(2, "0")}</span><h2 id={`assistant-question-${turn.id}`}>{turn.question}</h2></header>
         <p className="assistant-search-summary" role="status">NASA NTRS returned {turn.result.search.uniqueRecordCount} unique source record{turn.result.search.uniqueRecordCount === 1 ? "" : "s"} across {turn.result.search.queries.filter(({ status }) => status === "returned").length} successful quer{turn.result.search.queries.filter(({ status }) => status === "returned").length === 1 ? "y" : "ies"}; {turn.result.search.selectedRecordCount} current record{turn.result.search.selectedRecordCount === 1 ? " was" : "s were"} selected for synthesis{turn.result.unavailableContextSourceCount > 0 ? `. ${turn.result.unavailableContextSourceCount} prior source record${turn.result.unavailableContextSourceCount === 1 ? " was" : "s were"} unavailable for refresh.` : "."}</p>
 
-        <details className="assistant-search-strategy">
-          <summary>Search strategy · {turn.result.search.queries.length} deterministic NASA queries</summary>
+         <details className="assistant-search-strategy">
+           <summary>Search strategy · {turn.result.search.queries.length} {turn.result.search.planningSource === "gemini" ? "AI-planned" : "deterministic"} NASA queries</summary>
           <ul>{turn.result.search.queries.map((entry) => <li key={entry.query}><span>{entry.query}</span><small>{entry.status === "failed" ? "NASA search unavailable" : `${entry.recordsReturned ?? 0} records returned`}</small></li>)}</ul>
           {turn.result.search.queries.some(({ status }) => status === "failed") && <p>Some NASA query requests failed. Counts above show the records returned for successful requests only.</p>}
         </details>
@@ -313,6 +313,15 @@ export function ExperimentComparisonWorkspace() {
   }
 
   const selectedRecords = (result?.results ?? []).filter((record) => selected.includes(record.id));
+  const sharedSubjects = selectedRecords.length > 1
+    ? selectedRecords[0].subjectCategories.filter((subject) => selectedRecords.every((record) => record.subjectCategories.includes(subject))).slice(0, 4)
+    : [];
+  const comparisonSignals = [
+    { label: "Records compared", value: String(selectedRecords.length), detail: "of 3 maximum" },
+    { label: "Abstracts available", value: `${selectedRecords.filter((record) => Boolean(record.abstract?.trim())).length}/${selectedRecords.length}`, detail: "source-provided" },
+    { label: "Full-text links", value: `${selectedRecords.filter((record) => record.fullTextLinks.length > 0).length}/${selectedRecords.length}`, detail: "returned by NASA" },
+    { label: "Shared subjects", value: sharedSubjects.length ? String(sharedSubjects.length) : "—", detail: sharedSubjects.length ? sharedSubjects.join(" · ") : "select 2+ records" },
+  ];
   const rows: Array<{ label: string; value: (record: NtrsRecord) => string | undefined }> = [
     { label: "NASA NTRS identifier", value: (record) => record.id },
     { label: "Document type", value: (record) => record.documentType },
@@ -337,9 +346,10 @@ export function ExperimentComparisonWorkspace() {
           </li>)}</ul> : <div className="tool-empty-state"><h3>No records returned</h3><p>Try a broader search term. An empty query result is not evidence that no study exists.</p></div>}
         </>}
       </section>
-      {selectedRecords.length > 0 && <section className="tool-panel comparison-output" aria-labelledby="comparison-output-title">
-        <div className="tool-panel-heading"><div><p className="eyebrow">AVAILABLE METADATA</p><h2 id="comparison-output-title">Record comparison</h2><p>Missing fields mean NASA NTRS did not return that metadata for this record. They are not zero values.</p></div><button className="quiet-button" type="button" onClick={() => setSelected([])}>Clear selection</button></div>
-        <div className="comparison-table-wrap" role="region" aria-label="Selected NASA record metadata comparison" tabIndex={0}>
+       {selectedRecords.length > 0 && <section className="tool-panel comparison-output" aria-labelledby="comparison-output-title">
+         <div className="tool-panel-heading"><div><p className="eyebrow">EVIDENCE MATRIX</p><h2 id="comparison-output-title">Where the records line up</h2><p>Missing fields mean NASA NTRS did not return that metadata for this record. They are not zero values.</p></div><button className="quiet-button" type="button" onClick={() => setSelected([])}>Clear selection</button></div>
+         <div className="comparison-signal-strip" aria-label="Comparison summary">{comparisonSignals.map((signal) => <div key={signal.label}><span>{signal.label}</span><strong>{signal.value}</strong><small>{signal.detail}</small></div>)}</div>
+         <div className="comparison-table-wrap" role="region" aria-label="Selected NASA record metadata comparison" tabIndex={0}>
           <table className="comparison-table"><thead><tr><th scope="col">Field</th>{selectedRecords.map((record) => <th scope="col" key={record.id}>{record.title}<small>NASA NTRS {record.id}</small><a href={record.canonicalUrl} target="_blank" rel="noreferrer">Open source <ArrowUpRight size={12} aria-hidden="true" /></a></th>)}</tr></thead>
             <tbody>
               {rows.map((row) => <tr key={row.label}><th scope="row">{row.label}</th>{selectedRecords.map((record) => <td key={record.id}>{row.value(record) || <span className="not-provided">Not provided by source</span>}</td>)}</tr>)}
@@ -364,10 +374,27 @@ const emptyScenario: ScenarioAssumptions = {
   durationSeconds: "",
 };
 
+function ScenarioEvidenceResults({ result }: { result: NtrsSearchResult }) {
+  return <section className="tool-panel scenario-evidence-panel" aria-labelledby="scenario-evidence-title">
+    <div className="tool-panel-heading"><div><p className="eyebrow">NASA NTRS · VOCABULARY MATCH</p><h2 id="scenario-evidence-title">Evidence connected to this scenario</h2><p>These records match the scenario terms sent to NASA NTRS. They are starting points for reading, not proof that the papers used the exact values above.</p></div><span className="coverage-sample-count">{result.totalIsEstimate ? "about " : ""}{result.total.toLocaleString()} matches</span></div>
+    {result.results.length ? <ul className="scenario-evidence-list">{result.results.slice(0, 6).map((record) => <li key={record.id}>
+      <div><p className="result-source-line"><span>NASA NTRS ID {record.id}</span>{record.publicationDate && <span>{record.publicationDate.split("T")[0]}</span>}</p><h3><Link href={`/research/${encodeURIComponent(record.id)}`}>{record.title}</Link></h3><p className="scenario-evidence-meta">{[record.documentType, record.center].filter(Boolean).join(" · ") || "Metadata not provided by NASA NTRS"}</p>{record.abstract && <p className="scenario-evidence-abstract">{record.abstract}</p>}</div>
+      <a className="source-link" href={record.canonicalUrl} target="_blank" rel="noreferrer" aria-label={`Open ${record.title} on NASA NTRS`}><ArrowUpRight size={16} aria-hidden="true" /></a>
+    </li>)}</ul> : <div className="tool-empty-state"><h3>No matching records returned</h3><p>Try adding a broader fuel or oxidizer description. An empty vocabulary match does not establish that no relevant study exists.</p></div>}
+    <p className="tool-disclaimer">Search sent to NASA NTRS: <strong>{result.query}</strong></p>
+  </section>;
+}
+
 export function ScenarioExplorerWorkspace() {
   const [assumptions, setAssumptions] = useState(emptyScenario);
+  const [result, setResult] = useState<NtrsSearchResult | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const update = (key: keyof ScenarioAssumptions, value: string) => setAssumptions((current) => ({ ...current, [key]: value }));
   const snapshot = createScenarioAssumptionRecord(assumptions);
+  const fingerprint = getScenarioFingerprint(assumptions);
+  const completion = getScenarioCompletion(assumptions);
+  const searchQuery = buildScenarioSearchQuery(assumptions);
 
   function download() {
     const file = new Blob([JSON.stringify(snapshot, null, 2)], { type: "application/json" });
@@ -377,12 +404,21 @@ export function ScenarioExplorerWorkspace() {
     anchor.click(); URL.revokeObjectURL(url);
   }
 
+  async function findEvidence() {
+    if (!fingerprint.length || loading) return;
+    setLoading(true);
+    setError("");
+    try { setResult(await searchNtrs(searchQuery, 12)); }
+    catch (cause) { setError(cause instanceof Error ? cause.message : "NASA NTRS search could not be completed."); }
+    finally { setLoading(false); }
+  }
+
   return (
     <div className="workspace-tool-page">
-      <div className="scenario-limit-note" role="note"><p className="eyebrow">ASSUMPTIONS ONLY · NO SOLVER</p><p>This is an interactive scenario worksheet. It records values you choose; it does not calculate combustion behavior, predict flame outcomes, or represent a validated NASA simulation.</p></div>
+      <div className="scenario-limit-note" role="note"><span className="tool-semantic-marker" aria-hidden="true" /><div><p className="eyebrow">ASSUMPTIONS ONLY · NO SOLVER</p><p>This is an interactive scenario worksheet. It records values you choose; it does not calculate combustion behavior, predict flame outcomes, or represent a validated NASA simulation.</p></div></div>
       <div className="scenario-layout">
         <section className="tool-panel" aria-labelledby="scenario-input-title">
-          <div className="tool-panel-heading"><div><p className="eyebrow">USER-SELECTED CONDITIONS</p><h2 id="scenario-input-title">Define a scenario</h2><p>Every value below is a user assumption. Leave unknown values blank.</p></div></div>
+          <div className="tool-panel-heading"><div><p className="eyebrow">USER-SELECTED CONDITIONS</p><h2 id="scenario-input-title">Define a scenario</h2><p>Every value below is a user assumption. Leave unknown values blank.</p></div><span className="scenario-completion">{completion.percentage}% defined</span></div>
           <form className="scenario-form" onSubmit={(event) => event.preventDefault()}>
             <label>Gravity context<select value={assumptions.gravityContext} onChange={(event) => update("gravityContext", event.target.value)}><option value="">Choose a context</option><option>Microgravity (user-selected context)</option><option>Partial gravity (user-selected context)</option><option>Earth gravity (user-selected context)</option><option>Other or unspecified</option></select></label>
             <label>Fuel or material description<input value={assumptions.fuelDescription} onChange={(event) => update("fuelDescription", event.target.value)} maxLength={200} placeholder="Enter a material or fuel" /></label>
@@ -394,13 +430,17 @@ export function ScenarioExplorerWorkspace() {
           </form>
         </section>
         <section className="tool-panel scenario-preview" aria-labelledby="scenario-preview-title" aria-live="polite">
-          <div className="tool-panel-heading"><div><p className="eyebrow">SCENARIO RECORD</p><h2 id="scenario-preview-title">Your assumptions</h2></div><span className="workspace-scope">USER INPUT</span></div>
+          <div className="tool-panel-heading"><div><p className="eyebrow">SCENARIO FINGERPRINT</p><h2 id="scenario-preview-title">Your assumptions</h2><p>A compact vocabulary fingerprint connects your worksheet to real NASA source records.</p></div><span className="workspace-scope">USER INPUT</span></div>
           {snapshot.parameters.length ? <dl className="scenario-parameter-list">{snapshot.parameters.map((parameter) => <div key={parameter.name}><dt>{parameter.name}</dt><dd>{parameter.value}{parameter.unit ? ` ${parameter.unit}` : ""}</dd></div>)}</dl> : <div className="tool-empty-state"><h3>No conditions entered</h3><p>Choose a context or add a parameter to build a scenario record.</p></div>}
-          <p className="scenario-origin"><Check size={15} aria-hidden="true" /> Values are recorded as user-entered assumptions, not published evidence.</p>
+          {fingerprint.length > 0 && <div className="scenario-fingerprint" aria-label="Scenario fingerprint terms">{fingerprint.map((item) => <span key={item.label} className={`scenario-fingerprint-chip is-${item.kind}`}><small>{item.label}</small><strong>{item.value}</strong></span>)}</div>}
+          <p className="scenario-origin"><Check size={15} aria-hidden="true" /><span>Values are recorded as user-entered assumptions, not published evidence.</span></p>
           <p className="tool-disclaimer">{snapshot.limitation} Do not use this worksheet as an engineering prediction or fire-safety decision tool.</p>
-          <button className="button button-secondary" type="button" onClick={download} disabled={!snapshot.parameters.length}><Download size={15} aria-hidden="true" /> Download assumptions JSON</button>
+          <div className="scenario-actions"><button className="button button-primary" type="button" onClick={() => void findEvidence()} disabled={!fingerprint.length || loading}><Search size={15} aria-hidden="true" /> {loading ? "Finding evidence…" : "Find matching NASA evidence"}</button><button className="button button-secondary" type="button" onClick={download} disabled={!snapshot.parameters.length}><Download size={15} aria-hidden="true" /> Download assumptions JSON</button></div>
+          <p className="scenario-query" role="status"><span>Derived search vocabulary</span><strong>{searchQuery}</strong></p>
         </section>
       </div>
+      {error && <ProviderError message={error} onRetry={() => void findEvidence()} />}
+      {result && <ScenarioEvidenceResults result={result} />}
     </div>
   );
 }
@@ -417,6 +457,19 @@ function MetadataBars({ title, rows, sampleSize }: { title: string; rows: Array<
   if (!rows.length) return <div className="tool-empty-state"><h3>No structured values are available</h3><p>NASA NTRS did not return records for this breakdown in the inspected page.</p></div>;
   const max = Math.max(...rows.map((row) => row.count), 1);
   return <figure className="metadata-chart"><figcaption><h3>{title}</h3><p>Counts among {sampleSize} records returned for the current query.</p></figcaption><ol>{rows.map((row) => <li key={row.label}><span className="metadata-chart-label">{row.label}</span><span className="metadata-bar-track" aria-hidden="true"><span style={{ width: `${(row.count / max) * 100}%` }} /></span><span className="metadata-chart-count">{row.count}</span></li>)}</ol><table className="sr-only"><caption>{title} data</caption><thead><tr><th scope="col">Category</th><th scope="col">Record count</th></tr></thead><tbody>{rows.map((row) => <tr key={row.label}><th scope="row">{row.label}</th><td>{row.count}</td></tr>)}</tbody></table></figure>;
+}
+
+function EvidenceGapCards({ query, analysis }: { query: string; analysis: ReturnType<typeof getEvidenceGapAnalysis> }) {
+  const followUps = [`${query} abstract`, `${query} experiment`, `${query} ignition extinction`];
+  return <section className="tool-panel evidence-gap-panel" aria-labelledby="evidence-gap-results-title">
+    <div className="tool-panel-heading"><div><p className="eyebrow">DECISION SUPPORT</p><h2 id="evidence-gap-results-title">What this sample cannot tell you yet</h2><p>These checks are calculated from the returned records so the next research move is visible instead of hidden inside a generic chart.</p></div><span className="coverage-sample-count">n = {analysis.total}</span></div>
+    <div className="evidence-gap-grid">{analysis.gaps.map((gap) => <article className={`evidence-gap-card is-${gap.severity}`} key={gap.key}><span className="evidence-gap-status">{gap.severity === "covered" ? "COVERED" : gap.severity === "priority" ? "PRIORITY" : "WATCH"}</span><h3>{gap.label}</h3><p>{gap.detail}</p></article>)}</div>
+    <div className="evidence-gap-next"><div><p className="eyebrow">NEXT QUERY MOVES</p><h3>Close the gap with a focused search</h3></div><div className="evidence-gap-links">{followUps.map((followUp) => <Link key={followUp} href={`/workspace/research-explorer?q=${encodeURIComponent(followUp)}`}>{followUp}<ArrowUpRight size={13} aria-hidden="true" /></Link>)}</div></div>
+  </section>;
+}
+
+function LandscapeMetric({ label, value, detail }: { label: string; value: string; detail: string }) {
+  return <div className="landscape-metric"><span>{label}</span><strong>{value}</strong><small>{detail}</small></div>;
 }
 
 export function ResearchCorpusWorkspace({ mode }: { mode: "gaps" | "analytics" }) {
@@ -438,6 +491,8 @@ export function ResearchCorpusWorkspace({ mode }: { mode: "gaps" | "analytics" }
   const records = result?.results ?? [];
   const types = countByLabel(records.map((record) => record.documentType));
   const years = countByLabel(records.map((record) => publicationYear(record.publicationDate)));
+  const evidenceGaps = getEvidenceGapAnalysis(records);
+  const landscape = getResearchLandscapeSummary(records);
 
   return (
     <div className="workspace-tool-page">
@@ -449,16 +504,18 @@ export function ResearchCorpusWorkspace({ mode }: { mode: "gaps" | "analytics" }
         {result && <p className="tool-result-scope" role="status">NASA NTRS returned {result.totalIsEstimate ? "about " : ""}{result.total.toLocaleString()} records for “{result.query}”. This view inspected {records.length} records from one result page{result.partial ? "; some records had incomplete metadata" : ""}.</p>}
         {result && records.length === 0 && <div className="tool-empty-state"><h3>No records were returned for this query</h3><p>An empty NTRS search does not establish that no relevant evidence exists. Broaden or revise the query, then inspect the returned scope.</p></div>}
       </section>
-      {result && records.length > 0 && mode === "gaps" && <>
-        <section className="tool-panel" aria-labelledby="coverage-heading"><div className="tool-panel-heading"><div><p className="eyebrow">OBSERVED RESPONSE FIELDS</p><h2 id="coverage-heading">Metadata availability in this sample</h2></div><span className="coverage-sample-count">n = {records.length}</span></div><MetadataCoverageTable records={records} /></section>
-        <section className="tool-panel" aria-labelledby="coverage-records-heading"><div className="tool-panel-heading"><div><p className="eyebrow">SOURCE SCOPE</p><h2 id="coverage-records-heading">Records inspected</h2><p>Open a NASA source record to review the publication itself.</p></div></div><ul className="tool-record-list coverage-record-list">{records.slice(0, 12).map((record) => <li key={record.id}><div><p className="result-source-line"><span>NASA NTRS ID {record.id}</span>{record.publicationDate && <span>{record.publicationDate.split("T")[0]}</span>}</p><h3><Link href={`/research/${encodeURIComponent(record.id)}`}>{record.title}</Link></h3><RecordMetadata record={record} /></div><a className="source-link" href={record.canonicalUrl} target="_blank" rel="noreferrer" aria-label={`Open ${record.title} on NASA NTRS`}><ArrowUpRight size={16} aria-hidden="true" /></a></li>)}</ul></section>
-      </>}
-      {result && records.length > 0 && mode === "analytics" && <>
-        <section className="tool-panel" aria-labelledby="analytics-coverage-heading"><div className="tool-panel-heading"><div><p className="eyebrow">DATA LIMITS</p><h2 id="analytics-coverage-heading">Metadata coverage</h2><p>Counts below use the records returned in the inspected page, not the full reported result total.</p></div><span className="coverage-sample-count">n = {records.length}</span></div><MetadataCoverageTable records={records} /></section>
-        <div className="analytics-chart-grid"><section className="tool-panel"><MetadataBars title="Document type" rows={types} sampleSize={records.length} /></section><section className="tool-panel"><MetadataBars title="Publication year" rows={years} sampleSize={records.length} /></section></div>
-        <p className="tool-disclaimer analytics-disclaimer">These summaries describe NTRS record metadata for the query shown. The available metadata does not include a structured, comparable set of experimental measurements, so no scientific outcome chart is produced.</p>
-      </>}
+       {result && mode === "gaps" && <>
+         <EvidenceGapCards query={result.query} analysis={evidenceGaps} />
+         {records.length > 0 && <>
+         <section className="tool-panel" aria-labelledby="coverage-heading"><div className="tool-panel-heading"><div><p className="eyebrow">OBSERVED RESPONSE FIELDS</p><h2 id="coverage-heading">Metadata availability in this sample</h2></div><span className="coverage-sample-count">n = {records.length}</span></div><MetadataCoverageTable records={records} /></section>
+         <section className="tool-panel" aria-labelledby="coverage-records-heading"><div className="tool-panel-heading"><div><p className="eyebrow">SOURCE SCOPE</p><h2 id="coverage-records-heading">Records inspected</h2><p>Open a NASA source record to review the publication itself.</p></div></div><ul className="tool-record-list coverage-record-list">{records.slice(0, 12).map((record) => <li key={record.id}><div><p className="result-source-line"><span>NASA NTRS ID {record.id}</span>{record.publicationDate && <span>{record.publicationDate.split("T")[0]}</span>}</p><h3><Link href={`/research/${encodeURIComponent(record.id)}`}>{record.title}</Link></h3><RecordMetadata record={record} /></div><a className="source-link" href={record.canonicalUrl} target="_blank" rel="noreferrer" aria-label={`Open ${record.title} on NASA NTRS`}><ArrowUpRight size={16} aria-hidden="true" /></a></li>)}</ul></section>
+         </>}
+       </>}
+       {result && records.length > 0 && mode === "analytics" && <>
+         <section className="tool-panel research-landscape-panel" aria-labelledby="analytics-landscape-heading"><div className="tool-panel-heading"><div><p className="eyebrow">RESEARCH LANDSCAPE</p><h2 id="analytics-landscape-heading">A pulse check for this NASA query</h2><p>Use the returned publication metadata to see how broad, recent, and source-accessible this sample is.</p></div><span className="coverage-sample-count">n = {records.length}</span></div><div className="landscape-metrics"><LandscapeMetric label="Returned sample" value={landscape.total.toLocaleString()} detail="records inspected" /><LandscapeMetric label="Abstract coverage" value={`${Math.round((landscape.abstractCount / landscape.total) * 100)}%`} detail={`${landscape.abstractCount} records with abstracts`} /><LandscapeMetric label="Full-text access" value={`${Math.round((landscape.fullTextCount / landscape.total) * 100)}%`} detail={`${landscape.fullTextCount} returned links`} /><LandscapeMetric label="Timeline" value={landscape.yearRange ? `${landscape.yearRange.first}–${landscape.yearRange.last}` : "—"} detail={`${landscape.datedCount} dated records`} /></div></section>
+         <div className="analytics-chart-grid"><section className="tool-panel"><MetadataBars title="Publication year" rows={years} sampleSize={records.length} /></section><section className="tool-panel"><MetadataBars title="Document type" rows={types} sampleSize={records.length} /></section><section className="tool-panel"><MetadataBars title="NASA center" rows={landscape.centers} sampleSize={records.length} /></section><section className="tool-panel"><MetadataBars title="Subject categories" rows={landscape.subjects} sampleSize={records.length} /></section></div>
+         <p className="tool-disclaimer analytics-disclaimer">These summaries describe NTRS record metadata for the query shown. The available metadata does not include a structured, comparable set of experimental measurements, so no scientific outcome chart is produced.</p>
+       </>}
     </div>
   );
 }
-

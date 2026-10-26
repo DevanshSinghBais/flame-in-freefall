@@ -7,7 +7,13 @@ import { classifySupabaseAuthError, logAuthDiagnostic } from "@/lib/auth/diagnos
 export async function GET(request: NextRequest) {
   const code = request.nextUrl.searchParams.get("code");
   const next = safeReturnPath(request.nextUrl.searchParams.get("next"), "/auth/verified");
-  const callbackError = () => NextResponse.redirect(new URL("/sign-in?error=callback", request.url));
+  const callbackError = (kind = "callback") => {
+    const url = new URL("/sign-in", request.url);
+    url.searchParams.set("error", kind);
+    return NextResponse.redirect(url);
+  };
+
+  if (request.nextUrl.searchParams.get("error")) return callbackError("oauth");
 
   try {
     const client = await createServerClient();

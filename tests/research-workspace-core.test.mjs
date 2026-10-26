@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { countByLabel, createScenarioAssumptionRecord, getMetadataCoverage, publicationYear } from "../src/lib/research-workspace-core.ts";
+import { buildScenarioSearchQuery, countByLabel, createScenarioAssumptionRecord, getEvidenceGapAnalysis, getMetadataCoverage, getResearchLandscapeSummary, getScenarioCompletion, getScenarioFingerprint, publicationYear } from "../src/lib/research-workspace-core.ts";
 
 const record = (overrides = {}) => ({
   id: "20210015913",
@@ -61,4 +61,40 @@ test("scenario export preserves assumptions, units, and makes no predicted outpu
   assert.deepEqual(result.calculations, []);
   assert.match(result.limitation, /No physical combustion model/);
   assert.equal(Object.hasOwn(result, "outcome"), false);
+});
+
+test("scenario fingerprint creates a bounded NASA vocabulary query", () => {
+  const input = {
+    gravityContext: "Microgravity (user-selected context)",
+    fuelDescription: "methane", oxidizerDescription: "air",
+    ambientPressureKpa: "101.3", initialTemperatureK: "", oxygenVolumePercent: "21", durationSeconds: "30",
+  };
+  assert.equal(buildScenarioSearchQuery(input), "microgravity methane air 21 oxygen 101.3 kPa pressure");
+  assert.equal(getScenarioCompletion(input).percentage, 86);
+  assert.equal(getScenarioFingerprint(input).length, 6);
+});
+
+test("evidence gap analysis exposes actionable limits in a returned sample", () => {
+  const result = getEvidenceGapAnalysis([
+    record({ abstract: undefined, fullTextLinks: [], center: "Glenn Research Center" }),
+    record({ id: "20210015914", abstract: "A second abstract.", fullTextLinks: [{ label: "PDF", url: "https://ntrs.nasa.gov/api/citations/20210015914/downloads/1" }], center: "Ames Research Center" }),
+  ]);
+  assert.equal(result.total, 2);
+  assert.equal(result.abstractCoverage, 1);
+  assert.equal(result.distinctCenters, 2);
+  assert.equal(result.gaps.find((gap) => gap.key === "abstract")?.severity, "priority");
+  assert.equal(result.gaps.find((gap) => gap.key === "center")?.severity, "covered");
+});
+
+test("research landscape summarizes real metadata dimensions without outcomes", () => {
+  const result = getResearchLandscapeSummary([
+    record(),
+    record({ id: "20210015914", publicationDate: "2022-04-02T00:00:00Z", center: "Ames Research Center", subjectCategories: ["Combustion", "Fire safety"], fullTextLinks: [{ label: "PDF", url: "https://ntrs.nasa.gov/api/citations/20210015914/downloads/1" }] }),
+  ]);
+  assert.deepEqual(result.yearRange, { first: "2021", last: "2022" });
+  assert.equal(result.abstractCount, 2);
+  assert.equal(result.fullTextCount, 1);
+  assert.deepEqual(result.centers.map(({ label, count }) => ({ label, count })), [{ label: "Ames Research Center", count: 1 }, { label: "Glenn Research Center", count: 1 }]);
+  assert.equal(result.subjects[0].label, "Combustion");
+  assert.equal(result.subjects[0].count, 2);
 });

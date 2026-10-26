@@ -4,7 +4,7 @@ export const MAX_ASSISTANT_REQUEST_BYTES = 12_000;
 export const MAX_ASSISTANT_QUESTION_LENGTH = 500;
 export const MAX_ASSISTANT_HISTORY_TURNS = 3;
 export const MAX_ASSISTANT_CONTEXT_IDS = 3;
-export const MAX_ASSISTANT_CURRENT_SOURCES = 5;
+export const MAX_ASSISTANT_CURRENT_SOURCES = 8;
 export const MAX_ASSISTANT_SOURCES = MAX_ASSISTANT_CURRENT_SOURCES + MAX_ASSISTANT_CONTEXT_IDS;
 export const MAX_ASSISTANT_SEARCH_QUERIES = 4;
 export const MIN_ASSISTANT_SEARCH_QUERIES = 2;
@@ -154,6 +154,13 @@ export function normalizeAssistantRequest(value: unknown): AssistantRequest {
 function queryWords(question: string): string[] {
   return (question.match(/[\p{L}\p{N}]+(?:[-'][\p{L}\p{N}]+)*/gu) ?? [])
     .filter((word) => !NTRS_QUERY_STOP_WORDS.has(word.toLocaleLowerCase()));
+}
+
+function sourceRelevanceScore(record: NtrsRecord, question: string): number {
+  const terms = queryWords(question).map((word) => word.toLocaleLowerCase());
+  const title = record.title.toLocaleLowerCase();
+  const abstract = (record.abstract ?? "").toLocaleLowerCase();
+  return terms.reduce((score, term) => score + (title.includes(term) ? 4 : 0) + (abstract.includes(term) ? 1 : 0), 0);
 }
 
 function cleanNtrsQuery(value: string): string {
@@ -478,7 +485,11 @@ export async function runGroundedResearchAssistant(
       if (!uniqueCurrentRecords.has(record.id)) uniqueCurrentRecords.set(record.id, record);
     }
   }
-  const selectedCurrent = [...uniqueCurrentRecords.values()].slice(0, MAX_ASSISTANT_CURRENT_SOURCES);
+  const selectedCurrent = [...uniqueCurrentRecords.values()]
+    .map((record, index) => ({ record, index, relevance: sourceRelevanceScore(record, input.question) }))
+    .sort((left, right) => right.relevance - left.relevance || left.index - right.index)
+    .slice(0, MAX_ASSISTANT_CURRENT_SOURCES)
+    .map(({ record }) => record);
   const currentIds = new Set(selectedCurrent.map((record) => record.id));
   const availableContext = contextRecords.flatMap((entry) => entry.status === "fulfilled" && !currentIds.has(entry.value.id) ? [entry.value] : []);
   availableContext.forEach(assertSourceIsTraceable);

@@ -20,12 +20,24 @@ async function getActionOrigin(): Promise<string | null> {
   const requestHeaders = await headers();
   const configuredOrigin = process.env.NEXT_PUBLIC_SITE_URL?.trim();
   const requestOrigin = requestHeaders.get("origin") ?? requestHeaders.get("referer");
+  const requestHost = requestHeaders.get("host");
+  if (requestOrigin && requestHost) {
+    try {
+      const parsedRequest = new URL(requestOrigin);
+      if ((parsedRequest.protocol === "https:" || parsedRequest.hostname === "localhost" || parsedRequest.hostname === "127.0.0.1")
+        && parsedRequest.host.toLowerCase() === requestHost.toLowerCase()
+        && (parsedRequest.hostname === "localhost" || parsedRequest.hostname === "127.0.0.1")) {
+        return parsedRequest.origin;
+      }
+    } catch {
+      // Fall through to the configured deployment origin.
+    }
+  }
   const candidate = configuredOrigin || requestOrigin;
   if (!candidate) return null;
   try {
     const parsed = new URL(candidate);
     if (parsed.protocol !== "https:" && parsed.hostname !== "localhost" && parsed.hostname !== "127.0.0.1") return null;
-    const requestHost = requestHeaders.get("host");
     if (!configuredOrigin && requestHost && parsed.host.toLowerCase() !== requestHost.toLowerCase()) return null;
     return parsed.origin;
   } catch {
@@ -39,6 +51,30 @@ async function authRedirect(next: string): Promise<string | null> {
   const url = new URL("/auth/callback", origin);
   url.searchParams.set("next", safeReturnPath(next));
   return url.toString();
+}
+
+function authConfigurationMessage(operation: "sign_in" | "sign_up"): string {
+  return operation === "sign_in"
+    ? "Google sign-in is disabled for this workspace. Add a Google OAuth client ID and secret in Supabase Authentication → Providers → Google, then try again."
+    : "Google account creation is disabled for this workspace. Add a Google OAuth client ID and secret in Supabase Authentication → Providers → Google, then try again.";
+}
+
+async function readGoogleProviderEnabled(): Promise<boolean | null> {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim();
+  const publishableKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY?.trim();
+  if (!supabaseUrl || !publishableKey) return null;
+  try {
+    const settingsUrl = new URL("/auth/v1/settings", supabaseUrl);
+    const response = await fetch(settingsUrl, {
+      headers: { apikey: publishableKey, Authorization: `Bearer ${publishableKey}` },
+      cache: "no-store",
+    });
+    if (!response.ok) return null;
+    const payload = await response.json() as { external?: { google?: unknown } };
+    return typeof payload.external?.google === "boolean" ? payload.external.google : null;
+  } catch {
+    return null;
+  }
 }
 
 export async function signInAction(_previous: AuthActionState = idleState, data: FormData): Promise<AuthActionState> {
@@ -126,6 +162,54 @@ export async function signInAction(_previous: AuthActionState = idleState, data:
   logAuthDiagnostic("sign_in", "session_verified_before_redirect", { category: "success", code: null, httpStatus: null });
   revalidatePath("/", "layout");
   redirect(safeReturnPath(data.get("next")));
+}
+
+export async function signInWithGoogleAction(_previous: AuthActionState = idleState, data: FormData): Promise<AuthActionState> {
+  const redirectTo = await authRedirect(safeReturnPath(data.get("next")));
+  if (!redirectTo) {
+    logAuthDiagnostic("sign_in", "oauth_redirect_configuration", { category: "configuration", code: null, httpStatus: null });
+    return { status: "error", message: "Google sign-in is not configured for this request. Set NEXT_PUBLIC_SITE_URL for deployed environments." };
+  }
+
+  if (await readGoogleProviderEnabled() === false) {
+    logAuthDiagnostic("sign_in", "oauth_provider_disabled", { category: "configuration", code: "validation_failed", httpStatus: 400 });
+    return { status: "error", message: authConfigurationMessage("sign_in") };
+  }
+
+  let oauthUrl: string | null = null;
+  try {
+    const client = await createServerClient();
+    const { data: oauth, error } = await client.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo,
+        queryParams: { access_type: "offline", prompt: "select_account" },
+      },
+    });
+    if (error) {
+      const diagnostic = classifySupabaseAuthError(error);
+      logAuthDiagnostic("sign_in", "oauth_provider_response", diagnostic);
+      return {
+        status: "error",
+        message: diagnostic.category === "configuration" ? authConfigurationMessage("sign_in") : "Google sign-in could not be started. Try again shortly.",
+      };
+    }
+    oauthUrl = oauth.url ?? null;
+  } catch (error) {
+    const diagnostic = classifySupabaseAuthError(error);
+    logAuthDiagnostic("sign_in", "oauth_provider_exception", diagnostic);
+    return {
+      status: "error",
+      message: diagnostic.category === "configuration" ? authConfigurationMessage("sign_in") : "Google sign-in could not be started. Try again shortly.",
+    };
+  }
+
+  if (!oauthUrl) {
+    logAuthDiagnostic("sign_in", "oauth_url_missing", { category: "provider_unavailable", code: null, httpStatus: null });
+    return { status: "error", message: "Google sign-in could not be started. Try again shortly." };
+  }
+  logAuthDiagnostic("sign_in", "oauth_redirect_started", { category: "success", code: null, httpStatus: null });
+  redirect(oauthUrl);
 }
 
 export async function signUpAction(_previous: AuthActionState = idleState, data: FormData): Promise<AuthActionState> {

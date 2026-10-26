@@ -4,8 +4,10 @@ import { AppShell } from "@/components/app-shell";
 import { WorkspaceShell } from "@/components/workspace-shell";
 import { AiResearchAssistantWorkspace, ExperimentComparisonWorkspace, ResearchCorpusWorkspace, ScenarioExplorerWorkspace } from "@/components/research-workspace-tools";
 import { ResearchReportClient } from "@/components/research-report-client";
+import { FireSimulationWorkspace } from "@/components/fire-simulation";
 import { requireUser } from "@/lib/server/require-user";
 import { isGeminiConfigured } from "@/lib/server/gemini-provider";
+import { isOllamaConfigured } from "@/lib/server/ollama-provider";
 import { destinations } from "@/lib/workspace-navigation";
 
 export const dynamic = "force-dynamic";
@@ -30,12 +32,13 @@ export default async function WorkspaceSectionPage({ params }: { params: Promise
 
   if (section === "ai-research-assistant") {
     await requireUser("/workspace/ai-research-assistant");
-    return <WorkspaceShell><PageHeader title="AI Research Assistant" description="Ask a research question, retrieve real NASA NTRS records, and review a source-grounded synthesis." scope="LIVE NTRS · GEMINI" /><AiResearchAssistantWorkspace synthesisAvailable={isGeminiConfigured()} /></WorkspaceShell>;
+    return <WorkspaceShell><PageHeader title="AI Research Assistant" description="Ask a research question, retrieve real NASA NTRS records, and review a source-grounded synthesis." scope="LIVE NTRS · AI + LOCAL FALLBACK" /><AiResearchAssistantWorkspace synthesisAvailable={isGeminiConfigured() || isOllamaConfigured()} /></WorkspaceShell>;
   }
-  if (section === "experiment-comparison") return <WorkspaceShell><PageHeader title="Experiment Comparison" description="Select real NASA NTRS records and compare the metadata the source actually provides." scope="SOURCE-LINKED" /><ExperimentComparisonWorkspace /></WorkspaceShell>;
-  if (section === "scenario-explorer") return <WorkspaceShell><PageHeader title="Scenario Explorer" description="Record user-selected combustion conditions without presenting an unvalidated simulation or prediction." scope="ASSUMPTIONS ONLY" /><ScenarioExplorerWorkspace /></WorkspaceShell>;
+  if (section === "experiment-comparison") return <WorkspaceShell><PageHeader title="Evidence Matrix" description="Line up NASA records side by side and see where their source metadata agrees, differs, or is missing." scope="SOURCE-LINKED" /><ExperimentComparisonWorkspace /></WorkspaceShell>;
+  if (section === "scenario-explorer") return <WorkspaceShell><PageHeader title="Scenario Lab" description="Build a transparent combustion scenario fingerprint, then connect its vocabulary to real NASA source records." scope="SCENARIO → EVIDENCE" /><ScenarioExplorerWorkspace /></WorkspaceShell>;
+  if (section === "fire-simulation") return <WorkspaceShell><PageHeader title="Fire Simulation" description="Explore how selected gravity, mixture, and flow conditions change an illustrative flame morphology." scope="INTERACTIVE MODEL" /><FireSimulationWorkspace /></WorkspaceShell>;
   if (section === "evidence-gaps") return <WorkspaceShell><PageHeader title="Evidence Gaps" description="Inspect the metadata returned for a bounded NASA NTRS query and see what this response does not contain." scope="QUERY COVERAGE" /><ResearchCorpusWorkspace mode="gaps" /></WorkspaceShell>;
-  if (section === "scientific-analytics") return <WorkspaceShell><PageHeader title="Scientific Analytics" description="Explore source-backed publication metadata. The available NTRS metadata does not provide a structured measurement corpus." scope="NTRS METADATA" /><ResearchCorpusWorkspace mode="analytics" /></WorkspaceShell>;
+  if (section === "scientific-analytics") return <WorkspaceShell><PageHeader title="Research Landscape" description="Read the publication pulse behind a NASA query: timeline, institutions, subjects, and source access at a glance." scope="NTRS LANDSCAPE" /><ResearchCorpusWorkspace mode="analytics" /></WorkspaceShell>;
 
   if (section === "reports") {
     const { client, user } = await requireUser("/workspace/reports");
