@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { Wordmark } from "@/components/wordmark";
 
 const publicLinks = [
+  { href: "/workspace/overview", label: "Explore Research" },
   { href: "/about", label: "About the Science" },
   { href: "/sources", label: "Research Sources" },
   { href: "/sign-in", label: "Sign In" },
