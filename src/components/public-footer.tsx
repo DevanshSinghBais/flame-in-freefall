@@ -5,7 +5,10 @@ export function PublicFooter() {
   return (
     <footer className="public-footer">
       <div className="page-width footer-inner">
-        <Wordmark />
+        <div className="footer-brand">
+          <Wordmark />
+          <p>Evidence, observed beyond the pull of Earth.</p>
+        </div>
         <nav aria-label="Footer navigation" className="footer-links">
           <Link href="/about">About the Science</Link>
           <Link href="/sources">Research Sources</Link>

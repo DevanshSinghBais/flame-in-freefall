@@ -4,6 +4,7 @@ import { ArrowRight, ArrowUpRight, BookOpen, GitCompare, MessageCircle, Search }
 import { PublicHeader } from "@/components/public-header";
 import { PublicFooter } from "@/components/public-footer";
 import { FlameComparison } from "@/components/flame-comparison";
+import { HeroFlameScene } from "@/components/hero-flame-scene";
 import { researchRecords } from "@/lib/research";
 
 export function LandingPage() {
@@ -23,8 +24,10 @@ export function LandingPage() {
             />
           </div>
           <div className="hero-field" aria-hidden="true" />
+          <HeroFlameScene />
           <div className="page-width hero-content">
             <div className="hero-copy">
+              <p className="eyebrow hero-eyebrow">FIELD NOTES FROM ORBIT <span aria-hidden="true">/</span> 01</p>
               <h1 id="landing-title"><span>FIRE BEHAVES</span><span>DIFFERENTLY</span><span>BEYOND EARTH.</span></h1>
               <p className="hero-lede">Without gravity, buoyancy-driven flow changes how flames move, mix, and burn.</p>
               <p className="hero-description">FLAME IN FREEFALL helps researchers find, compare, and interpret published evidence on microgravity combustion.</p>
@@ -32,6 +35,7 @@ export function LandingPage() {
                 <Link className="button button-primary" href="/workspace/overview">Explore Research <ArrowRight size={17} aria-hidden="true" /></Link>
                 <Link className="button button-secondary" href="/workspace/ai-research-assistant"><MessageCircle size={17} aria-hidden="true" /> Ask the Research Assistant</Link>
               </div>
+              <p className="hero-caption">A source-first study of flame, flow and the conditions beyond Earth.</p>
             </div>
           </div>
           <p className="hero-image-caption">Illustrative concept image · not NASA photography</p>
